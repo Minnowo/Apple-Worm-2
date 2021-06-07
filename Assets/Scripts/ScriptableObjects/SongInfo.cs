@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+[CreateAssetMenu(menuName = "Song Info")]
+public class SongInfo : ScriptableObject
+{
+    public AudioClip Song;
+
+    public string SongName;
+
+    public float bpm;
+    public float firstBeatOffset = 0;
+    public int TotalNotes = -1;
+
+    public Track[] tracks;
+}
+
+	[System.Serializable]
+public class Note
+{
+    public float note;
+}
+
+	[System.Serializable]
+public class Track
+{
+    public Note[] notes;
+}

@@ -1,0 +1,102 @@
+{
+    "name": "PlayerInputActions",
+    "maps": [
+        {
+            "name": "PlayInput",
+            "id": "edbac2e6-26c9-4b11-a402-a108f47b1a3c",
+            "actions": [
+                {
+                    "name": "AttackUp1",
+                    "type": "Button",
+                    "id": "e89e4900-f55d-4ce0-a740-ab5c4c1683ae",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AttackUp2",
+                    "type": "Button",
+                    "id": "b083d0a6-e74f-467e-aaf8-6240a6c471a0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AttackDown1",
+                    "type": "Button",
+                    "id": "0d28dfcf-45df-41da-92e3-485adc6d23d5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "AttackDown2",
+                    "type": "Button",
+                    "id": "c01fae87-2077-41ab-973e-3cc0b7d5113d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "1d102120-a2c3-4f06-9cc8-16447105cb9e",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "AttackUp1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e97524b8-a942-4b3a-859d-693349ba3fe4",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "AttackDown1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d0a7d04-f8b9-422e-8cb8-32be09f662b6",
+                    "path": "<Keyboard>/f",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "AttackUp2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b201da3-343c-4825-932d-bb98b80a08b8",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "AttackDown2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "keyboard",
+            "bindingGroup": "keyboard",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

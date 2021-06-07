@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf06c2c02bb5cbb46b12f35b41630dff, type: 3}
+  m_Name: BassTelekinesis
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: 97740818f4351a841982add2925384b7, type: 3}
+  SongName: Bass Telekinesis
+  bpm: 112
+  firstBeatOffset: 0
+  TotalNotes: -1
+  tracks:
+  - notes:
+    - note: 1
+    - note: 2
+    - note: 3
+    - note: 4
+    - note: 4.5
+    - note: 5
+    - note: 6
+    - note: 7
+    - note: 8
+    - note: 9
+    - note: 23
+    - note: 24
+  - notes:
+    - note: 2
+    - note: 5
+    - note: 8
+    - note: 9
+    - note: 12
+    - note: 14
+    - note: 15
+    - note: 17
+    - note: 18
+    - note: 20
