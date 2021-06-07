@@ -9,7 +9,6 @@ public class MusicNode : MonoBehaviour
      public float endX;
      public float removeLineX;
      public float beat;
-     public int times;
      public bool paused;
 
 	public void Initialize(float startX, float posY, float endX, float removeLineX, float posZ, float targetBeat)

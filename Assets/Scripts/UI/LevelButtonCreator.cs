@@ -21,6 +21,8 @@ public class LevelButtonCreator : MonoBehaviour
     public float buttonHeight;
     public float leftMargin;
     public float topMargin;
+    
+    private PointF CanvasTopLeft;
 
     private RectTransform canvasRect
     {
@@ -30,7 +32,6 @@ public class LevelButtonCreator : MonoBehaviour
         }
     }
 
-    private PointF CanvasTopLeft;
 
     private void Awake()
     {

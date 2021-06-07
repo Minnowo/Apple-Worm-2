@@ -15151,15 +15151,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Paused: 0
-  badOffsetX: 0
-  goodOffsetX: 0
-  perfectOffsetX: 0
+  badOffsetX: 1
+  goodOffsetX: 0.5
+  perfectOffsetX: 0.2
   trackSpawnYPos:
   - 2
   - -2
   startLineX: 8
   finishLineX: -5
   removeLineX: -8
+  dequeueX: -5.5
   noteZPosition: 1
   dspSongTime: 0
   songBpm: 160
@@ -15289,4 +15290,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NotePrefab: {fileID: 1749556452273629693, guid: a9b94bd00c385b847865d13b8a6378af, type: 3}
   NotesObjectList: []
-  InitialAmount: 5
+  InitialAmount: 0

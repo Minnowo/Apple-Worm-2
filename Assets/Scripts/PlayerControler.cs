@@ -21,23 +21,11 @@ public class PlayerControler : MonoBehaviour
 
     public float speed = 5;
     public PlayerInput playerInput;
-    Rigidbody2D rb;
 
     // Start is called before the first frame update
     void Start()
     {
-        // get player's rigidbody
-        rb = GetComponent<Rigidbody2D>();
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //horizontal = Input.GetAxisRaw("Horizontal");
-        //vertical = Input.GetAxisRaw("Vertical");
-
-        //rigidbody2D.velocity = new Vector2(horizontal * speed, vertical * speed);
     }
 
     public void AttackUp(InputAction.CallbackContext value)
@@ -46,7 +34,6 @@ public class PlayerControler : MonoBehaviour
             return;
 
         PlayerInput(PlayerAction.AttackUp);
-        Debug.Log("player attacked up");
     }
     public void AttackDown(InputAction.CallbackContext value)
     {
@@ -54,7 +41,6 @@ public class PlayerControler : MonoBehaviour
             return;
 
         PlayerInput(PlayerAction.AttackDown);
-        Debug.Log("player attacked dowm");
     }
 
     private void PlayerInput(PlayerAction inp)

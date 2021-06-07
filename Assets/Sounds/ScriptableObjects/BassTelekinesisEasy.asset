@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf06c2c02bb5cbb46b12f35b41630dff, type: 3}
+  m_Name: BassTelekinesisEasy
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: 97740818f4351a841982add2925384b7, type: 3}
+  SongName: 
+  bpm: 50
+  firstBeatOffset: 0
+  TotalNotes: -1
+  tracks:
+  - notes:
+    - note: 1.1
+    - note: 3
+    - note: 4.1
+    - note: 4.3
+    - note: 4.6
+    - note: 5
+    - note: 5.5
+    - note: 6
+    - note: 6.5
+    - note: 8
+    - note: 9
+    - note: 9.3
+    - note: 9.7
+    - note: 10
+    - note: 11
+    - note: 11.5
+    - note: 12
+    - note: 13
+    - note: 14
+    - note: 14.5
+    - note: 15
+    - note: 16
+    - note: 16.5
+    - note: 17
+    - note: 17.5
+    - note: 18
+    - note: 19
+    - note: 20
+  - notes:
+    - note: 2
+    - note: 5
+    - note: 6.5
+    - note: 7
+    - note: 7.5
+    - note: 8.5
+    - note: 9.5
+    - note: 10.5
+    - note: 12.5
+    - note: 13.5
+    - note: 15
+    - note: 16.5
+    - note: 17.5
+    - note: 20
+    - note: 21
+    - note: 22
+    - note: 23
+    - note: 23.2
+    - note: 23.5
+    - note: 24
+    - note: 24.3

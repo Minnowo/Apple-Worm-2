@@ -25,6 +25,7 @@ public class Conductor : MonoBehaviour
     public float startLineX;
     public float finishLineX;
     public float removeLineX;
+    public float dequeueX;
     public float noteZPosition;
 
     //How many seconds have passed since the song started
@@ -73,10 +74,7 @@ public class Conductor : MonoBehaviour
 
     private void Awake()
     {
-        if(NotePool.Instance == null)
-        {
-
-        }
+        PlayerControler.PlayerInputted += PlayerControler_PlayerInputted;
     }
 
     void Start()
@@ -176,25 +174,24 @@ public class Conductor : MonoBehaviour
             if (nextNoteIndex >= curTrack.notes.Length)
                 continue;
 
-            if (nextNoteIndex >= curTrack.notes[nextNoteIndex].note)
+            if (curTrack.notes[nextNoteIndex].note >= beatToShow)
                 continue;
 
-            //if(nextNoteIndex < curTrack.notes.Length && curTrack.notes[nextNoteIndex].note < beatToShow)
-                Note currNote = curTrack.notes[nextNoteIndex];
+            Note currNote = curTrack.notes[nextNoteIndex];
 
-                MusicNode musicNode = NotePool.Instance.GetNode(
-                    startLineX,
-                    trackSpawnYPos[i],
-                    finishLineX,
-                    removeLineX,
-                    noteZPosition,
-                    currNote.note);
+            MusicNode musicNode = NotePool.Instance.GetNode(
+                startLineX,
+                trackSpawnYPos[i],
+                finishLineX,
+                removeLineX,
+                noteZPosition,
+                currNote.note);
 
-                //enqueue
-                trackQueues[i].Enqueue(musicNode);
+            //enqueue
+            trackQueues[i].Enqueue(musicNode);
 
-                //update the next index
-                trackNoteIndices[i]++;
+            //update the next index
+            trackNoteIndices[i]++;
         }
 
         for(int i = 0; i < numberOfTracks; i++)
@@ -205,7 +202,7 @@ public class Conductor : MonoBehaviour
 
             MusicNode curNode = trackQueues[i].Peek();
 
-            if(curNode.transform.position.x < finishLineX - goodOffsetX)
+            if(curNode.transform.position.x < dequeueX)
             {
                 // can remove the note because its going to be disabled by the BeatHit 
                 // function
@@ -219,6 +216,60 @@ public class Conductor : MonoBehaviour
         {
             songStarted = false;
             SongFinished();
+        }
+    }
+
+    private void PlayerControler_PlayerInputted(PlayerAction action)
+    {
+        int trackNumber = (int)action;
+
+        if (trackQueues.Length < 1)
+            return;
+
+        if (trackQueues[trackNumber].Count < 1)
+            return;
+
+        MusicNode frontNode = trackQueues[trackNumber].Peek();
+
+        float offsetX = frontNode.gameObject.transform.position.x - finishLineX;
+        //print($"offsetX: {offsetX}, perfectHit: {perfectOffsetX}");
+        if (offsetX < perfectOffsetX) //perfect hit
+        {
+            Debug.Log("perfect hit");
+            frontNode.PerfectHit();
+
+            //dispatch beat on hit event
+            BeatHit(trackNumber, Rank.PERFECT);
+
+            // remove the note from queue
+            trackQueues[trackNumber].Dequeue();
+            return;
+        }
+        
+        if (offsetX < goodOffsetX) //good hit
+        {
+            Debug.Log("good hit");
+            frontNode.GoodHit();
+
+            //dispatch beat on hit event
+            BeatHit(trackNumber, Rank.GOOD);
+
+            // remove the note from queue
+            trackQueues[trackNumber].Dequeue();
+            return;
+        }
+        
+        if (offsetX < badOffsetX) //bad hit
+        {
+            Debug.Log("bad hit");
+            frontNode.BadHit();
+
+            //dispatch beat on hit event
+            BeatHit(trackNumber, Rank.BAD);
+
+            // remove the note from queue
+            trackQueues[trackNumber].Dequeue();
+            return;
         }
     }
 
