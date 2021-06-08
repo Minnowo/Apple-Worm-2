@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf06c2c02bb5cbb46b12f35b41630dff, type: 3}
   m_Name: Bass
   m_EditorClassIdentifier: 
-  Song: {fileID: 0}
+  Song: {fileID: 8300000, guid: 97740818f4351a841982add2925384b7, type: 3}
   SongName: 
-  bpm: 0
+  bpm: 55
   firstBeatOffset: 0
   TotalNotes: -1
   tracks:

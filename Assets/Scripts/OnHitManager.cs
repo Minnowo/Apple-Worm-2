@@ -42,8 +42,8 @@ public class OnHitManager : MonoBehaviour
             return;
 
         musicSource.Play();
-        particleSystems[trackNumber].Stop();
-        particleSystems[trackNumber].Play();
+        //particleSystems[trackNumber].Stop();
+        //particleSystems[trackNumber].Play();
 
         if (t == NoteType.Bad)
             PlayerControler.Instance.TakeDamage(NotePool.Instance.damage);
