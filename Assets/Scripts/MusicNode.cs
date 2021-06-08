@@ -5,11 +5,14 @@ using UnityEngine;
 
 public class MusicNode : MonoBehaviour
 {
-     public float startX;
-     public float endX;
-     public float removeLineX;
-     public float beat;
-     public bool paused;
+    public float startX;
+    public float endX;
+    public float removeLineX;
+    public float beat;
+
+	public NoteType type;
+
+    public bool paused;
 
 	public void Initialize(float startX, float posY, float endX, float removeLineX, float posZ, float targetBeat)
 	{

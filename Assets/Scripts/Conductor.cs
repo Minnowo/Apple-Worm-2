@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public enum Rank { PERFECT, GOOD, BAD, MISS };
 
-
+[Serializable]
 public class Conductor : MonoBehaviour
 {
-
+    public static Conductor Instance = null;
     public delegate void BeatOnHitAction(int trackNumber, Rank rank);
     public static event BeatOnHitAction beatOnHitEvent;
 
@@ -15,18 +15,18 @@ public class Conductor : MonoBehaviour
     public delegate void SongCompletedAction();
     public static event SongCompletedAction songCompletedEvent;
 
-    public bool Paused = false;
+    public static bool Paused = false;
 
-    public float badOffsetX;
-    public float goodOffsetX;
-    public float perfectOffsetX;
+    public float badOffsetX = 1f;
+    public float goodOffsetX = 0.5f;
+    public float perfectOffsetX = 0.2f;
 
-    public float[] trackSpawnYPos;
-    public float startLineX;
-    public float finishLineX;
-    public float removeLineX;
-    public float dequeueX;
-    public float noteZPosition;
+    public float[] trackSpawnYPos = new float[] { 4f, -4f};
+    public float startLineX = 8;
+    public float finishLineX = -8;
+    public float removeLineX = -10;
+    public float dequeueX = -9;
+    public float noteZPosition = 1;
 
     //How many seconds have passed since the song started
     public float dspSongTime;
@@ -57,7 +57,7 @@ public class Conductor : MonoBehaviour
     //         =====o=o=o===o==o==o= <- track 2
     //
     // number of tracks = 2
-    private int numberOfTracks;
+    public int numberOfTracks { get; private set; }
 
     // keep track of by increasing a value at an index
     // you play the next note
@@ -74,6 +74,7 @@ public class Conductor : MonoBehaviour
 
     private void Awake()
     {
+        Instance = this;
         PlayerControler.PlayerInputted += PlayerControler_PlayerInputted;
     }
 
