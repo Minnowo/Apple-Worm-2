@@ -5,23 +5,23 @@ using UnityEngine;
 public class OnHitManager : MonoBehaviour
 {
     public AudioSource musicSource;
-    public ParticleSystem particleSystem;
+    public ParticleSystem ps;
 
-    //private Dictionary<int, ParticleSystem> particleSystems;
+    private Dictionary<int, ParticleSystem> particleSystems;
     void Start()
     {
         musicSource = GetComponent<AudioSource>();
-        particleSystem = GetComponent<ParticleSystem>();
+        ps = GetComponent<ParticleSystem>();
 
         Conductor.beatOnHitEvent += BeatHit;
 
-        /*particleSystems = new Dictionary<int, ParticleSystem>();
+        particleSystems = new Dictionary<int, ParticleSystem>();
         float xpos = Conductor.Instance.finishLineX;
         float[] yPos = Conductor.Instance.trackSpawnYPos;
 
         for (int i = 0; i < yPos.Length; i++)
         {
-            GameObject burstParticle = Instantiate<GameObject>(PlayerUIPrefabs.BurstParticle);
+            GameObject burstParticle = Instantiate<GameObject>(UIPrefabs.BurstParticle);
 
             burstParticle.transform.parent = this.transform;
 
@@ -31,17 +31,21 @@ public class OnHitManager : MonoBehaviour
                 6);
 
             particleSystems[i] = burstParticle.GetComponent<ParticleSystem>();
-        }*/
+        }
     }
 
-    private void BeatHit(int trackNumber, Rank rank)
+    private void BeatHit(int trackNumber, Rank rank, NoteType t)
     {
-        Debug.Log(rank);
+        //Debug.Log(rank);
+        
         if (rank == Rank.MISS)
             return;
 
         musicSource.Play();
-        /*particleSystems[trackNumber].Stop();
-        particleSystems[trackNumber].Play();*/
+        particleSystems[trackNumber].Stop();
+        particleSystems[trackNumber].Play();
+
+        if (t == NoteType.Bad)
+            PlayerControler.Instance.TakeDamage(NotePool.Instance.damage);
     }
 }

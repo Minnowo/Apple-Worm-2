@@ -8,8 +8,17 @@ using System;
 public class Conductor : MonoBehaviour
 {
     public static Conductor Instance = null;
-    public delegate void BeatOnHitAction(int trackNumber, Rank rank);
+    public delegate void BeatOnHitAction(int trackNumber, Rank rank, NoteType type);
     public static event BeatOnHitAction beatOnHitEvent;
+
+    public float T 
+    {
+        get
+        {
+            return songPosition / secondsPerBeat + beatsShownInAdvance;
+        }
+    }
+    
 
     //song completion
     public delegate void SongCompletedAction();
@@ -166,7 +175,6 @@ public class Conductor : MonoBehaviour
 
         float beatToShow = songPosition / secondsPerBeat + beatsShownInAdvance;
 
-
         for(int i = 0; i < numberOfTracks; i++)
         {
             int nextNoteIndex = trackNoteIndices[i];
@@ -186,7 +194,8 @@ public class Conductor : MonoBehaviour
                 finishLineX,
                 removeLineX,
                 noteZPosition,
-                currNote.note);
+                currNote.note,
+                currNote.type);
 
             //enqueue
             trackQueues[i].Enqueue(musicNode);
@@ -209,7 +218,7 @@ public class Conductor : MonoBehaviour
                 // function
                 trackQueues[i].Dequeue();
 
-                BeatHit(i, Rank.MISS);
+                BeatHit(i, Rank.MISS, NoteType.Normal) ;
             }
         }
 
@@ -240,7 +249,7 @@ public class Conductor : MonoBehaviour
             frontNode.PerfectHit();
 
             //dispatch beat on hit event
-            BeatHit(trackNumber, Rank.PERFECT);
+            BeatHit(trackNumber, Rank.PERFECT, frontNode.type);
 
             // remove the note from queue
             trackQueues[trackNumber].Dequeue();
@@ -253,7 +262,7 @@ public class Conductor : MonoBehaviour
             frontNode.GoodHit();
 
             //dispatch beat on hit event
-            BeatHit(trackNumber, Rank.GOOD);
+            BeatHit(trackNumber, Rank.GOOD, frontNode.type);
 
             // remove the note from queue
             trackQueues[trackNumber].Dequeue();
@@ -266,7 +275,7 @@ public class Conductor : MonoBehaviour
             frontNode.BadHit();
 
             //dispatch beat on hit event
-            BeatHit(trackNumber, Rank.BAD);
+            BeatHit(trackNumber, Rank.BAD, frontNode.type);
 
             // remove the note from queue
             trackQueues[trackNumber].Dequeue();
@@ -285,9 +294,9 @@ public class Conductor : MonoBehaviour
             songCompletedEvent();
     }
 
-    private void BeatHit(int trackNumber, Rank rank)
+    private void BeatHit(int trackNumber, Rank rank, NoteType t)
     {
         if (beatOnHitEvent != null) 
-            beatOnHitEvent(trackNumber, rank);
+            beatOnHitEvent(trackNumber, rank, t);
     }
 }

@@ -9,17 +9,53 @@ public class MusicNode : MonoBehaviour
     public float endX;
     public float removeLineX;
     public float beat;
+	public NoteType notetype;
 
-	public NoteType type;
+	public NoteType type
+    {
+        get
+        {
+			return t;
+        }
+        set
+        {
+			notetype = value;
+			t = value;
+
+			if (sr == null)
+				return;
+            switch (t)
+            {
+				case NoteType.Normal:
+					sr.sprite = UIPrefabs.DefaultMusicNodeSprite;
+					break;
+				case NoteType.Bad:
+					sr.sprite = UIPrefabs.BadMusicNodeSprite;
+					break;
+				case NoteType.Special:
+					sr.sprite = UIPrefabs.SpecialMusicNodeSprite;
+					break;
+            }
+        }
+    }
+	private NoteType t;
 
     public bool paused;
+	private SpriteRenderer sr;
+    private void Awake()
+    {
+		sr = GetComponent<SpriteRenderer>();
+		sr.sortingLayerName = "MusicNote";
+		//sr.sprite
+    }
 
-	public void Initialize(float startX, float posY, float endX, float removeLineX, float posZ, float targetBeat)
+    public void Initialize(float startX, float posY, float endX, float removeLineX, float posZ, float targetBeat, NoteType nt = NoteType.Normal)
 	{
 		this.startX = startX;
 		this.endX = endX;
 		this.beat = targetBeat;
 		this.removeLineX = removeLineX;
+		this.type = nt;
 
 		paused = false;
 

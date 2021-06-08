@@ -10,6 +10,7 @@ public class NotePool : MonoBehaviour
 
     public List<MusicNode> NotesObjectList;
 
+    public int damage = 15;
     public int InitialAmount = 0;
 
     private void Awake()
@@ -28,7 +29,7 @@ public class NotePool : MonoBehaviour
         }
     }
 
-    public MusicNode GetNode(float posX, float startY, float endX, float removeLineX, float posZ, float beat)
+    public MusicNode GetNode(float posX, float startY, float endX, float removeLineX, float posZ, float beat, NoteType nt = NoteType.Normal)
     {
         //check if there is an inactive instance
         // we will re-use it if there is 
@@ -36,24 +37,23 @@ public class NotePool : MonoBehaviour
         {
             if (!node.gameObject.activeInHierarchy)
             {
-                node.Initialize(posX, startY, endX, removeLineX, posZ, beat);
+                node.Initialize(posX, startY, endX, removeLineX, posZ, beat, nt);
                 node.gameObject.SetActive(true);
                 return node;
             }
         }
 
         //no inactive instances, instantiate a new GetComponent
-        MusicNode musicNode = CreateNote(posX, startY, endX, removeLineX, posZ, beat);
+        MusicNode musicNode = CreateNote(posX, startY, endX, removeLineX, posZ, beat, nt);
         NotesObjectList.Add(musicNode);
         return musicNode;
-
     }
 
-    public MusicNode CreateNote(float posX, float startY, float endX, float removeLineX, float posZ, float beat)
+    public MusicNode CreateNote(float posX, float startY, float endX, float removeLineX, float posZ, float beat, NoteType nt = NoteType.Normal)
     {
         // create a new gameobject using the note prefab
         MusicNode note = ((GameObject)Instantiate(NotePrefab)).GetComponent<MusicNode>();
-        note.Initialize(posX, startY, endX, removeLineX, posZ, beat);
+        note.Initialize(posX, startY, endX, removeLineX, posZ, beat, nt);
         return note;
     }
 }

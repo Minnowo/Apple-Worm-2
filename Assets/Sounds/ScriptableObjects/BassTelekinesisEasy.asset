@@ -19,54 +19,104 @@ MonoBehaviour:
   TotalNotes: -1
   tracks:
   - notes:
-    - note: 1.1
-    - note: 3
-    - note: 4.1
-    - note: 4.3
-    - note: 4.6
-    - note: 5
-    - note: 5.5
-    - note: 6
-    - note: 6.5
-    - note: 8
-    - note: 9
-    - note: 9.3
-    - note: 9.7
-    - note: 10
-    - note: 11
-    - note: 11.5
-    - note: 12
-    - note: 13
-    - note: 14
-    - note: 14.5
-    - note: 15
-    - note: 16
-    - note: 16.5
-    - note: 17
-    - note: 17.5
-    - note: 18
-    - note: 19
-    - note: 20
-    - note: 22
-  - notes:
+    - note: 1
+      type: 0
     - note: 2
+      type: 0
+    - note: 3
+      type: 0
+    - note: 4
+      type: 0
     - note: 5
-    - note: 6.5
+      type: 1
+    - note: 6
+      type: 0
     - note: 7
-    - note: 7.5
-    - note: 8.5
-    - note: 9.5
-    - note: 10.5
-    - note: 12.5
-    - note: 13.5
+      type: 0
+    - note: 8
+      type: 0
+    - note: 9
+      type: 0
+    - note: 10
+      type: 0
+    - note: 11
+      type: 0
+    - note: 12
+      type: 0
+    - note: 13
+      type: 0
+    - note: 14
+      type: 0
     - note: 15
-    - note: 16.5
-    - note: 17.5
+      type: 0
+    - note: 16
+      type: 0
+    - note: 17
+      type: 0
+    - note: 18
+      type: 0
+    - note: 19
+      type: 0
     - note: 20
+      type: 0
     - note: 21
+      type: 0
     - note: 22
+      type: 0
     - note: 23
-    - note: 23.2
-    - note: 23.5
+      type: 0
     - note: 24
-    - note: 24.3
+      type: 0
+    - note: 25
+      type: 0
+    - note: 26
+      type: 0
+    - note: 27
+      type: 0
+    - note: 28
+      type: 0
+    - note: 29
+      type: 0
+    - note: 30
+      type: 0
+    - note: 31
+      type: 0
+    - note: 32
+      type: 0
+    - note: 33
+      type: 0
+    - note: 34
+      type: 0
+    - note: 35
+      type: 0
+    - note: 36
+      type: 0
+    - note: 37
+      type: 0
+    - note: 38
+      type: 0
+    - note: 39
+      type: 0
+    - note: 40
+      type: 0
+    - note: 41
+      type: 0
+    - note: 42
+      type: 0
+    - note: 43
+      type: 0
+    - note: 44
+      type: 0
+    - note: 45
+      type: 0
+    - note: 46
+      type: 0
+    - note: 47
+      type: 0
+    - note: 48
+      type: 0
+    - note: 49
+      type: 0
+    - note: 50
+      type: 0
+  - notes: []

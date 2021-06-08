@@ -20,25 +20,47 @@ MonoBehaviour:
   tracks:
   - notes:
     - note: 1
+      type: 1
     - note: 2
+      type: 1
     - note: 3
+      type: 1
     - note: 4
+      type: 0
     - note: 4.5
+      type: 0
     - note: 5
+      type: 0
     - note: 6
+      type: 0
     - note: 7
+      type: 0
     - note: 8
+      type: 0
     - note: 9
+      type: 0
     - note: 23
+      type: 0
     - note: 24
+      type: 0
   - notes:
     - note: 2
+      type: 0
     - note: 5
+      type: 0
     - note: 8
+      type: 0
     - note: 9
+      type: 0
     - note: 12
+      type: 0
     - note: 14
+      type: 0
     - note: 15
+      type: 0
     - note: 17
+      type: 0
     - note: 18
+      type: 0
     - note: 20
+      type: 0

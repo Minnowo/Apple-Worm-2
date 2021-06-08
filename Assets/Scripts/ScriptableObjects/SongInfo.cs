@@ -20,6 +20,8 @@ public class SongInfo : ScriptableObject
 public class Note
 {
     public float note;
+    
+    public NoteType type = NoteType.Normal;
 }
 
 	[System.Serializable]
