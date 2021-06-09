@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf06c2c02bb5cbb46b12f35b41630dff, type: 3}
+  m_Name: MoriNoKinikoSongNormal
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: ad244117c80403849b5f2c28283d26bd, type: 3}
+  SongName: 
+  bpm: 35
+  firstBeatOffset: 0
+  TotalNotes: -1
+  tracks:
+  - notes:
+    - note: 1.0949167
+      type: 0
+    - note: 1.2798333
+      type: 0
+    - note: 1.46475
+      type: 0
+    - note: 1.8345833
+      type: 0
+    - note: 2.0195
+      type: 0
+    - note: 2.9440835
+      type: 0
+    - note: 3.3139167
+      type: 0
+    - note: 3.4988334
+      type: 0
+    - note: 4.053583
+      type: 0
+    - note: 4.4234166
+      type: 0
+    - note: 4.79325
+      type: 0
+    - note: 5.90275
+      type: 0
+    - note: 6.2725835
+      type: 0
+    - note: 7.01225
+      type: 0
+    - note: 7.9368334
+      type: 0
+    - note: 8.12175
+      type: 0
+    - note: 8.399417
+      type: 0
+    - note: 8.491583
+      type: 0
+    - note: 8.861417
+      type: 0
+    - note: 9.23125
+      type: 0
+    - note: 9.87875
+      type: 0
+    - note: 9.970917
+      type: 0
+    - note: 10.34075
+      type: 0
+    - note: 10.710584
+      type: 0
+    - note: 11.820084
+      type: 0
+    - note: 12.189917
+      type: 0
+    - note: 18.384916
+      type: 0
+    - note: 19.956417
+      type: 0
+    - note: 21.065916
+      type: 0
+    - note: 21.343584
+      type: 0
+    - note: 21.43575
+      type: 0
+    - note: 22.54525
+      type: 0
+    - note: 22.822916
+      type: 0
+    - note: 23.284916
+      type: 0
+    - note: 23.65475
+      type: 0
+    - note: 24.024584
+      type: 0
+    - note: 24.2095
+      type: 0
+    - note: 24.394417
+      type: 0
+    - note: 25.041916
+      type: 0
+    - note: 25.134083
+      type: 0
+    - note: 25.781584
+      type: 0
+    - note: 26.243584
+      type: 0
+    - note: 26.613417
+      type: 0
+    - note: 26.798334
+      type: 0
+    - note: 27.353083
+      type: 0
+    - note: 27.722918
+      type: 0
+    - note: 28.000584
+      type: 0
+    - note: 29.20225
+      type: 0
+    - note: 29.572083
+      type: 0
+    - note: 29.757
+      type: 0
+    - note: 29.941917
+      type: 0
+  - notes:
+    - note: 0.35583332
+      type: 0
+    - note: 0.6329167
+      type: 0
+    - note: 0.72508335
+      type: 0
+    - note: 2.2044168
+      type: 0
+    - note: 2.4820833
+      type: 0
+    - note: 2.57425
+      type: 0
+    - note: 3.68375
+      type: 0
+    - note: 3.9614167
+      type: 0
+    - note: 5.0709167
+      type: 0
+    - note: 5.1630836
+      type: 0
+    - note: 5.5329165
+      type: 0
+    - note: 6.4575
+      type: 0
+    - note: 6.6424165
+      type: 0
+    - note: 7.1971664
+      type: 0
+    - note: 7.3820834
+      type: 0
+    - note: 7.751917
+      type: 0
+    - note: 8.6765
+      type: 0
+    - note: 9.416166
+      type: 0
+    - note: 9.601084
+      type: 0
+    - note: 10.248584
+      type: 0
+    - note: 10.98825
+      type: 0
+    - note: 11.080417
+      type: 0
+    - note: 11.358084
+      type: 0
+    - note: 11.45025
+      type: 0
+    - note: 11.727917
+      type: 0
+    - note: 12.005
+      type: 0
+    - note: 18.10725
+      type: 0
+    - note: 18.477083
+      type: 0
+    - note: 18.846916
+      type: 0
+    - note: 19.586584
+      type: 0
+    - note: 19.86425
+      type: 0
+    - note: 20.32625
+      type: 0
+    - note: 20.696083
+      type: 0
+    - note: 21.805584
+      type: 0
+    - note: 22.175417
+      type: 0
+    - note: 22.915083
+      type: 0
+    - note: 23.469833
+      type: 0
+    - note: 24.76425
+      type: 0
+    - note: 24.949167
+      type: 0
+    - note: 25.503916
+      type: 0
+    - note: 25.87375
+      type: 0
+    - note: 26.4285
+      type: 0
+    - note: 26.98325
+      type: 0
+    - note: 27.168167
+      type: 0
+    - note: 27.907833
+      type: 0
+    - note: 28.09275
+      type: 0
+    - note: 28.462584
+      type: 0
+    - note: 28.74025
+      type: 0
+    - note: 28.832417
+      type: 0
+    - note: 29.387167
+      type: 0
+    - note: 30.034666
+      type: 0

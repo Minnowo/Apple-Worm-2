@@ -12,78 +12,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf06c2c02bb5cbb46b12f35b41630dff, type: 3}
   m_Name: SuperPowerSongNormal
   m_EditorClassIdentifier: 
-  Song: {fileID: 0}
+  Song: {fileID: 8300000, guid: 073b1569b3cebfa42b63fabdd6996550, type: 3}
   SongName: 
   bpm: 45
   firstBeatOffset: 0
   TotalNotes: -1
   tracks:
   - notes:
-    - note: 1.1047500000000001
+    - note: 1.10475
       type: 0
     - note: 3.12675
       type: 0
-    - note: 3.6330000000000005
+    - note: 3.633
       type: 0
     - note: 5.1495
       type: 0
     - note: 5.40225
       type: 0
-    - note: 6.160500000000001
+    - note: 6.1605
       type: 0
-    - note: 6.919500000000001
+    - note: 6.9195
       type: 0
-    - note: 7.6777500000000005
+    - note: 7.67775
       type: 0
-    - note: 8.183250000000001
+    - note: 8.18325
       type: 0
     - note: 8.436
       type: 0
-    - note: 8.941500000000001
+    - note: 8.9415
       type: 0
-    - note: 9.447000000000001
+    - note: 9.447
       type: 0
-    - note: 10.206000000000001
+    - note: 10.206
       type: 0
-    - note: 10.711500000000001
+    - note: 10.7115
       type: 0
-    - note: 11.343000000000002
+    - note: 11.343
       type: 0
-    - note: 11.722500000000002
+    - note: 11.7225
       type: 0
     - note: 11.84925
       type: 0
     - note: 12.228
       type: 0
-    - note: 12.480749999999999
+    - note: 12.48075
       type: 0
-    - note: 13.365750000000002
+    - note: 13.36575
       type: 0
-    - note: 14.250750000000002
+    - note: 14.25075
       type: 0
-    - note: 14.756250000000001
+    - note: 14.75625
       type: 0
     - note: 15.76725
       type: 0
-    - note: 16.273500000000002
+    - note: 16.2735
       type: 0
-    - note: 17.031750000000002
+    - note: 17.03175
       type: 0
     - note: 17.91675
       type: 0
-    - note: 19.306500000000003
+    - note: 19.3065
       type: 0
     - note: 19.43325
       type: 0
     - note: 20.571
       type: 0
-    - note: 21.329250000000002
+    - note: 21.32925
       type: 0
-    - note: 21.456000000000003
+    - note: 21.456
       type: 0
     - note: 21.9615
       type: 0
-    - note: 22.467000000000002
+    - note: 22.467
       type: 0
     - note: 22.593
       type: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
       type: 0
     - note: 23.8575
       type: 0
-    - note: 24.363000000000003
+    - note: 24.363
       type: 0
     - note: 25.5
       type: 0
@@ -103,35 +103,35 @@ MonoBehaviour:
       type: 0
     - note: 27.396
       type: 0
-    - note: 27.522750000000002
+    - note: 27.52275
       type: 0
     - note: 28.029
       type: 0
-    - note: 28.407750000000004
+    - note: 28.40775
       type: 0
     - note: 28.6605
       type: 0
     - note: 30.5565
       type: 0
-    - note: 30.682499999999997
+    - note: 30.6825
       type: 0
-    - note: 31.188000000000002
+    - note: 31.188
       type: 0
     - note: 31.947
       type: 0
-    - note: 32.453250000000004
+    - note: 32.45325
       type: 0
     - note: 32.95875
       type: 0
     - note: 33.46425
       type: 0
-    - note: 33.969750000000005
+    - note: 33.96975
       type: 0
     - note: 34.47525
       type: 0
     - note: 34.728
       type: 0
-    - note: 35.23350000000001
+    - note: 35.2335
       type: 0
     - note: 36.24525
       type: 0
@@ -139,13 +139,13 @@ MonoBehaviour:
       type: 0
     - note: 37.25625
       type: 0
-    - note: 38.014500000000005
+    - note: 38.0145
       type: 0
     - note: 38.52
       type: 0
     - note: 39.02625
       type: 0
-    - note: 40.542750000000005
+    - note: 40.54275
       type: 0
     - note: 41.04825
       type: 0
@@ -159,9 +159,9 @@ MonoBehaviour:
       type: 0
     - note: 44.33475
       type: 0
-    - note: 44.967000000000006
+    - note: 44.967
       type: 0
-    - note: 45.346500000000006
+    - note: 45.3465
       type: 0
     - note: 45.5985
       type: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
       type: 0
     - note: 46.61025
       type: 0
-    - note: 47.748000000000005
+    - note: 47.748
       type: 0
     - note: 48.12675
       type: 0
@@ -179,37 +179,37 @@ MonoBehaviour:
       type: 0
     - note: 49.89675
       type: 0
-    - note: 50.15025000000001
+    - note: 50.15025
       type: 0
-    - note: 51.03450000000001
+    - note: 51.0345
       type: 0
-    - note: 51.918749999999996
+    - note: 51.91875
       type: 0
     - note: 52.9305
       type: 0
-    - note: 53.057249999999996
+    - note: 53.05725
       type: 0
     - note: 53.68875
       type: 0
-    - note: 54.19500000000001
+    - note: 54.195
       type: 0
     - note: 54.7005
       type: 0
-    - note: 55.079249999999995
+    - note: 55.07925
       type: 0
     - note: 55.7115
       type: 0
-    - note: 55.838249999999995
+    - note: 55.83825
       type: 0
-    - note: 56.217000000000006
+    - note: 56.217
       type: 0
     - note: 56.97525
       type: 0
     - note: 57.354
       type: 0
-    - note: 58.23975000000001
+    - note: 58.23975
       type: 0
-    - note: 58.998000000000005
+    - note: 58.998
       type: 0
     - note: 61.3995
       type: 0
@@ -219,15 +219,15 @@ MonoBehaviour:
       type: 0
     - note: 64.56
       type: 0
-    - note: 65.44425000000001
+    - note: 65.44425
       type: 0
     - note: 65.82375
       type: 0
     - note: 66.32925
       type: 0
-    - note: 67.46700000000001
+    - note: 67.467
       type: 0
-    - note: 67.84575000000001
+    - note: 67.84575
       type: 0
     - note: 68.0985
       type: 0
@@ -235,23 +235,23 @@ MonoBehaviour:
       type: 0
     - note: 68.8575
       type: 0
-    - note: 69.11025000000001
+    - note: 69.11025
       type: 0
     - note: 69.61575
       type: 0
-    - note: 69.86850000000001
+    - note: 69.8685
       type: 0
     - note: 70.37475
       type: 0
-    - note: 71.13225000000001
+    - note: 71.13225
       type: 0
     - note: 71.8905
       type: 0
-    - note: 73.15500000000002
+    - note: 73.155
       type: 0
     - note: 73.91325
       type: 0
-    - note: 74.16600000000001
+    - note: 74.166
       type: 0
     - note: 74.92425
       type: 0
@@ -259,35 +259,35 @@ MonoBehaviour:
       type: 0
     - note: 76.947
       type: 0
-    - note: 77.19975000000001
+    - note: 77.19975
       type: 0
-    - note: 79.98075000000001
+    - note: 79.98075
       type: 0
-    - note: 81.75075000000001
+    - note: 81.75075
       type: 0
-    - note: 83.01450000000001
+    - note: 83.0145
       type: 0
-    - note: 83.52000000000001
+    - note: 83.52
       type: 0
-    - note: 84.02550000000001
+    - note: 84.0255
       type: 0
-    - note: 84.15225000000001
+    - note: 84.15225
       type: 0
-    - note: 84.65775000000001
+    - note: 84.65775
       type: 0
     - note: 85.28925
       type: 0
     - note: 85.7955
       type: 0
-    - note: 87.56550000000001
+    - note: 87.5655
       type: 0
     - note: 88.19625
       type: 0
-    - note: 88.57650000000001
+    - note: 88.5765
       type: 0
     - note: 89.33475
       type: 0
-    - note: 89.84025000000001
+    - note: 89.84025
       type: 0
     - note: 93.12675
       type: 0
@@ -295,17 +295,17 @@ MonoBehaviour:
       type: 0
     - note: 93.885
       type: 0
-    - note: 94.77000000000001
+    - note: 94.77
       type: 0
-    - note: 96.66600000000001
+    - note: 96.666
       type: 0
-    - note: 97.17224999999999
+    - note: 97.17225
       type: 0
     - note: 97.42425
       type: 0
-    - note: 97.92975000000001
+    - note: 97.92975
       type: 0
-    - note: 98.31000000000002
+    - note: 98.31
       type: 0
     - note: 98.8155
       type: 0
@@ -313,38 +313,38 @@ MonoBehaviour:
       type: 0
     - note: 99.95325
       type: 0
-    - note: 100.83749999999999
+    - note: 100.8375
       type: 0
-    - note: 101.21625000000002
+    - note: 101.21625
       type: 0
     - note: 103.4925
       type: 0
-    - note: 103.99799999999999
+    - note: 103.998
       type: 0
     - note: 104.25
       type: 0
-    - note: 104.75625000000001
+    - note: 104.75625
       type: 0
-    - note: 105.26174999999999
+    - note: 105.26175
       type: 0
   - notes:
     - note: 0.09375
       type: 0
-    - note: 0.34650000000000003
+    - note: 0.3465
       type: 0
-    - note: 1.3575000000000002
+    - note: 1.3575
       type: 0
-    - note: 2.1157500000000002
+    - note: 2.11575
       type: 0
     - note: 2.874
       type: 0
-    - note: 4.1385000000000005
+    - note: 4.1385
       type: 0
     - note: 4.39125
       type: 0
-    - note: 7.172250000000001
+    - note: 7.17225
       type: 0
-    - note: 9.321000000000002
+    - note: 9.321
       type: 0
     - note: 11.217
       type: 0
@@ -352,7 +352,7 @@ MonoBehaviour:
       type: 0
     - note: 13.4925
       type: 0
-    - note: 15.261750000000001
+    - note: 15.26175
       type: 0
     - note: 15.38775
       type: 0
@@ -362,67 +362,67 @@ MonoBehaviour:
       type: 0
     - note: 17.4105
       type: 0
-    - note: 18.422250000000002
+    - note: 18.42225
       type: 0
-    - note: 18.548250000000003
+    - note: 18.54825
       type: 0
     - note: 19.05375
       type: 0
-    - note: 19.938750000000002
+    - note: 19.93875
       type: 0
-    - note: 20.318250000000003
+    - note: 20.31825
       type: 0
-    - note: 21.076500000000003
+    - note: 21.0765
       type: 0
     - note: 24.61575
       type: 0
     - note: 25.12125
       type: 0
-    - note: 25.374000000000002
+    - note: 25.374
       type: 0
-    - note: 26.006249999999998
+    - note: 26.00625
       type: 0
-    - note: 26.637750000000004
+    - note: 26.63775
       type: 0
-    - note: 27.143250000000002
+    - note: 27.14325
       type: 0
     - note: 29.166
       type: 0
-    - note: 29.418750000000003
+    - note: 29.41875
       type: 0
     - note: 29.5455
       type: 0
     - note: 30.051
       type: 0
-    - note: 31.441499999999998
+    - note: 31.4415
       type: 0
-    - note: 31.568250000000003
+    - note: 31.56825
       type: 0
-    - note: 32.073750000000004
+    - note: 32.07375
       type: 0
     - note: 33.2115
       type: 0
-    - note: 34.222500000000004
+    - note: 34.2225
       type: 0
     - note: 34.98075
       type: 0
     - note: 35.487
       type: 0
-    - note: 35.99250000000001
+    - note: 35.9925
       type: 0
-    - note: 36.498000000000005
+    - note: 36.498
       type: 0
     - note: 37.509
       type: 0
-    - note: 38.267250000000004
+    - note: 38.26725
       type: 0
     - note: 39.53175
       type: 0
     - note: 39.7845
       type: 0
-    - note: 40.03725000000001
+    - note: 40.03725
       type: 0
-    - note: 40.795500000000004
+    - note: 40.7955
       type: 0
     - note: 41.55375
       type: 0
@@ -430,29 +430,29 @@ MonoBehaviour:
       type: 0
     - note: 42.5655
       type: 0
-    - note: 42.944250000000004
+    - note: 42.94425
       type: 0
     - note: 43.5765
       type: 0
-    - note: 43.828500000000005
+    - note: 43.8285
       type: 0
-    - note: 44.587500000000006
+    - note: 44.5875
       type: 0
-    - note: 44.840250000000005
+    - note: 44.84025
       type: 0
-    - note: 45.852000000000004
+    - note: 45.852
       type: 0
     - note: 46.3575
       type: 0
-    - note: 46.989000000000004
+    - note: 46.989
       type: 0
     - note: 47.11575
       type: 0
     - note: 47.62125
       type: 0
-    - note: 48.380250000000004
+    - note: 48.38025
       type: 0
-    - note: 48.632999999999996
+    - note: 48.633
       type: 0
     - note: 49.1385
       type: 0
@@ -466,11 +466,11 @@ MonoBehaviour:
       type: 0
     - note: 52.04625
       type: 0
-    - note: 52.425000000000004
+    - note: 52.425
       type: 0
-    - note: 52.677749999999996
+    - note: 52.67775
       type: 0
-    - note: 53.436749999999996
+    - note: 53.43675
       type: 0
     - note: 53.9415
       type: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
       type: 0
     - note: 55.206
       type: 0
-    - note: 56.469750000000005
+    - note: 56.46975
       type: 0
     - note: 56.7225
       type: 0
@@ -494,9 +494,9 @@ MonoBehaviour:
       type: 0
     - note: 60.009
       type: 0
-    - note: 60.261750000000006
+    - note: 60.26175
       type: 0
-    - note: 60.514500000000005
+    - note: 60.5145
       type: 0
     - note: 60.76725
       type: 0
@@ -506,17 +506,17 @@ MonoBehaviour:
       type: 0
     - note: 62.03175
       type: 0
-    - note: 62.28450000000001
+    - note: 62.2845
       type: 0
-    - note: 63.042750000000005
+    - note: 63.04275
       type: 0
     - note: 63.801
       type: 0
-    - note: 64.03275000000001
+    - note: 64.03275
       type: 0
-    - note: 64.81275000000001
+    - note: 64.81275
       type: 0
-    - note: 65.06550000000001
+    - note: 65.0655
       type: 0
     - note: 65.571
       type: 0
@@ -534,7 +534,7 @@ MonoBehaviour:
       type: 0
     - note: 70.122
       type: 0
-    - note: 70.87950000000001
+    - note: 70.8795
       type: 0
     - note: 71.51175
       type: 0
@@ -544,51 +544,51 @@ MonoBehaviour:
       type: 0
     - note: 72.6495
       type: 0
-    - note: 72.90225000000001
+    - note: 72.90225
       type: 0
     - note: 75.6825
       type: 0
     - note: 76.4415
       type: 0
-    - note: 77.95800000000001
+    - note: 77.958
       type: 0
     - note: 78.21075
       type: 0
-    - note: 78.96900000000001
+    - note: 78.969
       type: 0
-    - note: 79.72800000000001
+    - note: 79.728
       type: 0
-    - note: 80.48700000000001
+    - note: 80.487
       type: 0
     - note: 80.9925
       type: 0
     - note: 81.2445
       type: 0
-    - note: 82.12950000000001
+    - note: 82.1295
       type: 0
-    - note: 82.25550000000001
+    - note: 82.2555
       type: 0
     - note: 84.531
       type: 0
     - note: 85.0365
       type: 0
-    - note: 86.17500000000001
+    - note: 86.175
       type: 0
     - note: 86.301
       type: 0
     - note: 87.05925
       type: 0
-    - note: 88.07025000000002
+    - note: 88.07025
       type: 0
-    - note: 89.08200000000001
+    - note: 89.082
       type: 0
     - note: 90.093
       type: 0
-    - note: 90.21900000000001
+    - note: 90.219
       type: 0
     - note: 90.72525
       type: 0
-    - note: 91.23075000000001
+    - note: 91.23075
       type: 0
     - note: 91.35675
       type: 0
@@ -602,13 +602,13 @@ MonoBehaviour:
       type: 0
     - note: 94.13775
       type: 0
-    - note: 94.26450000000001
+    - note: 94.2645
       type: 0
-    - note: 95.27550000000001
+    - note: 95.2755
       type: 0
     - note: 95.4015
       type: 0
-    - note: 95.90700000000001
+    - note: 95.907
       type: 0
     - note: 96.1605
       type: 0
@@ -620,21 +620,21 @@ MonoBehaviour:
       type: 0
     - note: 100.206
       type: 0
-    - note: 100.33200000000001
+    - note: 100.332
       type: 0
-    - note: 101.46900000000001
+    - note: 101.469
       type: 0
     - note: 101.9745
       type: 0
-    - note: 102.22800000000001
+    - note: 102.228
       type: 0
-    - note: 102.35400000000001
+    - note: 102.354
       type: 0
     - note: 102.86025
       type: 0
     - note: 103.36575
       type: 0
-    - note: 104.37675000000002
+    - note: 104.37675
       type: 0
-    - note: 105.38850000000001
+    - note: 105.3885
       type: 0

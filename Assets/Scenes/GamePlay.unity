@@ -252,7 +252,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   musicSource: {fileID: 0}
-  ps: {fileID: 0}
+  circleFlash: []
+  circleIndicators: []
 --- !u!4 &42085855
 Transform:
   m_ObjectHideFlags: 0
@@ -21517,6 +21518,7 @@ MonoBehaviour:
   specialMusicNodeSprite: {fileID: 21300000, guid: 604bbad5d570c1b4e920b8c4604a0de1, type: 3}
   badMusicNodeSprite: {fileID: 21300000, guid: 346f9626e0ad76641b65f130f5fa8baa, type: 3}
   healthBar: {fileID: 1944792675}
+  flashCirclePrefab: {fileID: -8474049307924766651, guid: 818ebe0d6fe95b645835dc976890d658, type: 3}
 --- !u!222 &1984052271
 CanvasRenderer:
   m_ObjectHideFlags: 0

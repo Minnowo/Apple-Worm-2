@@ -57,4 +57,9 @@ public class CircleIndicator : MonoBehaviour
 
         transform.Rotate(rotationVector);
     }
+
+    public void PressDownEffect()
+    {
+
+    }
 }

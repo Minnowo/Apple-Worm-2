@@ -4,40 +4,56 @@ using UnityEngine;
 
 public class OnHitManager : MonoBehaviour
 {
+    public static OnHitManager Instance = null;
     public AudioSource musicSource;
-    public ParticleSystem ps;
+
+    public CircleFlash[] circleFlash;
+    public CircleIndicator[] circleIndicators;
 
     private Dictionary<int, ParticleSystem> particleSystems;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
     {
         musicSource = GetComponent<AudioSource>();
-        ps = GetComponent<ParticleSystem>();
 
         Conductor.beatOnHitEvent += BeatHit;
 
-        particleSystems = new Dictionary<int, ParticleSystem>();
+        
         float xpos = Conductor.Instance.finishLineX;
         float[] yPos = Conductor.Instance.trackSpawnYPos;
 
+        circleIndicators = new CircleIndicator[yPos.Length];
+        circleFlash = new CircleFlash[yPos.Length];
+
         for (int i = 0; i < yPos.Length; i++)
         {
-            GameObject burstParticle = Instantiate<GameObject>(UIPrefabs.BurstParticle);
+            GameObject circleIndicator = Instantiate<GameObject>(UIPrefabs.CircleIndicatorPrefab);
+            SpriteRenderer sr = circleIndicator.GetComponent<SpriteRenderer>();
 
-            burstParticle.transform.parent = this.transform;
+            sr.sortingLayerName = "Player";
+            sr.sortingOrder = 5;
 
-            burstParticle.transform.position = new Vector3(
-                xpos + Conductor.Instance.perfectOffsetX,
+            circleIndicator.transform.parent = this.transform;
+
+            circleIndicator.transform.position = new Vector3(
+                xpos,
                 yPos[i],
-                6);
+                5);
 
-            particleSystems[i] = burstParticle.GetComponent<ParticleSystem>();
+            circleIndicators[i] = circleIndicator.GetComponent< CircleIndicator>();
+
+            CircleFlash circleFlash = Instantiate<CircleFlash>(UIPrefabs.FlashCirclePrefab);
+            this.circleFlash[i] = circleFlash;
         }
     }
 
     private void BeatHit(int trackNumber, Rank rank, NoteType t)
     {
-        //Debug.Log(rank);
-        
         if (rank == Rank.MISS)
         {
             PlayerControler.Instance.TakeDamage(NotePool.Instance.damage);
@@ -45,8 +61,12 @@ public class OnHitManager : MonoBehaviour
         }
 
         musicSource.Play();
-        //particleSystems[trackNumber].Stop();
-        //particleSystems[trackNumber].Play();
+
+        circleFlash[trackNumber].ShowFlash(
+            circleIndicators[trackNumber].transform.position.x, 
+            circleIndicators[trackNumber].transform.position.y, 
+            circleIndicators[trackNumber].transform.position.z, 
+            10);
 
         if (t == NoteType.Bad)
             PlayerControler.Instance.TakeDamage(NotePool.Instance.damage);

@@ -359,7 +359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentSong: {fileID: 0}
   songCollections:
-  - {fileID: 11400000, guid: 9e907e2a23662184da4f9014df34bd20, type: 2}
+  - {fileID: 11400000, guid: e96c6e45b1cc48149bdc3b399a3f2956, type: 2}
   - {fileID: 11400000, guid: 6f81382cd9590874f814a46c35aa946b, type: 2}
 --- !u!1 &167097389
 GameObject:

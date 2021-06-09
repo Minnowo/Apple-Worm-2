@@ -23,29 +23,11 @@ public class PlayerControler : MonoBehaviour
     {
         Instance = this;
     }
+
     void Start()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
         rigidBody.transform.position = new Vector3(Conductor.Instance.finishLineX + Conductor.Instance.goodOffsetX, 0, 5);
-
-        float xpos = Conductor.Instance.finishLineX;
-        float[] yPos = Conductor.Instance.trackSpawnYPos;
-
-        for (int i = 0; i < yPos.Length; i++)
-        {
-            GameObject circleIndicator = Instantiate<GameObject>(UIPrefabs.CircleIndicatorPrefab);
-            SpriteRenderer sr = circleIndicator.GetComponent<SpriteRenderer>();
-
-            sr.sortingLayerName = "Player";
-            sr.sortingOrder = 5;
-
-            circleIndicator.transform.parent = this.transform;
-
-            circleIndicator.transform.position = new Vector3(
-                xpos, 
-                yPos[i], 
-                5);
-        }
 
         UIPrefabs.HealthBar.SetMaxHealth(Health);
     }
@@ -61,7 +43,9 @@ public class PlayerControler : MonoBehaviour
         if (!value.started)
             return;
 
+
         PlayerInput(PlayerAction.AttackUp);
+        OnHitManager.Instance.circleIndicators[0].PressDownEffect();
         //print($"track: {0}, beat: {Conductor.Instance.T}");
     }
     public void AttackDown(InputAction.CallbackContext value)
@@ -70,6 +54,8 @@ public class PlayerControler : MonoBehaviour
             return;
 
         PlayerInput(PlayerAction.AttackDown);
+        OnHitManager.Instance.circleIndicators[1].PressDownEffect();
+
         //print($"track: {1}, beat: {Conductor.Instance.T}");
     }
 

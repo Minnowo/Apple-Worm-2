@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BassTelekinesisCollection
   m_EditorClassIdentifier: 
   songSets:
-  - easy: {fileID: 11400000, guid: bec479f4d285aa945970ff514f381688, type: 2}
+  - easy: {fileID: 11400000, guid: d35e7a03e3f545e4eb5205df3c164810, type: 2}
     normal: {fileID: 11400000, guid: c68c8cdaa6ee90341aae10cf472f5d8d, type: 2}
     hard: {fileID: 11400000, guid: c68c8cdaa6ee90341aae10cf472f5d8d, type: 2}

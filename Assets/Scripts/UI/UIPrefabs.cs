@@ -60,6 +60,16 @@ public class UIPrefabs : MonoBehaviour
         }
     }
     public HealthBar healthBar;
+
+    public static CircleFlash FlashCirclePrefab
+    {
+        get
+        {
+            return Instance.flashCirclePrefab;
+        }
+    }
+    public CircleFlash flashCirclePrefab;
+
     private void Awake()
     {
         Instance = this;
