@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: 9747a77ad72f52f4db0e1d9e2922d40f, type: 3}
   SongName: 
-  bpm: 45
-  firstBeatOffset: 0
-  TotalNotes: -1
+  bpm: 43.45
+  firstBeatOffset: 1
+  delayMusicWithFirstBeatOffset: 1
   tracks:
   - notes:
     - note: 0.637275

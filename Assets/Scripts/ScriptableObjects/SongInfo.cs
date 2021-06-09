@@ -11,6 +11,7 @@ public class SongInfo : ScriptableObject
 
     public float bpm;
     public float firstBeatOffset = 0;
+    public float beatsShowInAdvance = 1;
     public bool delayMusicWithFirstBeatOffset = true;
 
     public Track[] tracks;

@@ -15,8 +15,8 @@ MonoBehaviour:
   Song: {fileID: 8300000, guid: ad244117c80403849b5f2c28283d26bd, type: 3}
   SongName: 
   bpm: 35
-  firstBeatOffset: 0
-  TotalNotes: -1
+  firstBeatOffset: 1
+  delayMusicWithFirstBeatOffset: 1
   tracks:
   - notes:
     - note: 1.0949167

@@ -15,8 +15,8 @@ MonoBehaviour:
   Song: {fileID: 8300000, guid: 97740818f4351a841982add2925384b7, type: 3}
   SongName: Bass Telekinesis
   bpm: 112
-  firstBeatOffset: 0
-  TotalNotes: -1
+  firstBeatOffset: -5
+  delayMusicWithFirstBeatOffset: 1
   tracks:
   - notes:
     - note: 1

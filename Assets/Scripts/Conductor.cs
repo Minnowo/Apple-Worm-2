@@ -48,7 +48,7 @@ public class Conductor : MonoBehaviour
     public static float songPosition;               //Current song position, in seconds
     public static float pauseTimeStamp = -1f;
     public static float secondsPerBeat;      // 
-    public static int beatsShownInAdvance = 1;      // number of notes shown on screen
+    public static float beatsShownInAdvance = 1f;      // number of notes shown on screen
 
     //an AudioSource attached to this GameObject that will play the music.
     public AudioSource musicSource { get { return GetComponent<AudioSource>(); } }
@@ -104,6 +104,7 @@ public class Conductor : MonoBehaviour
         secondsPerBeat = 60f / songInfo.bpm;
         songLength = songInfo.Song.length;
         songBpm = SongMessenger.Instance.CurrentSong.bpm;
+        beatsShownInAdvance = songInfo.beatsShowInAdvance;
 
         numberOfTracks = trackSpawnYPos.Length;
         trackNoteIndices = new int[numberOfTracks];

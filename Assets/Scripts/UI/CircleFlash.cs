@@ -23,7 +23,7 @@ public class CircleFlash : MonoBehaviour
         if (!flash)
             return;
 
-        this.gameObject.SetActive(true);
+        //this.gameObject.SetActive(true);
 
         if (sr.color.a > 0.5f)
         {
@@ -44,7 +44,7 @@ public class CircleFlash : MonoBehaviour
         if (sr.color.a <= 0)
         {
             flash = false;
-            this.gameObject.SetActive(false);
+            //this.gameObject.SetActive(false);
         }
     }
 
