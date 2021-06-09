@@ -1,0 +1,8 @@
+bpm = ?
+
+secondsPerBeat = 60 / bmp
+
+songPositionInMS = ?
+songPositionInSeconds = sonPositionInMS / 1000
+
+beat = songPositionInSeconds / secondsPerBeat

@@ -39,7 +39,10 @@ public class OnHitManager : MonoBehaviour
         //Debug.Log(rank);
         
         if (rank == Rank.MISS)
+        {
+            PlayerControler.Instance.TakeDamage(NotePool.Instance.damage);
             return;
+        }
 
         musicSource.Play();
         //particleSystems[trackNumber].Stop();

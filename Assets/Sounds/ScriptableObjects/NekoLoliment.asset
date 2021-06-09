@@ -1,0 +1,1380 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf06c2c02bb5cbb46b12f35b41630dff, type: 3}
+  m_Name: NekoLoliment
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: 493def3f5847b544f8aadbfe769d8840, type: 3}
+  SongName: 
+  bpm: 55
+  firstBeatOffset: 0
+  TotalNotes: -1
+  tracks:
+  - notes:
+    - note: 0.3965
+      type: 0
+    - note: 0.8980833
+      type: 0
+    - note: 0.8980833
+      type: 0
+    - note: 1.1483333
+      type: 0
+    - note: 1.3996667
+      type: 0
+    - note: 10.176833
+      type: 0
+    - note: 10.428166
+      type: 0
+    - note: 10.678416
+      type: 0
+    - note: 10.678416
+      type: 0
+    - note: 10.92975
+      type: 0
+    - note: 11.431334
+      type: 0
+    - note: 11.431334
+      type: 0
+    - note: 11.681583
+      type: 0
+    - note: 12.1831665
+      type: 0
+    - note: 12.4345
+      type: 0
+    - note: 12.68475
+      type: 0
+    - note: 12.936084
+      type: 0
+    - note: 13.186334
+      type: 0
+    - note: 13.186334
+      type: 0
+    - note: 13.437667
+      type: 0
+    - note: 13.687917
+      type: 0
+    - note: 13.93925
+      type: 0
+    - note: 13.93925
+      type: 0
+    - note: 14.440833
+      type: 0
+    - note: 14.733334
+      type: 0
+    - note: 14.81675
+      type: 0
+    - note: 14.859
+      type: 0
+    - note: 14.9001665
+      type: 0
+    - note: 14.942416
+      type: 0
+    - note: 15.025833
+      type: 0
+    - note: 15.068084
+      type: 0
+    - note: 15.10925
+      type: 0
+    - note: 15.192667
+      type: 0
+    - note: 15.234917
+      type: 0
+    - note: 15.277166
+      type: 0
+    - note: 15.40175
+      type: 0
+    - note: 15.444
+      type: 0
+    - note: 15.48625
+      type: 0
+    - note: 15.527416
+      type: 0
+    - note: 15.569667
+      type: 0
+    - note: 15.610833
+      type: 0
+    - note: 15.653084
+      type: 0
+    - note: 15.945583
+      type: 0
+    - note: 15.945583
+      type: 0
+    - note: 16.195833
+      type: 0
+    - note: 16.195833
+      type: 0
+    - note: 16.404917
+      type: 0
+    - note: 16.404917
+      type: 0
+    - note: 17.199
+      type: 0
+    - note: 17.199
+      type: 0
+    - note: 17.450333
+      type: 0
+    - note: 18.202168
+      type: 0
+    - note: 18.202168
+      type: 0
+    - note: 19.456667
+      type: 0
+    - note: 19.706917
+      type: 0
+    - note: 2.1515
+      type: 0
+    - note: 2.1515
+      type: 0
+    - note: 2.4028332
+      type: 0
+    - note: 2.6530833
+      type: 0
+    - note: 2.6530833
+      type: 0
+    - note: 2.9044166
+      type: 0
+    - note: 20.710083
+      type: 0
+    - note: 20.961416
+      type: 0
+    - note: 21.211666
+      type: 0
+    - note: 21.463
+      type: 0
+    - note: 21.71325
+      type: 0
+    - note: 21.71325
+      type: 0
+    - note: 22.214834
+      type: 0
+    - note: 22.758667
+      type: 0
+    - note: 22.800917
+      type: 0
+    - note: 22.842083
+      type: 0
+    - note: 22.9255
+      type: 0
+    - note: 23.093416
+      type: 0
+    - note: 23.134583
+      type: 0
+    - note: 23.176834
+      type: 0
+    - note: 23.218
+      type: 0
+    - note: 23.343666
+      type: 0
+    - note: 23.469334
+      type: 0
+    - note: 23.511583
+      type: 0
+    - note: 23.678417
+      type: 0
+    - note: 23.719584
+      type: 0
+    - note: 23.970917
+      type: 0
+    - note: 24.221167
+      type: 0
+    - note: 24.72275
+      type: 0
+    - note: 24.974083
+      type: 0
+    - note: 24.974083
+      type: 0
+    - note: 25.224333
+      type: 0
+    - note: 25.224333
+      type: 0
+    - note: 25.475666
+      type: 0
+    - note: 25.475666
+      type: 0
+    - note: 25.725916
+      type: 0
+    - note: 25.97725
+      type: 0
+    - note: 26.2275
+      type: 0
+    - note: 26.478834
+      type: 0
+    - note: 26.729084
+      type: 0
+    - note: 26.980417
+      type: 0
+    - note: 27.230667
+      type: 0
+    - note: 27.230667
+      type: 0
+    - note: 27.482
+      type: 0
+    - note: 27.482
+      type: 0
+    - note: 27.983583
+      type: 0
+    - note: 27.983583
+      type: 0
+    - note: 28.485167
+      type: 0
+    - note: 28.735416
+      type: 0
+    - note: 28.98675
+      type: 0
+    - note: 28.98675
+      type: 0
+    - note: 29.237
+      type: 0
+    - note: 29.488333
+      type: 0
+    - note: 3.1546667
+      type: 0
+    - note: 3.65625
+      type: 0
+    - note: 3.9075832
+      type: 0
+    - note: 30.240168
+      type: 0
+    - note: 30.82625
+      type: 0
+    - note: 30.867416
+      type: 0
+    - note: 30.950834
+      type: 0
+    - note: 30.993084
+      type: 0
+    - note: 31.035334
+      type: 0
+    - note: 31.202168
+      type: 0
+    - note: 31.243334
+      type: 0
+    - note: 31.285583
+      type: 0
+    - note: 31.494667
+      type: 0
+    - note: 31.578083
+      type: 0
+    - note: 31.6615
+      type: 0
+    - note: 31.744917
+      type: 0
+    - note: 31.99625
+      type: 0
+    - note: 32.2465
+      type: 0
+    - note: 32.2465
+      type: 0
+    - note: 32.497833
+      type: 0
+    - note: 32.748085
+      type: 0
+    - note: 32.999416
+      type: 0
+    - note: 32.999416
+      type: 0
+    - note: 33.24967
+      type: 0
+    - note: 33.75125
+      type: 0
+    - note: 34.252834
+      type: 0
+    - note: 34.754417
+      type: 0
+    - note: 34.754417
+      type: 0
+    - note: 35.00575
+      type: 0
+    - note: 35.256
+      type: 0
+    - note: 35.50733
+      type: 0
+    - note: 36.008915
+      type: 0
+    - note: 36.259167
+      type: 0
+    - note: 36.259167
+      type: 0
+    - note: 36.5105
+      type: 0
+    - note: 36.5105
+      type: 0
+    - note: 37.012085
+      type: 0
+    - note: 37.012085
+      type: 0
+    - note: 37.262333
+      type: 0
+    - note: 37.763916
+      type: 0
+    - note: 37.763916
+      type: 0
+    - note: 38.01525
+      type: 0
+    - note: 38.2655
+      type: 0
+    - note: 38.516834
+      type: 0
+    - note: 38.516834
+      type: 0
+    - note: 38.809334
+      type: 0
+    - note: 38.85158
+      type: 0
+    - note: 38.976166
+      type: 0
+    - note: 39.018417
+      type: 0
+    - note: 39.05958
+      type: 0
+    - note: 39.18525
+      type: 0
+    - note: 39.268665
+      type: 0
+    - note: 39.310917
+      type: 0
+    - note: 39.35317
+      type: 0
+    - note: 39.52
+      type: 0
+    - note: 39.645668
+      type: 0
+    - note: 39.77025
+      type: 0
+    - note: 4.409167
+      type: 0
+    - note: 4.6594167
+      type: 0
+    - note: 40.27183
+      type: 0
+    - note: 40.523167
+      type: 0
+    - note: 41.02475
+      type: 0
+    - note: 41.275
+      type: 0
+    - note: 41.526333
+      type: 0
+    - note: 41.526333
+      type: 0
+    - note: 41.776585
+      type: 0
+    - note: 42.027916
+      type: 0
+    - note: 42.278168
+      type: 0
+    - note: 42.278168
+      type: 0
+    - note: 43.031082
+      type: 0
+    - note: 43.281334
+      type: 0
+    - note: 43.532665
+      type: 0
+    - note: 43.782917
+      type: 0
+    - note: 44.2845
+      type: 0
+    - note: 44.2845
+      type: 0
+    - note: 44.53583
+      type: 0
+    - note: 44.53583
+      type: 0
+    - note: 45.03742
+      type: 0
+    - note: 45.287666
+      type: 0
+    - note: 45.539
+      type: 0
+    - note: 45.78925
+      type: 0
+    - note: 45.78925
+      type: 0
+    - note: 46.040585
+      type: 0
+    - note: 46.290833
+      type: 0
+    - note: 46.290833
+      type: 0
+    - note: 46.542168
+      type: 0
+    - note: 46.792416
+      type: 0
+    - note: 46.792416
+      type: 0
+    - note: 47.04375
+      type: 0
+    - note: 47.294
+      type: 0
+    - note: 47.294
+      type: 0
+    - note: 47.671
+      type: 0
+    - note: 48.172585
+      type: 0
+    - note: 48.172585
+      type: 0
+    - note: 48.297165
+      type: 0
+    - note: 48.422832
+      type: 0
+    - note: 48.79875
+      type: 0
+    - note: 48.79875
+      type: 0
+    - note: 49.050083
+      type: 0
+    - note: 49.300335
+      type: 0
+    - note: 49.300335
+      type: 0
+    - note: 49.551666
+      type: 0
+    - note: 49.551666
+      type: 0
+    - note: 49.801918
+      type: 0
+    - note: 5.161
+      type: 0
+    - note: 5.4123335
+      type: 0
+    - note: 5.6625834
+      type: 0
+    - note: 5.6625834
+      type: 0
+    - note: 5.9139166
+      type: 0
+    - note: 50.05325
+      type: 0
+    - note: 50.3035
+      type: 0
+    - note: 50.3035
+      type: 0
+    - note: 50.554832
+      type: 0
+    - note: 51.056416
+      type: 0
+    - note: 51.306667
+      type: 0
+    - note: 51.306667
+      type: 0
+    - note: 51.558
+      type: 0
+    - note: 52.811417
+      type: 0
+    - note: 53.814583
+      type: 0
+    - note: 54.065918
+      type: 0
+    - note: 54.316166
+      type: 0
+    - note: 54.81775
+      type: 0
+    - note: 54.943417
+      type: 0
+    - note: 54.943417
+      type: 0
+    - note: 55.069084
+      type: 0
+    - note: 55.069084
+      type: 0
+    - note: 55.19475
+      type: 0
+    - note: 55.319332
+      type: 0
+    - note: 55.445
+      type: 0
+    - note: 55.570667
+      type: 0
+    - note: 55.820915
+      type: 0
+    - note: 55.946583
+      type: 0
+    - note: 55.946583
+      type: 0
+    - note: 56.07225
+      type: 0
+    - note: 56.07225
+      type: 0
+    - note: 56.197918
+      type: 0
+    - note: 56.3225
+      type: 0
+    - note: 57.075417
+      type: 0
+    - note: 57.075417
+      type: 0
+    - note: 57.32567
+      type: 0
+    - note: 57.32567
+      type: 0
+    - note: 57.577
+      type: 0
+    - note: 58.078583
+      type: 0
+    - note: 58.328835
+      type: 0
+    - note: 59.08175
+      type: 0
+    - note: 59.332
+      type: 0
+    - note: 59.332
+      type: 0
+    - note: 59.583332
+      type: 0
+    - note: 59.833584
+      type: 0
+    - note: 6.1641665
+      type: 0
+    - note: 6.4155
+      type: 0
+    - note: 6.66575
+      type: 0
+    - note: 6.66575
+      type: 0
+    - note: 6.9170833
+      type: 0
+    - note: 6.9170833
+      type: 0
+    - note: 60.084915
+      type: 0
+    - note: 60.084915
+      type: 0
+    - note: 60.5865
+      type: 0
+    - note: 60.83675
+      type: 0
+    - note: 61.088085
+      type: 0
+    - note: 61.088085
+      type: 0
+    - note: 61.338333
+      type: 0
+    - note: 61.338333
+      type: 0
+    - note: 61.58967
+      type: 0
+    - note: 62.09125
+      type: 0
+    - note: 62.09125
+      type: 0
+    - note: 62.592834
+      type: 0
+    - note: 62.843082
+      type: 0
+    - note: 63.344666
+      type: 0
+    - note: 63.344666
+      type: 0
+    - note: 63.596
+      type: 0
+    - note: 63.72167
+      type: 0
+    - note: 63.84625
+      type: 0
+    - note: 63.971916
+      type: 0
+    - note: 64.34783
+      type: 0
+    - note: 64.4735
+      type: 0
+    - note: 64.59917
+      type: 0
+    - note: 64.72483
+      type: 0
+    - note: 64.72483
+      type: 0
+    - note: 64.84942
+      type: 0
+    - note: 65.10075
+      type: 0
+    - note: 65.10075
+      type: 0
+    - note: 65.60233
+      type: 0
+    - note: 66.10392
+      type: 0
+    - note: 66.10392
+      type: 0
+    - note: 66.354164
+      type: 0
+    - note: 66.6055
+      type: 0
+    - note: 66.6055
+      type: 0
+    - note: 66.85575
+      type: 0
+    - note: 67.107086
+      type: 0
+    - note: 67.107086
+      type: 0
+    - note: 67.35733
+      type: 0
+    - note: 67.35733
+      type: 0
+    - note: 67.608665
+      type: 0
+    - note: 68.3605
+      type: 0
+    - note: 68.3605
+      type: 0
+    - note: 68.86208
+      type: 0
+    - note: 69.11342
+      type: 0
+    - note: 69.36367
+      type: 0
+    - note: 69.36367
+      type: 0
+    - note: 69.615
+      type: 0
+    - note: 69.615
+      type: 0
+    - note: 69.86525
+      type: 0
+    - note: 7.167333
+      type: 0
+    - note: 7.418667
+      type: 0
+    - note: 7.6689167
+      type: 0
+    - note: 70.116585
+      type: 0
+    - note: 70.116585
+      type: 0
+    - note: 70.36684
+      type: 0
+    - note: 70.618164
+      type: 0
+    - note: 70.618164
+      type: 0
+    - note: 70.868416
+      type: 0
+    - note: 71.11975
+      type: 0
+    - note: 71.37
+      type: 0
+    - note: 71.37
+      type: 0
+    - note: 71.62133
+      type: 0
+    - note: 71.87158
+      type: 0
+    - note: 72.12292
+      type: 0
+    - note: 72.6245
+      type: 0
+    - note: 72.6245
+      type: 0
+    - note: 72.87475
+      type: 0
+    - note: 73.12608
+      type: 0
+    - note: 73.62767
+      type: 0
+    - note: 73.62767
+      type: 0
+    - note: 73.877914
+      type: 0
+    - note: 74.12925
+      type: 0
+    - note: 8.003667
+      type: 0
+    - note: 8.045917
+      type: 0
+    - note: 8.923417
+      type: 0
+    - note: 9.173667
+      type: 0
+    - note: 9.926583
+      type: 0
+  - notes:
+    - note: 0.14625
+      type: 0
+    - note: 0.3965
+      type: 0
+    - note: 0.64675
+      type: 0
+    - note: 1.3996667
+      type: 0
+    - note: 1.6499166
+      type: 0
+    - note: 1.6499166
+      type: 0
+    - note: 1.90125
+      type: 0
+    - note: 10.176833
+      type: 0
+    - note: 10.428166
+      type: 0
+    - note: 10.92975
+      type: 0
+    - note: 11.18
+      type: 0
+    - note: 11.18
+      type: 0
+    - note: 11.681583
+      type: 0
+    - note: 11.932917
+      type: 0
+    - note: 11.932917
+      type: 0
+    - note: 12.1831665
+      type: 0
+    - note: 12.4345
+      type: 0
+    - note: 12.68475
+      type: 0
+    - note: 12.936084
+      type: 0
+    - note: 13.437667
+      type: 0
+    - note: 13.687917
+      type: 0
+    - note: 14.1895
+      type: 0
+    - note: 14.1895
+      type: 0
+    - note: 14.440833
+      type: 0
+    - note: 14.691083
+      type: 0
+    - note: 14.775583
+      type: 0
+    - note: 14.984667
+      type: 0
+    - note: 15.1515
+      type: 0
+    - note: 15.318334
+      type: 0
+    - note: 15.360583
+      type: 0
+    - note: 15.69425
+      type: 0
+    - note: 16.697416
+      type: 0
+    - note: 16.697416
+      type: 0
+    - note: 16.94875
+      type: 0
+    - note: 16.94875
+      type: 0
+    - note: 17.450333
+      type: 0
+    - note: 17.700583
+      type: 0
+    - note: 17.700583
+      type: 0
+    - note: 17.951916
+      type: 0
+    - note: 17.951916
+      type: 0
+    - note: 18.4535
+      type: 0
+    - note: 18.4535
+      type: 0
+    - note: 18.70375
+      type: 0
+    - note: 18.70375
+      type: 0
+    - note: 18.955084
+      type: 0
+    - note: 18.955084
+      type: 0
+    - note: 19.205334
+      type: 0
+    - note: 19.205334
+      type: 0
+    - note: 19.456667
+      type: 0
+    - note: 19.706917
+      type: 0
+    - note: 19.95825
+      type: 0
+    - note: 19.95825
+      type: 0
+    - note: 2.4028332
+      type: 0
+    - note: 2.9044166
+      type: 0
+    - note: 20.2085
+      type: 0
+    - note: 20.2085
+      type: 0
+    - note: 20.459833
+      type: 0
+    - note: 20.459833
+      type: 0
+    - note: 20.710083
+      type: 0
+    - note: 20.961416
+      type: 0
+    - note: 21.211666
+      type: 0
+    - note: 21.463
+      type: 0
+    - note: 21.964582
+      type: 0
+    - note: 21.964582
+      type: 0
+    - note: 22.214834
+      type: 0
+    - note: 22.466167
+      type: 0
+    - note: 22.466167
+      type: 0
+    - note: 22.716417
+      type: 0
+    - note: 22.884333
+      type: 0
+    - note: 22.96775
+      type: 0
+    - note: 23.01
+      type: 0
+    - note: 23.051167
+      type: 0
+    - note: 23.26025
+      type: 0
+    - note: 23.3025
+      type: 0
+    - note: 23.385916
+      type: 0
+    - note: 23.427084
+      type: 0
+    - note: 23.55275
+      type: 0
+    - note: 23.595
+      type: 0
+    - note: 23.636168
+      type: 0
+    - note: 23.970917
+      type: 0
+    - note: 24.221167
+      type: 0
+    - note: 24.4725
+      type: 0
+    - note: 24.4725
+      type: 0
+    - note: 24.72275
+      type: 0
+    - note: 25.725916
+      type: 0
+    - note: 25.97725
+      type: 0
+    - note: 26.2275
+      type: 0
+    - note: 26.478834
+      type: 0
+    - note: 26.729084
+      type: 0
+    - note: 26.980417
+      type: 0
+    - note: 27.73225
+      type: 0
+    - note: 27.73225
+      type: 0
+    - note: 28.233833
+      type: 0
+    - note: 28.233833
+      type: 0
+    - note: 28.485167
+      type: 0
+    - note: 28.735416
+      type: 0
+    - note: 29.237
+      type: 0
+    - note: 29.488333
+      type: 0
+    - note: 29.738583
+      type: 0
+    - note: 29.738583
+      type: 0
+    - note: 29.989916
+      type: 0
+    - note: 29.989916
+      type: 0
+    - note: 3.406
+      type: 0
+    - note: 3.406
+      type: 0
+    - note: 3.65625
+      type: 0
+    - note: 3.9075832
+      type: 0
+    - note: 30.240168
+      type: 0
+    - note: 30.4915
+      type: 0
+    - note: 30.4915
+      type: 0
+    - note: 30.74175
+      type: 0
+    - note: 30.784
+      type: 0
+    - note: 30.909666
+      type: 0
+    - note: 31.0765
+      type: 0
+    - note: 31.11875
+      type: 0
+    - note: 31.159916
+      type: 0
+    - note: 31.327833
+      type: 0
+    - note: 31.369
+      type: 0
+    - note: 31.41125
+      type: 0
+    - note: 31.452417
+      type: 0
+    - note: 31.536917
+      type: 0
+    - note: 31.620333
+      type: 0
+    - note: 31.70375
+      type: 0
+    - note: 31.99625
+      type: 0
+    - note: 32.497833
+      type: 0
+    - note: 32.748085
+      type: 0
+    - note: 33.24967
+      type: 0
+    - note: 33.501
+      type: 0
+    - note: 33.501
+      type: 0
+    - note: 33.75125
+      type: 0
+    - note: 34.002583
+      type: 0
+    - note: 34.002583
+      type: 0
+    - note: 34.252834
+      type: 0
+    - note: 34.504166
+      type: 0
+    - note: 34.504166
+      type: 0
+    - note: 35.00575
+      type: 0
+    - note: 35.256
+      type: 0
+    - note: 35.50733
+      type: 0
+    - note: 35.757584
+      type: 0
+    - note: 35.757584
+      type: 0
+    - note: 36.008915
+      type: 0
+    - note: 36.76075
+      type: 0
+    - note: 36.76075
+      type: 0
+    - note: 37.262333
+      type: 0
+    - note: 37.513668
+      type: 0
+    - note: 37.513668
+      type: 0
+    - note: 38.01525
+      type: 0
+    - note: 38.2655
+      type: 0
+    - note: 38.767082
+      type: 0
+    - note: 38.89275
+      type: 0
+    - note: 38.935
+      type: 0
+    - note: 39.101833
+      type: 0
+    - note: 39.144085
+      type: 0
+    - note: 39.2275
+      type: 0
+    - note: 39.394333
+      type: 0
+    - note: 39.436584
+      type: 0
+    - note: 39.47775
+      type: 0
+    - note: 39.561165
+      type: 0
+    - note: 39.603416
+      type: 0
+    - note: 39.686832
+      type: 0
+    - note: 39.729084
+      type: 0
+    - note: 4.157833
+      type: 0
+    - note: 4.157833
+      type: 0
+    - note: 4.409167
+      type: 0
+    - note: 4.6594167
+      type: 0
+    - note: 4.91075
+      type: 0
+    - note: 4.91075
+      type: 0
+    - note: 40.021584
+      type: 0
+    - note: 40.021584
+      type: 0
+    - note: 40.27183
+      type: 0
+    - note: 40.523167
+      type: 0
+    - note: 40.77342
+      type: 0
+    - note: 40.77342
+      type: 0
+    - note: 41.02475
+      type: 0
+    - note: 41.275
+      type: 0
+    - note: 41.776585
+      type: 0
+    - note: 42.027916
+      type: 0
+    - note: 42.5295
+      type: 0
+    - note: 42.5295
+      type: 0
+    - note: 42.77975
+      type: 0
+    - note: 42.77975
+      type: 0
+    - note: 43.031082
+      type: 0
+    - note: 43.281334
+      type: 0
+    - note: 43.532665
+      type: 0
+    - note: 43.782917
+      type: 0
+    - note: 44.03425
+      type: 0
+    - note: 44.03425
+      type: 0
+    - note: 44.786083
+      type: 0
+    - note: 44.786083
+      type: 0
+    - note: 45.03742
+      type: 0
+    - note: 45.287666
+      type: 0
+    - note: 45.539
+      type: 0
+    - note: 46.040585
+      type: 0
+    - note: 46.542168
+      type: 0
+    - note: 47.04375
+      type: 0
+    - note: 47.545334
+      type: 0
+    - note: 47.545334
+      type: 0
+    - note: 47.671
+      type: 0
+    - note: 47.79558
+      type: 0
+    - note: 47.79558
+      type: 0
+    - note: 47.92125
+      type: 0
+    - note: 47.92125
+      type: 0
+    - note: 48.046917
+      type: 0
+    - note: 48.046917
+      type: 0
+    - note: 48.297165
+      type: 0
+    - note: 48.422832
+      type: 0
+    - note: 48.5485
+      type: 0
+    - note: 48.5485
+      type: 0
+    - note: 49.050083
+      type: 0
+    - note: 49.801918
+      type: 0
+    - note: 5.161
+      type: 0
+    - note: 5.4123335
+      type: 0
+    - note: 5.9139166
+      type: 0
+    - note: 50.05325
+      type: 0
+    - note: 50.554832
+      type: 0
+    - note: 50.805084
+      type: 0
+    - note: 50.805084
+      type: 0
+    - note: 51.056416
+      type: 0
+    - note: 51.558
+      type: 0
+    - note: 51.80825
+      type: 0
+    - note: 51.80825
+      type: 0
+    - note: 52.05958
+      type: 0
+    - note: 52.05958
+      type: 0
+    - note: 52.309834
+      type: 0
+    - note: 52.309834
+      type: 0
+    - note: 52.561165
+      type: 0
+    - note: 52.561165
+      type: 0
+    - note: 52.811417
+      type: 0
+    - note: 53.06275
+      type: 0
+    - note: 53.06275
+      type: 0
+    - note: 53.313
+      type: 0
+    - note: 53.313
+      type: 0
+    - note: 53.564335
+      type: 0
+    - note: 53.564335
+      type: 0
+    - note: 53.814583
+      type: 0
+    - note: 54.065918
+      type: 0
+    - note: 54.316166
+      type: 0
+    - note: 54.5675
+      type: 0
+    - note: 54.5675
+      type: 0
+    - note: 54.81775
+      type: 0
+    - note: 55.19475
+      type: 0
+    - note: 55.319332
+      type: 0
+    - note: 55.445
+      type: 0
+    - note: 55.570667
+      type: 0
+    - note: 55.696335
+      type: 0
+    - note: 55.696335
+      type: 0
+    - note: 55.820915
+      type: 0
+    - note: 56.197918
+      type: 0
+    - note: 56.3225
+      type: 0
+    - note: 56.573833
+      type: 0
+    - note: 56.573833
+      type: 0
+    - note: 56.824085
+      type: 0
+    - note: 56.824085
+      type: 0
+    - note: 57.577
+      type: 0
+    - note: 57.82725
+      type: 0
+    - note: 57.82725
+      type: 0
+    - note: 58.078583
+      type: 0
+    - note: 58.328835
+      type: 0
+    - note: 58.580166
+      type: 0
+    - note: 58.580166
+      type: 0
+    - note: 58.830418
+      type: 0
+    - note: 58.830418
+      type: 0
+    - note: 59.08175
+      type: 0
+    - note: 59.583332
+      type: 0
+    - note: 59.833584
+      type: 0
+    - note: 6.1641665
+      type: 0
+    - note: 6.4155
+      type: 0
+    - note: 60.335167
+      type: 0
+    - note: 60.335167
+      type: 0
+    - note: 60.5865
+      type: 0
+    - note: 60.83675
+      type: 0
+    - note: 61.58967
+      type: 0
+    - note: 61.839916
+      type: 0
+    - note: 61.839916
+      type: 0
+    - note: 62.3415
+      type: 0
+    - note: 62.3415
+      type: 0
+    - note: 62.592834
+      type: 0
+    - note: 62.843082
+      type: 0
+    - note: 63.094418
+      type: 0
+    - note: 63.094418
+      type: 0
+    - note: 63.596
+      type: 0
+    - note: 63.72167
+      type: 0
+    - note: 63.84625
+      type: 0
+    - note: 63.971916
+      type: 0
+    - note: 64.09758
+      type: 0
+    - note: 64.09758
+      type: 0
+    - note: 64.22325
+      type: 0
+    - note: 64.22325
+      type: 0
+    - note: 64.34783
+      type: 0
+    - note: 64.4735
+      type: 0
+    - note: 64.59917
+      type: 0
+    - note: 64.84942
+      type: 0
+    - note: 65.351
+      type: 0
+    - note: 65.351
+      type: 0
+    - note: 65.60233
+      type: 0
+    - note: 65.852585
+      type: 0
+    - note: 65.852585
+      type: 0
+    - note: 66.354164
+      type: 0
+    - note: 66.85575
+      type: 0
+    - note: 67.608665
+      type: 0
+    - note: 67.85892
+      type: 0
+    - note: 67.85892
+      type: 0
+    - note: 68.11025
+      type: 0
+    - note: 68.11025
+      type: 0
+    - note: 68.61183
+      type: 0
+    - note: 68.61183
+      type: 0
+    - note: 68.86208
+      type: 0
+    - note: 69.11342
+      type: 0
+    - note: 69.86525
+      type: 0
+    - note: 7.167333
+      type: 0
+    - note: 7.418667
+      type: 0
+    - note: 7.6689167
+      type: 0
+    - note: 7.9625
+      type: 0
+    - note: 70.36684
+      type: 0
+    - note: 70.868416
+      type: 0
+    - note: 70.99408
+      type: 0
+    - note: 71.245415
+      type: 0
+    - note: 71.62133
+      type: 0
+    - note: 71.87158
+      type: 0
+    - note: 72.12292
+      type: 0
+    - note: 72.37317
+      type: 0
+    - note: 72.37317
+      type: 0
+    - note: 72.87475
+      type: 0
+    - note: 73.12608
+      type: 0
+    - note: 73.376335
+      type: 0
+    - note: 73.376335
+      type: 0
+    - note: 73.877914
+      type: 0
+    - note: 74.12925
+      type: 0
+    - note: 74.3795
+      type: 0
+    - note: 74.3795
+      type: 0
+    - note: 8.087083
+      type: 0
+    - note: 8.1705
+      type: 0
+    - note: 8.338417
+      type: 0
+    - note: 8.672083
+      type: 0
+    - note: 8.923417
+      type: 0
+    - note: 9.173667
+      type: 0
+    - note: 9.425
+      type: 0
+    - note: 9.425
+      type: 0
+    - note: 9.67525
+      type: 0
+    - note: 9.67525
+      type: 0
+    - note: 9.926583
+      type: 0

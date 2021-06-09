@@ -243,44 +243,49 @@ public class Conductor : MonoBehaviour
 
         float offsetX = frontNode.gameObject.transform.position.x - finishLineX;
         //print($"offsetX: {offsetX}, perfectHit: {perfectOffsetX}");
-        if (offsetX < perfectOffsetX) //perfect hit
+
+        if(offsetX.InRange(-perfectOffsetX, perfectOffsetX))
         {
             Debug.Log("perfect hit");
-            frontNode.PerfectHit();
-
-            //dispatch beat on hit event
-            BeatHit(trackNumber, Rank.PERFECT, frontNode.type);
-
-            // remove the note from queue
-            trackQueues[trackNumber].Dequeue();
+            HitBeat(frontNode, Rank.PERFECT, trackNumber);
             return;
         }
         
-        if (offsetX < goodOffsetX) //good hit
+        if (offsetX.InRange(-goodOffsetX, goodOffsetX)) //good hit
         {
             Debug.Log("good hit");
-            frontNode.GoodHit();
-
-            //dispatch beat on hit event
-            BeatHit(trackNumber, Rank.GOOD, frontNode.type);
-
-            // remove the note from queue
-            trackQueues[trackNumber].Dequeue();
+            HitBeat(frontNode, Rank.GOOD, trackNumber);
             return;
         }
         
-        if (offsetX < badOffsetX) //bad hit
+        if (offsetX.InRange(-badOffsetX, badOffsetX)) //bad hit
         {
             Debug.Log("bad hit");
-            frontNode.BadHit();
-
-            //dispatch beat on hit event
-            BeatHit(trackNumber, Rank.BAD, frontNode.type);
-
-            // remove the note from queue
-            trackQueues[trackNumber].Dequeue();
+            HitBeat(frontNode, Rank.BAD, trackNumber);
             return;
         }
+    }
+
+    private void HitBeat(MusicNode n, Rank r, int tracknumber)
+    {
+        switch (r)
+        {
+            case Rank.BAD:
+                n.BadHit();
+                break;
+            case Rank.GOOD:
+                n.GoodHit();
+                break;
+            case Rank.PERFECT:
+                n.PerfectHit();
+                break;
+        }
+
+        //dispatch beat on hit event
+        BeatHit(tracknumber, Rank.PERFECT, n.type);
+
+        // remove the note from queue
+        trackQueues[tracknumber].Dequeue();
     }
 
     void OnDestroy()

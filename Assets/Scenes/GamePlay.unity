@@ -21575,16 +21575,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3a2e78ea4fd014d887229a2a63b09d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  badOffsetX: 1
+  badOffsetX: 0.8
   goodOffsetX: 0.5
-  perfectOffsetX: 0.2
+  perfectOffsetX: 0.3
   trackSpawnYPos:
   - 2
   - -2
   startLineX: 8
   finishLineX: -5
   removeLineX: -8
-  dequeueX: -5.5
+  dequeueX: -6
   noteZPosition: 1
   dspSongTime: 0
   songBpm: 160
@@ -21602,7 +21602,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.458
   m_Pitch: 1
   Loop: 0
   Mute: 0

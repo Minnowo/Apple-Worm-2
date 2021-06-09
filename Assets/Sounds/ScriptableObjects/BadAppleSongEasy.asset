@@ -1,0 +1,300 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf06c2c02bb5cbb46b12f35b41630dff, type: 3}
+  m_Name: BadAppleSongEasy
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: ff490384e89082441a2336aa8d1f52c8, type: 3}
+  SongName: 
+  bpm: 34.49525
+  firstBeatOffset: 0
+  TotalNotes: -1
+  tracks:
+  - notes:
+    - note: 9.766755
+      type: 0
+    - note: 11.516814
+      type: 0
+    - note: 12.766692
+      type: 0
+    - note: 13.7664795
+      type: 0
+    - note: 15.516539
+      type: 0
+    - note: 17.766779
+      type: 0
+    - note: 21.266897
+      type: 0
+    - note: 21.767078
+      type: 0
+    - note: 22.766865
+      type: 0
+    - note: 23.267046
+      type: 0
+    - note: 24.266834
+      type: 0
+    - note: 25.26662
+      type: 0
+    - note: 25.766802
+      type: 0
+    - note: 27.26677
+      type: 0
+    - note: 29.26692
+      type: 0
+    - note: 29.767101
+      type: 0
+    - note: 31.267069
+      type: 0
+    - note: 32.016766
+      type: 0
+    - note: 32.266857
+      type: 0
+    - note: 32.51695
+      type: 0
+    - note: 32.767036
+      type: 0
+    - note: 35.766975
+      type: 0
+    - note: 37.266945
+      type: 0
+    - note: 37.767124
+      type: 0
+    - note: 39.267094
+      type: 0
+    - note: 39.7667
+      type: 0
+    - note: 40.26688
+      type: 0
+    - note: 41.266666
+      type: 0
+    - note: 43.26682
+      type: 0
+    - note: 45.266968
+      type: 0
+    - note: 46.266754
+      type: 0
+    - note: 48.266903
+      type: 0
+    - note: 49.267265
+      type: 0
+    - note: 52.267204
+      type: 0
+    - note: 54.266777
+      type: 0
+    - note: 56.76711
+      type: 0
+    - note: 58.767258
+      type: 0
+    - note: 60.766834
+      type: 0
+    - note: 61.267014
+      type: 0
+    - note: 61.767193
+      type: 0
+    - note: 62.267376
+      type: 0
+    - note: 74.7673
+      type: 0
+    - note: 77.26706
+      type: 0
+    - note: 77.76724
+      type: 0
+    - note: 79.26721
+      type: 0
+    - note: 79.76739
+      type: 0
+    - note: 81.76697
+      type: 0
+    - note: 82.76733
+      type: 0
+    - note: 83.26751
+      type: 0
+    - note: 83.76711
+      type: 0
+    - note: 85.26708
+      type: 0
+    - note: 85.767265
+      type: 0
+    - note: 86.76705
+      type: 0
+    - note: 87.267235
+      type: 0
+    - note: 88.0175
+      type: 0
+    - note: 88.51711
+      type: 0
+    - note: 92.7675
+      type: 0
+    - note: 93.267105
+      type: 0
+    - note: 97.2674
+      type: 0
+    - note: 97.767586
+      type: 0
+    - note: 99.76716
+      type: 0
+    - note: 102.76768
+      type: 0
+    - note: 107.76719
+      type: 0
+    - note: 111.2673
+      type: 0
+    - note: 112.26766
+      type: 0
+    - note: 113.267456
+      type: 0
+    - note: 113.76763
+      type: 0
+    - note: 114.76742
+      type: 0
+    - note: 115.2676
+      type: 0
+  - notes:
+    - note: 8.766968
+      type: 0
+    - note: 10.766542
+      type: 0
+    - note: 11.766905
+      type: 0
+    - note: 14.766842
+      type: 0
+    - note: 15.766629
+      type: 0
+    - note: 16.26681
+      type: 0
+    - note: 17.266598
+      type: 0
+    - note: 18.766565
+      type: 0
+    - note: 19.266747
+      type: 0
+    - note: 19.766928
+      type: 0
+    - note: 23.766653
+      type: 0
+    - note: 26.76659
+      type: 0
+    - note: 27.76695
+      type: 0
+    - note: 30.766888
+      type: 0
+    - note: 33.766827
+      type: 0
+    - note: 34.76719
+      type: 0
+    - note: 36.76676
+      type: 0
+    - note: 38.76691
+      type: 0
+    - note: 41.76685
+      type: 0
+    - note: 43.767
+      type: 0
+    - note: 45.767147
+      type: 0
+    - note: 46.766933
+      type: 0
+    - note: 50.26705
+      type: 0
+    - note: 51.26684
+      type: 0
+    - note: 53.26699
+      type: 0
+    - note: 53.76717
+      type: 0
+    - note: 54.51687
+      type: 0
+    - note: 54.76696
+      type: 0
+    - note: 55.26714
+      type: 0
+    - note: 55.767323
+      type: 0
+    - note: 56.266926
+      type: 0
+    - note: 56.517017
+      type: 0
+    - note: 57.766895
+      type: 0
+    - note: 59.767044
+      type: 0
+    - note: 62.766983
+      type: 0
+    - note: 72.76716
+      type: 0
+    - note: 73.267334
+      type: 0
+    - note: 73.766945
+      type: 0
+    - note: 75.266914
+      type: 0
+    - note: 75.76709
+      type: 0
+    - note: 78.76703
+      type: 0
+    - note: 80.267
+      type: 0
+    - note: 81.26736
+      type: 0
+    - note: 88.26702
+      type: 0
+    - note: 88.767204
+      type: 0
+    - note: 89.76756
+      type: 0
+    - note: 90.76735
+      type: 0
+    - note: 91.767136
+      type: 0
+    - note: 93.76729
+      type: 0
+    - note: 94.767075
+      type: 0
+    - note: 95.26726
+      type: 0
+    - note: 95.76744
+      type: 0
+    - note: 96.26762
+      type: 0
+    - note: 99.267555
+      type: 0
+    - note: 101.26713
+      type: 0
+    - note: 101.76731
+      type: 0
+    - note: 102.267494
+      type: 0
+    - note: 104.26764
+      type: 0
+    - note: 104.51716
+      type: 0
+    - note: 104.76725
+      type: 0
+    - note: 105.76761
+      type: 0
+    - note: 106.767395
+      type: 0
+    - note: 108.76755
+      type: 0
+    - note: 109.767334
+      type: 0
+    - note: 110.7677
+      type: 0
+    - note: 111.76749
+      type: 0
+    - note: 115.76721
+      type: 0
+    - note: 116.76757
+      type: 0
+    - note: 117.76736
+      type: 0
+    - note: 118.76772
+      type: 0

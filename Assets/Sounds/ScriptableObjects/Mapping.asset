@@ -14,94 +14,94 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: 97740818f4351a841982add2925384b7, type: 3}
   SongName: 
-  bpm: 55
+  bpm: 1
   firstBeatOffset: 0
   TotalNotes: -1
   tracks:
   - notes:
-    - note: 0.0
+    - note: 0
       type: 0
     - note: 0.2
       type: 0
     - note: 0.4
       type: 0
-    - note: 0.6000000000000001
+    - note: 0.6
       type: 0
     - note: 0.8
       type: 0
-    - note: 1.0
+    - note: 1
       type: 0
-    - note: 1.2000000000000002
+    - note: 1.2
       type: 0
-    - note: 1.4000000000000001
+    - note: 1.4
       type: 0
     - note: 1.6
       type: 0
     - note: 1.8
       type: 0
-    - note: 2.0
+    - note: 2
       type: 0
     - note: 2.2
       type: 0
-    - note: 2.4000000000000004
+    - note: 2.4
       type: 0
     - note: 2.6
       type: 0
-    - note: 2.8000000000000003
+    - note: 2.8
       type: 0
-    - note: 3.0
+    - note: 3
       type: 0
     - note: 3.2
       type: 0
-    - note: 3.4000000000000004
+    - note: 3.4
       type: 0
     - note: 3.6
       type: 0
-    - note: 3.8000000000000003
+    - note: 3.8
       type: 0
-    - note: 4.0
+    - note: 4
       type: 0
     - note: 4.2
       type: 0
     - note: 4.4
       type: 0
-    - note: 4.6000000000000005
+    - note: 4.6
       type: 0
-    - note: 4.800000000000001
+    - note: 4.8
       type: 0
-    - note: 5.0
+    - note: 5
       type: 0
     - note: 5.2
       type: 0
     - note: 5.4
       type: 0
-    - note: 5.6000000000000005
+    - note: 5.6
       type: 0
-    - note: 5.800000000000001
+    - note: 5.8
       type: 0
-    - note: 6.0
+    - note: 6
       type: 0
     - note: 6.2
       type: 0
     - note: 6.4
       type: 0
-    - note: 6.6000000000000005
+    - note: 6.6
       type: 0
-    - note: 6.800000000000001
+    - note: 6.8
       type: 0
-    - note: 7.0
+    - note: 7
       type: 0
     - note: 7.2
       type: 0
     - note: 7.4
       type: 0
-    - note: 7.6000000000000005
+    - note: 7.6
       type: 0
-    - note: 7.800000000000001
+    - note: 7.8
       type: 0
-    - note: 8.0
+    - note: 8
       type: 0
-    - note: 8.200000000000001
+    - note: 8.2
       type: 0
     - note: 8.4
       type: 0
@@ -109,237 +109,237 @@ MonoBehaviour:
       type: 0
     - note: 8.8
       type: 0
-    - note: 9.0
+    - note: 9
       type: 0
-    - note: 9.200000000000001
+    - note: 9.2
       type: 0
     - note: 9.4
       type: 0
-    - note: 9.600000000000001
+    - note: 9.6
       type: 0
     - note: 9.8
       type: 0
-    - note: 10.0
+    - note: 10
       type: 0
-    - note: 10.200000000000001
+    - note: 10.2
       type: 0
     - note: 10.4
       type: 0
-    - note: 10.600000000000001
+    - note: 10.6
       type: 0
     - note: 10.8
       type: 0
-    - note: 11.0
+    - note: 11
       type: 0
-    - note: 11.200000000000001
+    - note: 11.2
       type: 0
     - note: 11.4
       type: 0
-    - note: 11.600000000000001
+    - note: 11.6
       type: 0
     - note: 11.8
       type: 0
-    - note: 12.0
+    - note: 12
       type: 0
-    - note: 12.200000000000001
+    - note: 12.2
       type: 0
     - note: 12.4
       type: 0
-    - note: 12.600000000000001
+    - note: 12.6
       type: 0
     - note: 12.8
       type: 0
-    - note: 13.0
+    - note: 13
       type: 0
-    - note: 13.200000000000001
+    - note: 13.2
       type: 0
     - note: 13.4
       type: 0
-    - note: 13.600000000000001
+    - note: 13.6
       type: 0
     - note: 13.8
       type: 0
-    - note: 14.0
+    - note: 14
       type: 0
-    - note: 14.200000000000001
+    - note: 14.2
       type: 0
     - note: 14.4
       type: 0
-    - note: 14.600000000000001
+    - note: 14.6
       type: 0
     - note: 14.8
       type: 0
-    - note: 15.0
+    - note: 15
       type: 0
-    - note: 15.200000000000001
+    - note: 15.2
       type: 0
     - note: 15.4
       type: 0
-    - note: 15.600000000000001
+    - note: 15.6
       type: 0
     - note: 15.8
       type: 0
-    - note: 16.0
+    - note: 16
       type: 0
     - note: 16.2
       type: 0
-    - note: 16.400000000000002
+    - note: 16.4
       type: 0
     - note: 16.6
       type: 0
     - note: 16.8
       type: 0
-    - note: 17.0
+    - note: 17
       type: 0
     - note: 17.2
       type: 0
-    - note: 17.400000000000002
+    - note: 17.4
       type: 0
     - note: 17.6
       type: 0
     - note: 17.8
       type: 0
-    - note: 18.0
+    - note: 18
       type: 0
     - note: 18.2
       type: 0
-    - note: 18.400000000000002
+    - note: 18.4
       type: 0
     - note: 18.6
       type: 0
     - note: 18.8
       type: 0
-    - note: 19.0
+    - note: 19
       type: 0
-    - note: 19.200000000000003
+    - note: 19.2
       type: 0
-    - note: 19.400000000000002
+    - note: 19.4
       type: 0
     - note: 19.6
       type: 0
     - note: 19.8
       type: 0
-    - note: 20.0
+    - note: 20
       type: 0
-    - note: 20.200000000000003
+    - note: 20.2
       type: 0
-    - note: 20.400000000000002
+    - note: 20.4
       type: 0
     - note: 20.6
       type: 0
     - note: 20.8
       type: 0
-    - note: 21.0
+    - note: 21
       type: 0
-    - note: 21.200000000000003
+    - note: 21.2
       type: 0
-    - note: 21.400000000000002
+    - note: 21.4
       type: 0
     - note: 21.6
       type: 0
     - note: 21.8
       type: 0
-    - note: 22.0
+    - note: 22
       type: 0
-    - note: 22.200000000000003
+    - note: 22.2
       type: 0
-    - note: 22.400000000000002
+    - note: 22.4
       type: 0
     - note: 22.6
       type: 0
     - note: 22.8
       type: 0
-    - note: 23.0
+    - note: 23
       type: 0
-    - note: 23.200000000000003
+    - note: 23.2
       type: 0
-    - note: 23.400000000000002
+    - note: 23.4
       type: 0
     - note: 23.6
       type: 0
     - note: 23.8
       type: 0
-    - note: 24.0
+    - note: 24
       type: 0
-    - note: 24.200000000000003
+    - note: 24.2
       type: 0
-    - note: 24.400000000000002
+    - note: 24.4
       type: 0
     - note: 24.6
       type: 0
     - note: 24.8
       type: 0
-    - note: 25.0
+    - note: 25
       type: 0
-    - note: 25.200000000000003
+    - note: 25.2
       type: 0
-    - note: 25.400000000000002
+    - note: 25.4
       type: 0
     - note: 25.6
       type: 0
     - note: 25.8
       type: 0
-    - note: 26.0
+    - note: 26
       type: 0
-    - note: 26.200000000000003
+    - note: 26.2
       type: 0
-    - note: 26.400000000000002
+    - note: 26.4
       type: 0
     - note: 26.6
       type: 0
     - note: 26.8
       type: 0
-    - note: 27.0
+    - note: 27
       type: 0
-    - note: 27.200000000000003
+    - note: 27.2
       type: 0
-    - note: 27.400000000000002
+    - note: 27.4
       type: 0
     - note: 27.6
       type: 0
     - note: 27.8
       type: 0
-    - note: 28.0
+    - note: 28
       type: 0
-    - note: 28.200000000000003
+    - note: 28.2
       type: 0
-    - note: 28.400000000000002
+    - note: 28.4
       type: 0
     - note: 28.6
       type: 0
     - note: 28.8
       type: 0
-    - note: 29.0
+    - note: 29
       type: 0
-    - note: 29.200000000000003
+    - note: 29.2
       type: 0
-    - note: 29.400000000000002
+    - note: 29.4
       type: 0
     - note: 29.6
       type: 0
     - note: 29.8
       type: 0
-    - note: 30.0
+    - note: 30
       type: 0
-    - note: 30.200000000000003
+    - note: 30.2
       type: 0
-    - note: 30.400000000000002
+    - note: 30.4
       type: 0
     - note: 30.6
       type: 0
     - note: 30.8
       type: 0
-    - note: 31.0
+    - note: 31
       type: 0
-    - note: 31.200000000000003
+    - note: 31.2
       type: 0
-    - note: 31.400000000000002
+    - note: 31.4
       type: 0
     - note: 31.6
       type: 0
     - note: 31.8
       type: 0
-    - note: 32.0
+    - note: 32
       type: 0
     - note: 32.2
       type: 0
@@ -347,9 +347,9 @@ MonoBehaviour:
       type: 0
     - note: 32.6
       type: 0
-    - note: 32.800000000000004
+    - note: 32.8
       type: 0
-    - note: 33.0
+    - note: 33
       type: 0
     - note: 33.2
       type: 0
@@ -357,9 +357,9 @@ MonoBehaviour:
       type: 0
     - note: 33.6
       type: 0
-    - note: 33.800000000000004
+    - note: 33.8
       type: 0
-    - note: 34.0
+    - note: 34
       type: 0
     - note: 34.2
       type: 0
@@ -367,9 +367,9 @@ MonoBehaviour:
       type: 0
     - note: 34.6
       type: 0
-    - note: 34.800000000000004
+    - note: 34.8
       type: 0
-    - note: 35.0
+    - note: 35
       type: 0
     - note: 35.2
       type: 0
@@ -377,9 +377,9 @@ MonoBehaviour:
       type: 0
     - note: 35.6
       type: 0
-    - note: 35.800000000000004
+    - note: 35.8
       type: 0
-    - note: 36.0
+    - note: 36
       type: 0
     - note: 36.2
       type: 0
@@ -387,9 +387,9 @@ MonoBehaviour:
       type: 0
     - note: 36.6
       type: 0
-    - note: 36.800000000000004
+    - note: 36.8
       type: 0
-    - note: 37.0
+    - note: 37
       type: 0
     - note: 37.2
       type: 0
@@ -397,212 +397,212 @@ MonoBehaviour:
       type: 0
     - note: 37.6
       type: 0
-    - note: 37.800000000000004
+    - note: 37.8
       type: 0
-    - note: 38.0
+    - note: 38
       type: 0
     - note: 38.2
       type: 0
-    - note: 38.400000000000006
+    - note: 38.4
       type: 0
     - note: 38.6
       type: 0
-    - note: 38.800000000000004
+    - note: 38.8
       type: 0
-    - note: 39.0
+    - note: 39
       type: 0
     - note: 39.2
       type: 0
-    - note: 39.400000000000006
+    - note: 39.4
       type: 0
     - note: 39.6
       type: 0
-    - note: 39.800000000000004
+    - note: 39.8
       type: 0
-    - note: 40.0
+    - note: 40
       type: 0
     - note: 40.2
       type: 0
-    - note: 40.400000000000006
+    - note: 40.4
       type: 0
     - note: 40.6
       type: 0
-    - note: 40.800000000000004
+    - note: 40.8
       type: 0
-    - note: 41.0
+    - note: 41
       type: 0
     - note: 41.2
       type: 0
-    - note: 41.400000000000006
+    - note: 41.4
       type: 0
     - note: 41.6
       type: 0
-    - note: 41.800000000000004
+    - note: 41.8
       type: 0
-    - note: 42.0
+    - note: 42
       type: 0
     - note: 42.2
       type: 0
-    - note: 42.400000000000006
+    - note: 42.4
       type: 0
     - note: 42.6
       type: 0
-    - note: 42.800000000000004
+    - note: 42.8
       type: 0
-    - note: 43.0
+    - note: 43
       type: 0
     - note: 43.2
       type: 0
-    - note: 43.400000000000006
+    - note: 43.4
       type: 0
     - note: 43.6
       type: 0
-    - note: 43.800000000000004
+    - note: 43.8
       type: 0
-    - note: 44.0
+    - note: 44
       type: 0
     - note: 44.2
       type: 0
-    - note: 44.400000000000006
+    - note: 44.4
       type: 0
     - note: 44.6
       type: 0
-    - note: 44.800000000000004
+    - note: 44.8
       type: 0
-    - note: 45.0
+    - note: 45
       type: 0
     - note: 45.2
       type: 0
-    - note: 45.400000000000006
+    - note: 45.4
       type: 0
     - note: 45.6
       type: 0
-    - note: 45.800000000000004
+    - note: 45.8
       type: 0
-    - note: 46.0
+    - note: 46
       type: 0
     - note: 46.2
       type: 0
-    - note: 46.400000000000006
+    - note: 46.4
       type: 0
     - note: 46.6
       type: 0
-    - note: 46.800000000000004
+    - note: 46.8
       type: 0
-    - note: 47.0
+    - note: 47
       type: 0
     - note: 47.2
       type: 0
-    - note: 47.400000000000006
+    - note: 47.4
       type: 0
     - note: 47.6
       type: 0
-    - note: 47.800000000000004
+    - note: 47.8
       type: 0
-    - note: 48.0
+    - note: 48
       type: 0
     - note: 48.2
       type: 0
-    - note: 48.400000000000006
+    - note: 48.4
       type: 0
     - note: 48.6
       type: 0
-    - note: 48.800000000000004
+    - note: 48.8
       type: 0
-    - note: 49.0
+    - note: 49
       type: 0
     - note: 49.2
       type: 0
-    - note: 49.400000000000006
+    - note: 49.4
       type: 0
     - note: 49.6
       type: 0
-    - note: 49.800000000000004
+    - note: 49.8
       type: 0
   - notes:
-    - note: 0.0
+    - note: 0
       type: 0
     - note: 0.2
       type: 0
     - note: 0.4
       type: 0
-    - note: 0.6000000000000001
+    - note: 0.6
       type: 0
     - note: 0.8
       type: 0
-    - note: 1.0
+    - note: 1
       type: 0
-    - note: 1.2000000000000002
+    - note: 1.2
       type: 0
-    - note: 1.4000000000000001
+    - note: 1.4
       type: 0
     - note: 1.6
       type: 0
     - note: 1.8
       type: 0
-    - note: 2.0
+    - note: 2
       type: 0
     - note: 2.2
       type: 0
-    - note: 2.4000000000000004
+    - note: 2.4
       type: 0
     - note: 2.6
       type: 0
-    - note: 2.8000000000000003
+    - note: 2.8
       type: 0
-    - note: 3.0
+    - note: 3
       type: 0
     - note: 3.2
       type: 0
-    - note: 3.4000000000000004
+    - note: 3.4
       type: 0
     - note: 3.6
       type: 0
-    - note: 3.8000000000000003
+    - note: 3.8
       type: 0
-    - note: 4.0
+    - note: 4
       type: 0
     - note: 4.2
       type: 0
     - note: 4.4
       type: 0
-    - note: 4.6000000000000005
+    - note: 4.6
       type: 0
-    - note: 4.800000000000001
+    - note: 4.8
       type: 0
-    - note: 5.0
+    - note: 5
       type: 0
     - note: 5.2
       type: 0
     - note: 5.4
       type: 0
-    - note: 5.6000000000000005
+    - note: 5.6
       type: 0
-    - note: 5.800000000000001
+    - note: 5.8
       type: 0
-    - note: 6.0
+    - note: 6
       type: 0
     - note: 6.2
       type: 0
     - note: 6.4
       type: 0
-    - note: 6.6000000000000005
+    - note: 6.6
       type: 0
-    - note: 6.800000000000001
+    - note: 6.8
       type: 0
-    - note: 7.0
+    - note: 7
       type: 0
     - note: 7.2
       type: 0
     - note: 7.4
       type: 0
-    - note: 7.6000000000000005
+    - note: 7.6
       type: 0
-    - note: 7.800000000000001
+    - note: 7.8
       type: 0
-    - note: 8.0
+    - note: 8
       type: 0
-    - note: 8.200000000000001
+    - note: 8.2
       type: 0
     - note: 8.4
       type: 0
@@ -610,237 +610,237 @@ MonoBehaviour:
       type: 0
     - note: 8.8
       type: 0
-    - note: 9.0
+    - note: 9
       type: 0
-    - note: 9.200000000000001
+    - note: 9.2
       type: 0
     - note: 9.4
       type: 0
-    - note: 9.600000000000001
+    - note: 9.6
       type: 0
     - note: 9.8
       type: 0
-    - note: 10.0
+    - note: 10
       type: 0
-    - note: 10.200000000000001
+    - note: 10.2
       type: 0
     - note: 10.4
       type: 0
-    - note: 10.600000000000001
+    - note: 10.6
       type: 0
     - note: 10.8
       type: 0
-    - note: 11.0
+    - note: 11
       type: 0
-    - note: 11.200000000000001
+    - note: 11.2
       type: 0
     - note: 11.4
       type: 0
-    - note: 11.600000000000001
+    - note: 11.6
       type: 0
     - note: 11.8
       type: 0
-    - note: 12.0
+    - note: 12
       type: 0
-    - note: 12.200000000000001
+    - note: 12.2
       type: 0
     - note: 12.4
       type: 0
-    - note: 12.600000000000001
+    - note: 12.6
       type: 0
     - note: 12.8
       type: 0
-    - note: 13.0
+    - note: 13
       type: 0
-    - note: 13.200000000000001
+    - note: 13.2
       type: 0
     - note: 13.4
       type: 0
-    - note: 13.600000000000001
+    - note: 13.6
       type: 0
     - note: 13.8
       type: 0
-    - note: 14.0
+    - note: 14
       type: 0
-    - note: 14.200000000000001
+    - note: 14.2
       type: 0
     - note: 14.4
       type: 0
-    - note: 14.600000000000001
+    - note: 14.6
       type: 0
     - note: 14.8
       type: 0
-    - note: 15.0
+    - note: 15
       type: 0
-    - note: 15.200000000000001
+    - note: 15.2
       type: 0
     - note: 15.4
       type: 0
-    - note: 15.600000000000001
+    - note: 15.6
       type: 0
     - note: 15.8
       type: 0
-    - note: 16.0
+    - note: 16
       type: 0
     - note: 16.2
       type: 0
-    - note: 16.400000000000002
+    - note: 16.4
       type: 0
     - note: 16.6
       type: 0
     - note: 16.8
       type: 0
-    - note: 17.0
+    - note: 17
       type: 0
     - note: 17.2
       type: 0
-    - note: 17.400000000000002
+    - note: 17.4
       type: 0
     - note: 17.6
       type: 0
     - note: 17.8
       type: 0
-    - note: 18.0
+    - note: 18
       type: 0
     - note: 18.2
       type: 0
-    - note: 18.400000000000002
+    - note: 18.4
       type: 0
     - note: 18.6
       type: 0
     - note: 18.8
       type: 0
-    - note: 19.0
+    - note: 19
       type: 0
-    - note: 19.200000000000003
+    - note: 19.2
       type: 0
-    - note: 19.400000000000002
+    - note: 19.4
       type: 0
     - note: 19.6
       type: 0
     - note: 19.8
       type: 0
-    - note: 20.0
+    - note: 20
       type: 0
-    - note: 20.200000000000003
+    - note: 20.2
       type: 0
-    - note: 20.400000000000002
+    - note: 20.4
       type: 0
     - note: 20.6
       type: 0
     - note: 20.8
       type: 0
-    - note: 21.0
+    - note: 21
       type: 0
-    - note: 21.200000000000003
+    - note: 21.2
       type: 0
-    - note: 21.400000000000002
+    - note: 21.4
       type: 0
     - note: 21.6
       type: 0
     - note: 21.8
       type: 0
-    - note: 22.0
+    - note: 22
       type: 0
-    - note: 22.200000000000003
+    - note: 22.2
       type: 0
-    - note: 22.400000000000002
+    - note: 22.4
       type: 0
     - note: 22.6
       type: 0
     - note: 22.8
       type: 0
-    - note: 23.0
+    - note: 23
       type: 0
-    - note: 23.200000000000003
+    - note: 23.2
       type: 0
-    - note: 23.400000000000002
+    - note: 23.4
       type: 0
     - note: 23.6
       type: 0
     - note: 23.8
       type: 0
-    - note: 24.0
+    - note: 24
       type: 0
-    - note: 24.200000000000003
+    - note: 24.2
       type: 0
-    - note: 24.400000000000002
+    - note: 24.4
       type: 0
     - note: 24.6
       type: 0
     - note: 24.8
       type: 0
-    - note: 25.0
+    - note: 25
       type: 0
-    - note: 25.200000000000003
+    - note: 25.2
       type: 0
-    - note: 25.400000000000002
+    - note: 25.4
       type: 0
     - note: 25.6
       type: 0
     - note: 25.8
       type: 0
-    - note: 26.0
+    - note: 26
       type: 0
-    - note: 26.200000000000003
+    - note: 26.2
       type: 0
-    - note: 26.400000000000002
+    - note: 26.4
       type: 0
     - note: 26.6
       type: 0
     - note: 26.8
       type: 0
-    - note: 27.0
+    - note: 27
       type: 0
-    - note: 27.200000000000003
+    - note: 27.2
       type: 0
-    - note: 27.400000000000002
+    - note: 27.4
       type: 0
     - note: 27.6
       type: 0
     - note: 27.8
       type: 0
-    - note: 28.0
+    - note: 28
       type: 0
-    - note: 28.200000000000003
+    - note: 28.2
       type: 0
-    - note: 28.400000000000002
+    - note: 28.4
       type: 0
     - note: 28.6
       type: 0
     - note: 28.8
       type: 0
-    - note: 29.0
+    - note: 29
       type: 0
-    - note: 29.200000000000003
+    - note: 29.2
       type: 0
-    - note: 29.400000000000002
+    - note: 29.4
       type: 0
     - note: 29.6
       type: 0
     - note: 29.8
       type: 0
-    - note: 30.0
+    - note: 30
       type: 0
-    - note: 30.200000000000003
+    - note: 30.2
       type: 0
-    - note: 30.400000000000002
+    - note: 30.4
       type: 0
     - note: 30.6
       type: 0
     - note: 30.8
       type: 0
-    - note: 31.0
+    - note: 31
       type: 0
-    - note: 31.200000000000003
+    - note: 31.2
       type: 0
-    - note: 31.400000000000002
+    - note: 31.4
       type: 0
     - note: 31.6
       type: 0
     - note: 31.8
       type: 0
-    - note: 32.0
+    - note: 32
       type: 0
     - note: 32.2
       type: 0
@@ -848,9 +848,9 @@ MonoBehaviour:
       type: 0
     - note: 32.6
       type: 0
-    - note: 32.800000000000004
+    - note: 32.8
       type: 0
-    - note: 33.0
+    - note: 33
       type: 0
     - note: 33.2
       type: 0
@@ -858,9 +858,9 @@ MonoBehaviour:
       type: 0
     - note: 33.6
       type: 0
-    - note: 33.800000000000004
+    - note: 33.8
       type: 0
-    - note: 34.0
+    - note: 34
       type: 0
     - note: 34.2
       type: 0
@@ -868,9 +868,9 @@ MonoBehaviour:
       type: 0
     - note: 34.6
       type: 0
-    - note: 34.800000000000004
+    - note: 34.8
       type: 0
-    - note: 35.0
+    - note: 35
       type: 0
     - note: 35.2
       type: 0
@@ -878,9 +878,9 @@ MonoBehaviour:
       type: 0
     - note: 35.6
       type: 0
-    - note: 35.800000000000004
+    - note: 35.8
       type: 0
-    - note: 36.0
+    - note: 36
       type: 0
     - note: 36.2
       type: 0
@@ -888,9 +888,9 @@ MonoBehaviour:
       type: 0
     - note: 36.6
       type: 0
-    - note: 36.800000000000004
+    - note: 36.8
       type: 0
-    - note: 37.0
+    - note: 37
       type: 0
     - note: 37.2
       type: 0
@@ -898,125 +898,125 @@ MonoBehaviour:
       type: 0
     - note: 37.6
       type: 0
-    - note: 37.800000000000004
+    - note: 37.8
       type: 0
-    - note: 38.0
+    - note: 38
       type: 0
     - note: 38.2
       type: 0
-    - note: 38.400000000000006
+    - note: 38.4
       type: 0
     - note: 38.6
       type: 0
-    - note: 38.800000000000004
+    - note: 38.8
       type: 0
-    - note: 39.0
+    - note: 39
       type: 0
     - note: 39.2
       type: 0
-    - note: 39.400000000000006
+    - note: 39.4
       type: 0
     - note: 39.6
       type: 0
-    - note: 39.800000000000004
+    - note: 39.8
       type: 0
-    - note: 40.0
+    - note: 40
       type: 0
     - note: 40.2
       type: 0
-    - note: 40.400000000000006
+    - note: 40.4
       type: 0
     - note: 40.6
       type: 0
-    - note: 40.800000000000004
+    - note: 40.8
       type: 0
-    - note: 41.0
+    - note: 41
       type: 0
     - note: 41.2
       type: 0
-    - note: 41.400000000000006
+    - note: 41.4
       type: 0
     - note: 41.6
       type: 0
-    - note: 41.800000000000004
+    - note: 41.8
       type: 0
-    - note: 42.0
+    - note: 42
       type: 0
     - note: 42.2
       type: 0
-    - note: 42.400000000000006
+    - note: 42.4
       type: 0
     - note: 42.6
       type: 0
-    - note: 42.800000000000004
+    - note: 42.8
       type: 0
-    - note: 43.0
+    - note: 43
       type: 0
     - note: 43.2
       type: 0
-    - note: 43.400000000000006
+    - note: 43.4
       type: 0
     - note: 43.6
       type: 0
-    - note: 43.800000000000004
+    - note: 43.8
       type: 0
-    - note: 44.0
+    - note: 44
       type: 0
     - note: 44.2
       type: 0
-    - note: 44.400000000000006
+    - note: 44.4
       type: 0
     - note: 44.6
       type: 0
-    - note: 44.800000000000004
+    - note: 44.8
       type: 0
-    - note: 45.0
+    - note: 45
       type: 0
     - note: 45.2
       type: 0
-    - note: 45.400000000000006
+    - note: 45.4
       type: 0
     - note: 45.6
       type: 0
-    - note: 45.800000000000004
+    - note: 45.8
       type: 0
-    - note: 46.0
+    - note: 46
       type: 0
     - note: 46.2
       type: 0
-    - note: 46.400000000000006
+    - note: 46.4
       type: 0
     - note: 46.6
       type: 0
-    - note: 46.800000000000004
+    - note: 46.8
       type: 0
-    - note: 47.0
+    - note: 47
       type: 0
     - note: 47.2
       type: 0
-    - note: 47.400000000000006
+    - note: 47.4
       type: 0
     - note: 47.6
       type: 0
-    - note: 47.800000000000004
+    - note: 47.8
       type: 0
-    - note: 48.0
+    - note: 48
       type: 0
     - note: 48.2
       type: 0
-    - note: 48.400000000000006
+    - note: 48.4
       type: 0
     - note: 48.6
       type: 0
-    - note: 48.800000000000004
+    - note: 48.8
       type: 0
-    - note: 49.0
+    - note: 49
       type: 0
     - note: 49.2
       type: 0
-    - note: 49.400000000000006
+    - note: 49.4
       type: 0
     - note: 49.6
       type: 0
-    - note: 49.800000000000004
+    - note: 49.8
       type: 0
