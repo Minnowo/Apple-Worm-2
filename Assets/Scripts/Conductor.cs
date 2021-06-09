@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-
+using UnityEngine.UI;
 
 [Serializable]
 public class Conductor : MonoBehaviour
@@ -25,6 +25,8 @@ public class Conductor : MonoBehaviour
     public static event SongCompletedAction songCompletedEvent;
 
     public static bool Paused = false;
+
+    public int startCountDown = 3;
 
     public float badOffsetX = 1f;
     public float goodOffsetX = 0.5f;
@@ -52,6 +54,11 @@ public class Conductor : MonoBehaviour
     public AudioSource musicSource { get { return GetComponent<AudioSource>(); } }
     public SongInfo songInfo;
 
+    public Text countDownText;
+    public Text comboText;
+    public RankText rankText;
+
+    private float combo;
     private float[] notes;
 
     private float pausedTime = 0f;
@@ -91,6 +98,7 @@ public class Conductor : MonoBehaviour
     {
         Paused = true;
         pauseTimeStamp = -1f;
+        combo = 0;
 
         songInfo = SongMessenger.Instance.CurrentSong;
         secondsPerBeat = 60f / songInfo.bpm;
@@ -116,10 +124,20 @@ public class Conductor : MonoBehaviour
 
         tracks = songInfo.tracks;
 
-        PlayerControler.PlayerInputted += PlayerInputted;
+        //PlayerControler.PlayerInputted += PlayerInputted;
 
         musicSource.clip = SongMessenger.Instance.CurrentSong.Song;
-        StartSong();
+
+        StartCoroutine(CountDown());
+    }
+
+    public IEnumerator DelayPlay()
+    {
+        Paused = false;
+        songStarted = true;
+
+        yield return new WaitForSeconds(songInfo.firstBeatOffset);
+        musicSource.Play();
     }
 
     public void StartSong()
@@ -127,7 +145,11 @@ public class Conductor : MonoBehaviour
         //Record the time when the music starts
         dspSongTime = (float)AudioSettings.dspTime;
 
-
+        if (songInfo.delayMusicWithFirstBeatOffset)
+        {
+            StartCoroutine(DelayPlay());
+            return;
+        }
         //Start the music
         musicSource.Play();
 
@@ -135,10 +157,6 @@ public class Conductor : MonoBehaviour
         songStarted = true;
     }
 
-    void PlayerInputted(PlayerAction action)
-    {
-
-    }
 
 
     // Update is called once per frame
@@ -246,21 +264,18 @@ public class Conductor : MonoBehaviour
 
         if(offsetX.InRange(-perfectOffsetX, perfectOffsetX))
         {
-            Debug.Log("perfect hit");
             HitBeat(frontNode, Rank.PERFECT, trackNumber);
             return;
         }
         
         if (offsetX.InRange(-goodOffsetX, goodOffsetX)) //good hit
         {
-            Debug.Log("good hit");
             HitBeat(frontNode, Rank.GOOD, trackNumber);
             return;
         }
         
         if (offsetX.InRange(-badOffsetX, badOffsetX)) //bad hit
         {
-            Debug.Log("bad hit");
             HitBeat(frontNode, Rank.BAD, trackNumber);
             return;
         }
@@ -268,6 +283,7 @@ public class Conductor : MonoBehaviour
 
     private void HitBeat(MusicNode n, Rank r, int tracknumber)
     {
+        Debug.Log(r);
         switch (r)
         {
             case Rank.BAD:
@@ -282,15 +298,46 @@ public class Conductor : MonoBehaviour
         }
 
         //dispatch beat on hit event
-        BeatHit(tracknumber, Rank.PERFECT, n.type);
+        BeatHit(tracknumber, r, n.type);
 
         // remove the note from queue
         trackQueues[tracknumber].Dequeue();
     }
 
+    IEnumerator CountDown()
+    {
+        yield return new WaitForSeconds(1f);
+        print("295");
+        for (int i = startCountDown; i >= 1; i--)
+        {
+            countDownText.text = i.ToString();
+            yield return new WaitForSeconds(1f);
+        }
+        print("300");
+
+        countDownText.gameObject.SetActive(false);
+
+        StartSong();
+    }
+
+    public void UpdateComboText(bool keepCombo)
+    {
+        if (keepCombo)
+        {
+            combo++;
+            comboText.text = combo.ToString();
+            comboText.gameObject.SetActive(true);
+            return;
+        }
+
+        combo = 0;
+        comboText.text = combo.ToString();
+        comboText.gameObject.SetActive(false);
+    }
+
     void OnDestroy()
     {
-        PlayerControler.PlayerInputted -= PlayerInputted;
+        PlayerControler.PlayerInputted -= PlayerControler_PlayerInputted;
     }
 
     private void SongFinished()
@@ -301,6 +348,12 @@ public class Conductor : MonoBehaviour
 
     private void BeatHit(int trackNumber, Rank rank, NoteType t)
     {
+        rankText.ShowRank(rank, 2);
+        if (rank != Rank.MISS && t == NoteType.Normal)
+            UpdateComboText(true);
+        else
+            UpdateComboText(false);
+
         if (beatOnHitEvent != null) 
             beatOnHitEvent(trackNumber, rank, t);
     }

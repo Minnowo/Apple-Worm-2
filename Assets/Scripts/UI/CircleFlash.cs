@@ -23,11 +23,13 @@ public class CircleFlash : MonoBehaviour
         if (!flash)
             return;
 
-        if(sr.color.a > 0.5f)
+        this.gameObject.SetActive(true);
+
+        if (sr.color.a > 0.5f)
         {
             transform.localScale = new Vector3(
-                (transform.localScale.x / sr.color.a).Clamp(0, 2), 
-                (transform.localScale.y / sr.color.a).Clamp(0, 2), 
+                (transform.localScale.x / sr.color.a).Clamp(0, 2),
+                (transform.localScale.y / sr.color.a).Clamp(0, 2),
                 transform.localScale.z);
         }
         else if (sr.color.a < 0.5f && sr.color.a > 0.3f)
@@ -40,7 +42,10 @@ public class CircleFlash : MonoBehaviour
         sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, (sr.color.a - Time.deltaTime * flashSpeed).Clamp(0, 1));
 
         if (sr.color.a <= 0)
+        {
             flash = false;
+            this.gameObject.SetActive(false);
+        }
     }
 
     public void ShowFlash(float x, float y, float z, float flashSpeed)

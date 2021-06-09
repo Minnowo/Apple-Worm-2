@@ -4,7 +4,7 @@ import random
 
 os.chdir("\\".join(sys.argv[0].split("/")[:-1]))
 # 189.275 47.31875
-bpm = 45
+bpm = 43.5
 secondsPerBeat = 60 / bpm
 t1 = []
 t2 = []

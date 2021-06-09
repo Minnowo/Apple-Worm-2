@@ -259,7 +259,7 @@ MonoBehaviour:
   songPickButtonPrefab: {fileID: 6087966053625170842, guid: e270114a86543344293e9a87a5f960cd, type: 3}
   songMessengerPrefab: {fileID: 6525639481962904230, guid: b689958dbe15bef419186b810f6cc854, type: 3}
   centerButtonsOnCanvasX: 1
-  centerButtonsOnCanvasY: 1
+  centerButtonsOnCanvasY: 0
   buttonsPerRow: 3
   buttonWidth: 50
   buttonHeight: 50
@@ -361,6 +361,7 @@ MonoBehaviour:
   songCollections:
   - {fileID: 11400000, guid: e96c6e45b1cc48149bdc3b399a3f2956, type: 2}
   - {fileID: 11400000, guid: 6f81382cd9590874f814a46c35aa946b, type: 2}
+  - {fileID: 11400000, guid: f84ed5989a7fe25408a3022ef8718d9c, type: 2}
 --- !u!1 &167097389
 GameObject:
   m_ObjectHideFlags: 0
