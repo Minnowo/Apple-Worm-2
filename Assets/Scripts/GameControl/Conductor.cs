@@ -8,19 +8,10 @@ using UnityEngine.UI;
 public class Conductor : MonoBehaviour
 {
     public static Conductor Instance = null;
+
     public delegate void BeatOnHitAction(int trackNumber, Rank rank, NoteType type);
     public static event BeatOnHitAction beatOnHitEvent;
 
-    public float T 
-    {
-        get
-        {
-            return songPosition / secondsPerBeat + beatsShownInAdvance;
-        }
-    }
-    
-
-    //song completion
     public delegate void SongCompletedAction();
     public static event SongCompletedAction songCompletedEvent;
 
@@ -58,7 +49,7 @@ public class Conductor : MonoBehaviour
     public Text comboText;
     public RankText rankText;
 
-    private float combo;
+    private int combo;
     private float[] notes;
 
     private float pausedTime = 0f;
@@ -308,13 +299,11 @@ public class Conductor : MonoBehaviour
     IEnumerator CountDown()
     {
         yield return new WaitForSeconds(1f);
-        print("295");
         for (int i = startCountDown; i >= 1; i--)
         {
             countDownText.text = i.ToString();
             yield return new WaitForSeconds(1f);
         }
-        print("300");
 
         countDownText.gameObject.SetActive(false);
 
@@ -323,16 +312,25 @@ public class Conductor : MonoBehaviour
 
     public void UpdateComboText(bool keepCombo)
     {
+
         if (keepCombo)
         {
             combo++;
-            comboText.text = combo.ToString();
-            comboText.gameObject.SetActive(true);
+            comboText.text = "x" + combo.ToString();
+            comboText.fontSize = 56 + ((int)Math.Round(combo * .6)).Clamp(0, 30);
+
+            if (!comboText.gameObject.activeInHierarchy)
+                comboText.gameObject.SetActive(true);
+
+            // why tf does unity use 0-1 for colors its awful 
+            // anyway combo / 255 to make it 0-1
+            // but i'm using combo / 102 because combo * 2.5 / 255 is more work
+            comboText.color = new Color(1f, (1f - (combo / 102f)).ClampMin(0), (1f - (combo / 102f)).ClampMin(0), 1);
             return;
         }
 
         combo = 0;
-        comboText.text = combo.ToString();
+        comboText.text = "x" + combo.ToString();
         comboText.gameObject.SetActive(false);
     }
 
@@ -350,6 +348,7 @@ public class Conductor : MonoBehaviour
     private void BeatHit(int trackNumber, Rank rank, NoteType t)
     {
         rankText.ShowRank(rank, 2);
+
         if (rank != Rank.MISS && t == NoteType.Normal)
             UpdateComboText(true);
         else

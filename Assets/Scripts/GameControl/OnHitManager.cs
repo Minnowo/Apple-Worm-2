@@ -66,7 +66,7 @@ public class OnHitManager : MonoBehaviour
             circleIndicators[trackNumber].transform.position.x, 
             circleIndicators[trackNumber].transform.position.y, 
             circleIndicators[trackNumber].transform.position.z, 
-            10);
+            4);
 
         if (t == NoteType.Bad)
             PlayerControler.Instance.TakeDamage(NotePool.Instance.damage);

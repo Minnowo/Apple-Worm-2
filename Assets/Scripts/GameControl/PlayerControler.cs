@@ -27,9 +27,17 @@ public class PlayerControler : MonoBehaviour
     void Start()
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
-        rigidBody.transform.position = new Vector3(Conductor.Instance.finishLineX + Conductor.Instance.goodOffsetX, 0, 5);
+        rigidBody.transform.position = new Vector3(Conductor.Instance.finishLineX - Conductor.Instance.badOffsetX*2, 0, 5);
 
         UIPrefabs.HealthBar.SetMaxHealth(Health);
+    }
+
+    private void Update()
+    {
+        this.rigidBody.transform.position = new Vector3(
+            this.rigidBody.transform.position.x, 
+            Mathf.Sin(1 + Time.time) * 0.5f, 
+            this.rigidBody.transform.position.z);
     }
 
     public void TakeDamage(int dmg)

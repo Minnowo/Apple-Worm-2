@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Bad Apple
   m_EditorClassIdentifier: 
   songSets:
-  - easy: {fileID: 11400000, guid: 33b563dc97900cd42b2169cef14fc827, type: 2}
+  - easy: {fileID: 11400000, guid: ac4fc599a6140bb4990747e4d86416b2, type: 2}
     normal: {fileID: 11400000, guid: b721f6492b8a4224e8d1c9ced6f6ac8e, type: 2}
     hard: {fileID: 11400000, guid: 33b563dc97900cd42b2169cef14fc827, type: 2}

@@ -7,6 +7,28 @@ using System.Threading.Tasks;
 
 public static class Extensions
 {
+    public static T _ClampMax<T>(T num, T max) where T : IComparable<T>
+    {
+        if (num.CompareTo(max) >= 0) return max;
+        return num;
+    }
+
+    public static T ClampMax<T>(this T input, T max) where T : IComparable<T>
+    {
+        return _ClampMax(input, max);
+    }
+
+    public static T _ClampMin<T>(T num, T min) where T : IComparable<T>
+    {
+        if (num.CompareTo(min) <= 0) return min;
+        return num;
+    }
+    
+    public static T ClampMin<T>(this T input, T min) where T : IComparable<T>
+    {
+        return _ClampMin(input, min);
+    }
+
     public static T _Clamp<T>(T num, T min, T max) where T : IComparable<T>
     {
         if (num.CompareTo(min) <= 0) return min;
