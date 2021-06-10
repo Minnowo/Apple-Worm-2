@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: def0ccd3d797ac84aa44ebbb24f874a7, type: 3}
-  m_Name: TelekinesisCollection
+  m_Name: Rasputin
   m_EditorClassIdentifier: 
   songSets:
-  - easy: {fileID: 11400000, guid: 67a48e9a0a2c59244a9764f0c150cf23, type: 2}
-    normal: {fileID: 11400000, guid: 9304d313ee39eed4bb3278f3b77449a2, type: 2}
-    hard: {fileID: 11400000, guid: 9304d313ee39eed4bb3278f3b77449a2, type: 2}
+  - easy: {fileID: 11400000, guid: d9e9c2e70ccc2d5429e0a5d0481ea420, type: 2}
+    normal: {fileID: 11400000, guid: d9e9c2e70ccc2d5429e0a5d0481ea420, type: 2}
+    hard: {fileID: 0}

@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 148614703}
   - component: {fileID: 148614702}
   - component: {fileID: 148614707}
+  - component: {fileID: 148614708}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -260,8 +261,8 @@ MonoBehaviour:
   songMessengerPrefab: {fileID: 6525639481962904230, guid: b689958dbe15bef419186b810f6cc854, type: 3}
   centerButtonsOnCanvasX: 1
   centerButtonsOnCanvasY: 0
-  buttonsPerRow: 3
-  buttonWidth: 50
+  buttonsPerRow: 1
+  buttonWidth: 250
   buttonHeight: 50
   leftMargin: 275
   topMargin: 0
@@ -363,6 +364,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6f81382cd9590874f814a46c35aa946b, type: 2}
   - {fileID: 11400000, guid: f84ed5989a7fe25408a3022ef8718d9c, type: 2}
   - {fileID: 11400000, guid: 9c8a60a61c243e446a6ce69ddc7c3843, type: 2}
+--- !u!114 &148614708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148614701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd749c6786472e34ab2a773277dc5172, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbleFont: {fileID: 0}
 --- !u!1 &167097389
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: def0ccd3d797ac84aa44ebbb24f874a7, type: 3}
-  m_Name: BassTelekinesisCollection
+  m_Name: Mori No Kiniko
   m_EditorClassIdentifier: 
   songSets:
   - easy: {fileID: 11400000, guid: d35e7a03e3f545e4eb5205df3c164810, type: 2}

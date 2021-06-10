@@ -19,11 +19,16 @@ public static class Extensions
         return _Clamp(input, min, max);
     }
 
-    public static bool InRange(this float inp, float min, float max)
+    public static bool InRange<T>(this T input, T min, T max) where T : IComparable<T>
     {
-        if (inp < min)
+        return _InRange(input, min, max);
+    }
+
+    public static bool _InRange<T>(T input, T min, T max) where T : IComparable<T>
+    {
+        if (input.CompareTo(min) <= 0)
             return false;
-        if (inp > max)
+        if (input.CompareTo(max) >= 0)
             return false;
         return true;
     }
