@@ -121,7 +121,6 @@ public class LevelButtonCreator : MonoBehaviour
         difficultyButtons = new UnityEngine.UI.Button[3];
         for (int i = 0; i < 3; i++)
         {
-            print(i);
             GameObject buttonGameObject = Instantiate(songPickButtonPrefab);
 
             buttonGameObject.transform.position = new Vector3(xpos * (i+1), ypos, buttonGameObject.transform.position.z);

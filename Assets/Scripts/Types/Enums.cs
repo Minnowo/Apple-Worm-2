@@ -21,5 +21,6 @@ public enum NoteType
 {
     Normal,
     Bad,
-    Special
+    Heal,
+    Invincible
 }

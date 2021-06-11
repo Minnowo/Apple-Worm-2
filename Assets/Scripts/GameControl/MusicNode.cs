@@ -19,6 +19,7 @@ public class MusicNode : MonoBehaviour
         }
         set
         {
+			//print(value);
 			notetype = value;
 			t = value;
 
@@ -28,24 +29,30 @@ public class MusicNode : MonoBehaviour
             {
 				case NoteType.Normal:
 					sr.sprite = UIPrefabs.DefaultMusicNodeSprite;
+					rt.localScale = new Vector3(1.1f, 1.1f, 1f);
 					break;
 				case NoteType.Bad:
 					sr.sprite = UIPrefabs.BadMusicNodeSprite;
+					rt.localScale = new Vector3(1f, 1f, 1f);
 					break;
-				case NoteType.Special:
-					sr.sprite = UIPrefabs.SpecialMusicNodeSprite;
+				case NoteType.Heal:
+					sr.sprite = UIPrefabs.HealMusicNodeSprite;
+					rt.localScale = new Vector3(1f, 1f, 1f);
 					break;
-            }
+			}
         }
     }
 	private NoteType t;
 
     public bool paused;
 	private SpriteRenderer sr;
+	private Transform rt;
     private void Awake()
     {
 		sr = GetComponent<SpriteRenderer>();
 		sr.sortingLayerName = "MusicNote";
+
+		rt = GetComponent<Transform>();
 		//sr.sprite
     }
 

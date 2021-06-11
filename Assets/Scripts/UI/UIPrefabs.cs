@@ -34,14 +34,14 @@ public class UIPrefabs : MonoBehaviour
     }
     public Sprite defaultMusicNodeSprite;
 
-    public static Sprite SpecialMusicNodeSprite
+    public static Sprite HealMusicNodeSprite
     {
         get
         {
-            return UIPrefabs.Instance.specialMusicNodeSprite;
+            return UIPrefabs.Instance.healMusicNodeSprite;
         }
     }
-    public Sprite specialMusicNodeSprite;
+    public Sprite healMusicNodeSprite;
 
     public static Sprite BadMusicNodeSprite
     {

@@ -21770,9 +21770,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   circleIndicatorPrefab: {fileID: 640548522418863672, guid: 1a69042ce96a82949a2bd7966998055a, type: 3}
   burstParticle: {fileID: 8333505950078288087, guid: 86b8f51dea40be549bdc559b25bdf9b9, type: 3}
-  defaultMusicNodeSprite: {fileID: 21300000, guid: e392c6969ab1d1e4d902e17a5fbebfbd, type: 3}
-  specialMusicNodeSprite: {fileID: 21300000, guid: 604bbad5d570c1b4e920b8c4604a0de1, type: 3}
-  badMusicNodeSprite: {fileID: 21300000, guid: 346f9626e0ad76641b65f130f5fa8baa, type: 3}
+  defaultMusicNodeSprite: {fileID: 21300000, guid: 2a3191ce3d1ce7e40bd07f744323e9a4, type: 3}
+  healMusicNodeSprite: {fileID: 21300000, guid: 2887d9ba8e7c0b34c8ff37afd7ca5ae8, type: 3}
+  badMusicNodeSprite: {fileID: 21300000, guid: 5bbc5b954dd1b8342adc6757f885640e, type: 3}
   healthBar: {fileID: 1944792675}
   flashCirclePrefab: {fileID: -8474049307924766651, guid: 818ebe0d6fe95b645835dc976890d658, type: 3}
 --- !u!222 &1984052271

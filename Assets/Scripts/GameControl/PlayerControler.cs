@@ -42,7 +42,7 @@ public class PlayerControler : MonoBehaviour
 
     public void TakeDamage(int dmg)
     {
-        Health -= dmg;
+        Health = (Health - dmg).Clamp(0, 100);
         UIPrefabs.HealthBar.SetHealth(Health);
     }
 

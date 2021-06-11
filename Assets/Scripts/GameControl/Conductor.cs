@@ -275,7 +275,7 @@ public class Conductor : MonoBehaviour
 
     private void HitBeat(MusicNode n, Rank r, int tracknumber)
     {
-        Debug.Log(r);
+        //Debug.Log(r);
         switch (r)
         {
             case Rank.BAD:
@@ -349,10 +349,10 @@ public class Conductor : MonoBehaviour
     {
         rankText.ShowRank(rank, 2);
 
-        if (rank != Rank.MISS && t == NoteType.Normal)
-            UpdateComboText(true);
-        else
+        if (rank == Rank.MISS || t == NoteType.Bad)
             UpdateComboText(false);
+        else
+            UpdateComboText(true);
 
         if (beatOnHitEvent != null) 
             beatOnHitEvent(trackNumber, rank, t);
