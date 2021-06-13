@@ -44,4 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentSong: {fileID: 0}
-  characterIndex: 0
+  songIndex: 0

@@ -245,22 +245,6 @@ public class Conductor : MonoBehaviour
                 }
             }
 
-            if (curNode.type == NoteType.Bad)
-            {
-                if (curNode.transform.position.x < finishLineX  - goodOffsetX)
-                {
-                    if (i == PlayerControler.locationIndex)
-                    {
-                        curNode.trackNumber = i;
-                        curNode.hitPlayer = true;
-
-                        trackQueues[i].Dequeue();
-                        BeatHit(i, Rank.HIT, NoteType.Bad);
-                        continue;
-                    }
-                }
-            }
-
             if (curNode.transform.position.x < dequeueX)
             {
                 // can remove the note because its going to be disabled by the BeatHit 

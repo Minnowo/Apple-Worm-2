@@ -21577,7 +21577,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.15408659, y: -0.61634356}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21588,7 +21588,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 3.189849, y: 1.3408188}
   m_EdgeRadius: 0
 --- !u!50 &1984052267
 Rigidbody2D:
@@ -21834,6 +21834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startCountDown: 3
+  pauseNoteAssist: 1
+  pauseNoteAssistFrames: 25
   badOffsetX: 0.8
   goodOffsetX: 0.5
   perfectOffsetX: 0.3
@@ -21852,6 +21854,7 @@ MonoBehaviour:
   countDownText: {fileID: 1667489943}
   comboText: {fileID: 1351382887}
   rankText: {fileID: 1603325011}
+  combo: 0
 --- !u!82 &2106534303
 AudioSource:
   m_ObjectHideFlags: 0
