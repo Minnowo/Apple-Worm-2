@@ -14,10 +14,14 @@ public class PlayerControler : MonoBehaviour
     public static PlayerControler Instance = null;
     public static int locationIndex = 1;
 
+    public static int defaultInvincibleTime = 5;
+
     public int hitCooldownTime = 3;
     public int Health = 100;
     public int fadeSpeed = 5;
+    public bool isRockForm = false;
     public bool isOnDamageCooldown = false;
+    public bool resetSpriteAfterFadeOut = false;
 
     public float speed = 5;
     public PlayerInput playerInput;
@@ -43,7 +47,10 @@ public class PlayerControler : MonoBehaviour
 
     private float y;
 
+    private Sprite originalSprite;
+
     private Rigidbody2D rigidBody;
+    private RectTransform rt;
     private SpriteRenderer sr;
 
     private void Awake()
@@ -55,6 +62,9 @@ public class PlayerControler : MonoBehaviour
     {
         rigidBody = this.GetComponent<Rigidbody2D>();
         sr = this.GetComponent<SpriteRenderer>();
+        rt = this.GetComponent<RectTransform>();
+
+        originalSprite = sr.sprite;
 
         rigidBody.transform.position = new Vector3(Conductor.Instance.finishLineX - Conductor.Instance.badOffsetX * 2, 0, 5);
         y = rigidBody.transform.position.y;
@@ -66,7 +76,11 @@ public class PlayerControler : MonoBehaviour
     {
         if (isOnDamageCooldown)
         {
-            if(sr.color.a > 0.3)
+            if (isRockForm)
+            {
+                sr.color = new Color(1, 1, 1, 1);
+            }
+            else if(sr.color.a > 0.3)
             {
                 sr.color = new Color(1, 1, 1, (sr.color.a - Time.deltaTime * fadeSpeed).Clamp(0, 1));
             }
@@ -76,10 +90,19 @@ public class PlayerControler : MonoBehaviour
                 isOnDamageCooldown = false;
             }
         }
-        else if (sr.color.a < 1)
+        else if (sr.color.a < 1 || isRockForm)
         {
             sr.color = new Color(1, 1, 1, (sr.color.a + Time.deltaTime * fadeSpeed).Clamp(0, 1));
+
+            if (resetSpriteAfterFadeOut)
+            {
+                sr.sprite = originalSprite;
+                rt.localScale = new Vector3(0.5f, 0.5f, 1f);
+                isRockForm = false;
+                resetSpriteAfterFadeOut = false;
+            }
         }
+
 
         this.rigidBody.transform.position = Vector3.MoveTowards(
                 rigidBody.transform.position,
@@ -139,6 +162,16 @@ public class PlayerControler : MonoBehaviour
         //print($"track: {1}, beat: {Conductor.Instance.T}");
     }
 
+    public void GiveIFrames(float time)
+    {
+        this.lastHitTime = Time.time + time;
+        this.isOnDamageCooldown = true;
+        resetSpriteAfterFadeOut = true;
+        isRockForm = true;
+
+        sr.sprite = UIPrefabs.AppleWormRockSkin;
+        rt.localScale = new Vector3(0.9f, 0.9f, 1f);
+    }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -157,7 +190,7 @@ public class PlayerControler : MonoBehaviour
 
         if (collider.gameObject.CompareTag("MusicNoteINVINCIBLE"))
         {
-
+            GiveIFrames(defaultInvincibleTime);
         }
     }
 

@@ -256,6 +256,24 @@ public class Conductor : MonoBehaviour
                 }
             }
 
+            if (curNode.type == NoteType.Bad && PlayerControler.Instance.isRockForm)
+            {
+                if (curNode.transform.position.x < finishLineX - goodOffsetX)
+                {
+                    if (i == PlayerControler.locationIndex)
+                    {
+                        curNode.trackNumber = i;
+                        curNode.hitPlayer = true;
+
+                        trackQueues[i].Dequeue();
+
+                        // influence the beat hit to be good instead of the spikes
+                        BeatHit(i, Rank.PERFECT, NoteType.Normal);
+                        continue;
+                    }
+                }
+            }
+
             if (curNode.transform.position.x < dequeueX)
             {
                 // can remove the note because its going to be disabled by the BeatHit 

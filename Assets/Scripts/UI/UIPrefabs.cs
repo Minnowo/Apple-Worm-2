@@ -70,6 +70,24 @@ public class UIPrefabs : MonoBehaviour
     }
     public CircleFlash flashCirclePrefab;
 
+    public static Sprite InvincibleMusicNodeSprite
+    {
+        get
+        {
+            return Instance.invincibleMusicNodeSprite;
+        }
+    }
+    public Sprite invincibleMusicNodeSprite;
+
+    public static Sprite AppleWormRockSkin
+    {
+        get
+        {
+            return Instance.appleWormRockSkin;
+        }
+    }
+    public Sprite appleWormRockSkin;
+
     private void Awake()
     {
         Instance = this;

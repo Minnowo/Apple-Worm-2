@@ -21657,7 +21657,9 @@ MonoBehaviour:
   hitCooldownTime: 3
   Health: 100
   fadeSpeed: 5
+  isRockForm: 0
   isOnDamageCooldown: 0
+  resetSpriteAfterFadeOut: 0
   speed: 5
   playerInput: {fileID: 1984052269}
   lastHitTime: 0
@@ -21872,6 +21874,8 @@ MonoBehaviour:
   badMusicNodeSprite: {fileID: 21300000, guid: 5bbc5b954dd1b8342adc6757f885640e, type: 3}
   healthBar: {fileID: 1944792675}
   flashCirclePrefab: {fileID: -8474049307924766651, guid: 818ebe0d6fe95b645835dc976890d658, type: 3}
+  invincibleMusicNodeSprite: {fileID: 21300000, guid: 8789439babbe0ce469e9b49013dcf095, type: 3}
+  appleWormRockSkin: {fileID: 21300000, guid: 2010175883a81824aa215a52a9565264, type: 3}
 --- !u!222 &1984052271
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22077,5 +22081,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NotePrefab: {fileID: 1749556452273629693, guid: a9b94bd00c385b847865d13b8a6378af, type: 3}
   NotesObjectList: []
-  damage: 15
+  generalDamage: 10
+  spikeDamage: 20
   InitialAmount: 0

@@ -12,6 +12,9 @@ public class MusicNode : MonoBehaviour
     public float beat;
 	public NoteType notetype;
 
+	public bool hitPlayer = false;
+	public int trackNumber = 0;
+
 	public NoteType type
     {
         get
@@ -40,9 +43,13 @@ public class MusicNode : MonoBehaviour
 					sr.sprite = UIPrefabs.HealMusicNodeSprite;
 					rt.localScale = new Vector3(1f, 1f, 1f);
 					break;
+				case NoteType.Invincible:
+					sr.sprite = UIPrefabs.InvincibleMusicNodeSprite;
+					rt.localScale = new Vector3(1f, 1f, 1f);
+					break;
 			}
-        }
-    }
+		}
+	}
 	private NoteType t;
 
     public bool paused;
@@ -50,7 +57,11 @@ public class MusicNode : MonoBehaviour
 	private Transform rt;
 	private BoxCollider2D bc;
 
-    private void Awake()
+	// this is an exponent that is used to give an animation
+	// when the note hits the player and flys up or down off the screen
+	private int flyCounter = 1;
+
+	private void Awake()
     {
 		sr = GetComponent<SpriteRenderer>();
 		sr.sortingLayerName = "MusicNote";
@@ -70,6 +81,8 @@ public class MusicNode : MonoBehaviour
 		this.removeLineX = removeLineX;
 		this.type = nt;
 
+		hitPlayer = false;
+		flyCounter = 1;
 		paused = false;
 
 		tag = "MusicNote" + nt.ToString().ToUpper();
@@ -86,17 +99,35 @@ public class MusicNode : MonoBehaviour
 		if (paused) 
 			return;
 
-	
+		if (hitPlayer)
+		{
+			int i = 1;
+			if (trackNumber == 1)
+			{
+				i *= -1;
+			}
+
+			transform.position = new Vector3(
+				startX + (endX - startX) * (1f - (beat - Conductor.songPosition / Conductor.secondsPerBeat) / Conductor.beatsShownInAdvance),
+				transform.position.y + i * (flyCounter * Time.deltaTime),
+				transform.position.z);
+
+			flyCounter = (flyCounter + 1).ClampMax(20);
+		}
+		else
+		{
 			transform.position = new Vector3(
 				startX + (endX - startX) * (1f - (beat - Conductor.songPosition / Conductor.secondsPerBeat) / Conductor.beatsShownInAdvance),
 				transform.position.y,
 				transform.position.z);
-		
+		}		
 
 		//remove itself when out of the screen (remove line)
 		if (transform.position.x < removeLineX)
 		{
 			gameObject.SetActive(false);
+			hitPlayer = false;
+			flyCounter = 1;
 		}
 	}
 
