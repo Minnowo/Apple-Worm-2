@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Black Sun
   m_EditorClassIdentifier: 
   songSets:
-  - easy: {fileID: 11400000, guid: 67a48e9a0a2c59244a9764f0c150cf23, type: 2}
+  - easy: {fileID: 0}
     normal: {fileID: 0}
-    hard: {fileID: 0}
+    hard: {fileID: 11400000, guid: 67a48e9a0a2c59244a9764f0c150cf23, type: 2}

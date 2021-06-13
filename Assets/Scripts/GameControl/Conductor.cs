@@ -405,7 +405,7 @@ public class Conductor : MonoBehaviour
 
     private void PlayerDamaged(int newHealth, int oldHealth)
     {
-        if (oldHealth - newHealth < 0)
+        if (oldHealth - newHealth > 0)
         {
             UpdateComboText(false);
             PlayerScoreText.PlayerScore -= oldHealth - newHealth;

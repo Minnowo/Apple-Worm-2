@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   songSets:
   - easy: {fileID: 11400000, guid: d35e7a03e3f545e4eb5205df3c164810, type: 2}
-    normal: {fileID: 11400000, guid: c68c8cdaa6ee90341aae10cf472f5d8d, type: 2}
-    hard: {fileID: 11400000, guid: c68c8cdaa6ee90341aae10cf472f5d8d, type: 2}
+    normal: {fileID: 0}
+    hard: {fileID: 0}

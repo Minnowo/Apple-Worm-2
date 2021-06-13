@@ -52,8 +52,6 @@ MonoBehaviour:
       type: 0
     - note: 7.5225
       type: 0
-    - note: 7.7
-      type: 3
     - note: 7.84875
       type: 0
     - note: 8.175
@@ -82,7 +80,7 @@ MonoBehaviour:
       type: 0
     - note: 13.719
       type: 0
-    - note: 14
+    - note: 14.04525
       type: 1
     - note: 14.28975
       type: 0
@@ -94,7 +92,7 @@ MonoBehaviour:
       type: 0
     - note: 15.35025
       type: 0
-    - note: 15.45
+    - note: 15.83925
       type: 1
     - note: 16.24725
       type: 0
@@ -104,7 +102,9 @@ MonoBehaviour:
       type: 0
     - note: 16.899
       type: 0
-    - note: 17
+    - note: 17.0625
+      type: 1
+    - note: 17.307
       type: 1
     - note: 17.5515
       type: 0
@@ -114,6 +114,8 @@ MonoBehaviour:
       type: 0
     - note: 18.5295
       type: 0
+    - note: 18.85575
+      type: 1
     - note: 19.26375
       type: 0
     - note: 19.8345
@@ -126,8 +128,6 @@ MonoBehaviour:
       type: 0
     - note: 20.976
       type: 0
-    - note: 21.2
-      type: 1
     - note: 21.05775
       type: 0
     - note: 21.438
@@ -146,6 +146,8 @@ MonoBehaviour:
       type: 0
     - note: 23.17725
       type: 0
+    - note: 23.9925
+      type: 1
     - note: 24.31875
       type: 0
     - note: 24.4815
@@ -166,8 +168,6 @@ MonoBehaviour:
       type: 0
     - note: 26.7645
       type: 0
-    - note: 26.91
-      type: 1
     - note: 27.09075
       type: 0
     - note: 27.25425
@@ -178,20 +178,18 @@ MonoBehaviour:
       type: 0
     - note: 28.39575
       type: 0
-    - note: 28.7
-      type: 3
     - note: 29.0475
       type: 0
     - note: 29.211
       type: 0
     - note: 29.37375
       type: 0
-    - note: 29.5
+    - note: 29.5365
       type: 1
     - note: 30.02625
       type: 0
     - note: 30.189
-      type: 0
+      type: 1
     - note: 30.3525
       type: 0
     - note: 31.7655
@@ -212,21 +210,35 @@ MonoBehaviour:
       type: 1
     - note: 34.755
       type: 0
+    - note: 35.8965
+      type: 1
     - note: 36.22275
       type: 0
     - note: 36.549
       type: 0
+    - note: 36.87525
+      type: 1
+    - note: 37
+      type: 1
+    - note: 37.3424
+      type: 1
     - note: 37.6905
       type: 0
     - note: 37.85325
       type: 0
     - note: 38.1795
-      type: 0
+      type: 2
     - note: 38.50575
       type: 0
     - note: 38.6685
       type: 0
-    - note: 38.82
+    - note: 38.832
+      type: 1
+    - note: 39.48375
+      type: 1
+    - note: 39.64725
+      type: 1
+    - note: 39.81
       type: 1
     - note: 40.13625
       type: 0
@@ -238,7 +250,9 @@ MonoBehaviour:
       type: 0
     - note: 41.76675
       type: 0
-    - note: 41.9
+    - note: 42.093
+      type: 1
+    - note: 42.7455
       type: 1
     - note: 43.07175
       type: 0
@@ -258,6 +272,8 @@ MonoBehaviour:
       type: 0
     - note: 48.2895
       type: 0
+    - note: 48.71575
+      type: 1
     - note: 49.10475
       type: 0
     - note: 49.431
@@ -280,7 +296,7 @@ MonoBehaviour:
       type: 0
     - note: 52.638
       type: 0
-    - note: 52.82
+    - note: 52.8555
       type: 1
     - note: 53.073
       type: 0
@@ -302,15 +318,17 @@ MonoBehaviour:
       type: 0
     - note: 57.9105
       type: 0
-    - note: 58
+    - note: 58.07325
       type: 1
     - note: 58.3995
       type: 0
+    - note: 58.8888
+      type: 1
     - note: 59.37825
       type: 0
     - note: 59.7045
       type: 0
-    - note: 60
+    - note: 60.03075
       type: 1
     - note: 60.35625
       type: 0
@@ -318,10 +336,10 @@ MonoBehaviour:
       type: 0
     - note: 60.846
       type: 0
-    - note: 60.94
-      type: 1
     - note: 61.17225
       type: 0
+    - note: 61.49775
+      type: 1
     - note: 61.9875
       type: 0
     - note: 62.313
@@ -334,6 +352,12 @@ MonoBehaviour:
       type: 0
     - note: 64.2705
       type: 0
+    - note: 65.2485
+      type: 1
+    - note: 65.901
+      type: 1
+    - note: 66.5531
+      type: 1
     - note: 67.85775
       type: 0
     - note: 68.51025
@@ -352,12 +376,16 @@ MonoBehaviour:
       type: 0
     - note: 71.11875
       type: 0
+    - note: 71.445
+      type: 1
+    - note: 71.77125
+      type: 1
+    - note: 72.0975
+      type: 1
     - note: 72.75
       type: 0
     - note: 73.0755
       type: 0
-    - note: 73.2
-      type: 1
     - note: 73.40175
       type: 0
     - note: 73.728
@@ -365,7 +393,7 @@ MonoBehaviour:
     - note: 74.05425
       type: 0
     - note: 74.70675
-      type: 2
+      type: 3
     - note: 75.03225
       type: 0
     - note: 75.19575
@@ -386,6 +414,10 @@ MonoBehaviour:
       type: 0
     - note: 76.98975
       type: 0
+    - note: 77.31525
+      type: 1
+    - note: 77.96775
+      type: 1
     - note: 78.1305
       type: 0
     - note: 78.45675
@@ -406,8 +438,6 @@ MonoBehaviour:
       type: 2
     - note: 81.555
       type: 0
-    - note: 81.8
-      type: 1
     - note: 82.04475
       type: 0
     - note: 82.2075
@@ -428,6 +458,10 @@ MonoBehaviour:
       type: 0
     - note: 95.41575
       type: 0
+    - note: 96.231
+      type: 1
+    - note: 96.55725
+      type: 1
     - note: 96.8835
       type: 0
     - note: 97.536
@@ -436,7 +470,7 @@ MonoBehaviour:
       type: 2
     - note: 98.84025
       type: 0
-    - note: 99.1
+    - note: 99.1665
       type: 1
     - note: 99.819
       type: 0
@@ -446,6 +480,8 @@ MonoBehaviour:
       type: 0
     - note: 101.28675
       type: 0
+    - note: 101.4494
+      type: 1
     - note: 102.26475
       type: 0
     - note: 102.4275
@@ -454,8 +490,12 @@ MonoBehaviour:
       type: 0
     - note: 103.08
       type: 0
+    - note: 103.4063
+      type: 1
     - note: 103.89525
       type: 0
+    - note: 104.385
+      type: 1
     - note: 104.81925
       type: 0
     - note: 104.928
@@ -468,7 +508,7 @@ MonoBehaviour:
       type: 2
     - note: 105.363
       type: 0
-    - note: 105.6
+    - note: 105.6892
       type: 1
     - note: 106.0155
       type: 0
@@ -504,8 +544,16 @@ MonoBehaviour:
       type: 0
     - note: 113.8425
       type: 0
+    - note: 114.1687
+      type: 1
     - note: 114.495
       type: 0
+    - note: 114.8213
+      type: 1
+    - note: 115.1468
+      type: 1
+    - note: 115.7992
+      type: 1
     - note: 115.96275
       type: 0
     - note: 116.1255
@@ -562,6 +610,8 @@ MonoBehaviour:
       type: 0
     - note: 126.56175
       type: 0
+    - note: 127
+      type: 1
     - note: 127.5405
       type: 0
     - note: 127.866
@@ -650,6 +700,10 @@ MonoBehaviour:
       type: 0
     - note: 155.42474
       type: 0
+    - note: 156.24
+      type: 1
+    - note: 156.729
+      type: 1
     - note: 157.54425
       type: 0
   - notes:
@@ -761,14 +815,14 @@ MonoBehaviour:
       type: 0
     - note: 19.182
       type: 0
-    - note: 19.32
-      type: 1
     - note: 19.50825
       type: 0
     - note: 19.671
       type: 0
     - note: 19.75275
       type: 0
+    - note: 19.9545
+      type: 1
     - note: 20.40525
       type: 0
     - note: 20.8125
@@ -801,6 +855,8 @@ MonoBehaviour:
       type: 0
     - note: 26.928
       type: 0
+    - note: 27.09075
+      type: 1
     - note: 27.57975
       type: 0
     - note: 28.0695
@@ -808,13 +864,13 @@ MonoBehaviour:
     - note: 28.23225
       type: 0
     - note: 28.72125
-      type: 0
+      type: 3
     - note: 29.7
       type: 0
     - note: 30.678
       type: 0
     - note: 30.8415
-      type: 0
+      type: 1
     - note: 31.00425
       type: 0
     - note: 31.3305
@@ -826,7 +882,7 @@ MonoBehaviour:
     - note: 32.30925
       type: 0
     - note: 32.6355
-      type: 0
+      type: 2
     - note: 34.42875
       type: 0
     - note: 34.59225
@@ -866,15 +922,23 @@ MonoBehaviour:
     - note: 40.62525
       type: 0
     - note: 40.78875
-      type: 0
-    - note: 41
+      type: 3
+    - note: 41.115
+      type: 1
+    - note: 41.4405
+      type: 1
+    - note: 41.76675
       type: 1
     - note: 42.093
       type: 0
     - note: 42.7455
       type: 0
+    - note: 43.07175
+      type: 1
     - note: 43.39725
       type: 0
+    - note: 43.7235
+      type: 1
     - note: 44.04975
       type: 0
     - note: 44.376
@@ -891,6 +955,8 @@ MonoBehaviour:
       type: 0
     - note: 46.98525
       type: 0
+    - note: 47.47425
+      type: 1
     - note: 47.8005
       type: 0
     - note: 48.453
@@ -909,6 +975,14 @@ MonoBehaviour:
       type: 0
     - note: 50.40975
       type: 0
+    - note: 50.89875
+      type: 1
+    - note: 51.225
+      type: 1
+    - note: 51.55125
+      type: 1
+    - note: 51.87675
+      type: 1
     - note: 52.3665
       type: 0
     - note: 52.74675
@@ -941,6 +1015,8 @@ MonoBehaviour:
       type: 0
     - note: 59.052
       type: 0
+    - note: 59.5413
+      type: 1
     - note: 60.03075
       type: 0
     - note: 61.00875
@@ -973,6 +1049,8 @@ MonoBehaviour:
       type: 0
     - note: 66.879
       type: 0
+    - note: 67.3683
+      type: 1
     - note: 68.184
       type: 0
     - note: 69.162
@@ -997,17 +1075,39 @@ MonoBehaviour:
       type: 0
     - note: 72.42375
       type: 0
+    - note: 73.0755
+      type: 1
+    - note: 73.40175
+      type: 1
+    - note: 73.728
+      type: 1
     - note: 74.217
       type: 0
     - note: 74.54325
       type: 0
+    - note: 75.03225
+      type: 1
+    - note: 75.19575
+      type: 1
+    - note: 75.3585
+      type: 1
+    - note: 75.522
+      type: 1
+    - note: 75.68475
+      type: 1
+    - note: 75.84825
+      type: 1
+    - note: 76.6635
+      type: 1
+    - note: 76.98975
+      type: 1
     - note: 77.31525
       type: 0
     - note: 77.6415
       type: 0
     - note: 77.96775
       type: 0
-    - note: 78.42
+    - note: 78.45675
       type: 1
     - note: 78.9465
       type: 0
@@ -1015,16 +1115,22 @@ MonoBehaviour:
       type: 0
     - note: 80.73975
       type: 0
+    - note: 80.4135
+      type: 1
     - note: 81.066
       type: 0
     - note: 81.88125
       type: 0
+    - note: 82.53375
+      type: 1
     - note: 83.02275
       type: 0
     - note: 83.18625
       type: 0
     - note: 83.349
       type: 0
+    - note: 83.67525
+      type: 1
     - note: 94.27425
       type: 0
     - note: 95.0895
@@ -1079,6 +1185,8 @@ MonoBehaviour:
       type: 0
     - note: 104.7105
       type: 0
+    - note: 105.2542
+      type: 1
     - note: 105.68925
       type: 0
     - note: 106.34175
@@ -1101,6 +1209,10 @@ MonoBehaviour:
       type: 0
     - note: 109.929
       type: 0
+    - note: 110.418
+      type: 1
+    - note: 110.7442
+      type: 1
     - note: 111.0705
       type: 0
     - note: 111.23325
@@ -1116,19 +1228,27 @@ MonoBehaviour:
     - note: 113.02725
       type: 0
     - note: 113.3535
-      type: 0
+      type: 3
     - note: 113.67975
       type: 0
     - note: 114.16875
       type: 0
+    - note: 114.495
+      type: 1
     - note: 114.82125
       type: 0
     - note: 115.14675
       type: 0
     - note: 115.79925
       type: 0
+    - note: 116.1255
+      type: 1
     - note: 116.28825
       type: 0
+    - note: 116.4518
+      type: 1
+    - note: 116.778
+      type: 1
     - note: 117.10425
       type: 0
     - note: 117.59325
@@ -1169,8 +1289,6 @@ MonoBehaviour:
       type: 0
     - note: 126.888
       type: 0
-    - note: 127
-      type: 1
     - note: 127.21425
       type: 0
     - note: 128.5185
