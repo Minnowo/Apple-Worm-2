@@ -26,7 +26,7 @@ public class Conductor : MonoBehaviour
     public float goodOffsetX = 0.5f;
     public float perfectOffsetX = 0.2f;
 
-    public float[] trackSpawnYPos = new float[] { 4f, -4f};
+    public float[] trackSpawnYPos = new float[] { 4f, -4f };
     public float startLineX = 8;
     public float finishLineX = -8;
     public float removeLineX = -10;
@@ -52,7 +52,7 @@ public class Conductor : MonoBehaviour
     public Text comboText;
     public RankText rankText;
 
-    private int combo;
+    public int combo;
     private float[] notes;
 
     private float pausedTime = 0f;
@@ -162,7 +162,7 @@ public class Conductor : MonoBehaviour
 
         if (Paused)
         {
-            if(pauseTimeStamp < 0f)
+            if (pauseTimeStamp < 0f)
             {
                 pauseTimeStamp = (float)AudioSettings.dspTime;
                 musicSource.Pause();
@@ -171,7 +171,7 @@ public class Conductor : MonoBehaviour
         }
 
         // was paused but now has been unpaused
-        if(pauseTimeStamp > 0f)
+        if (pauseTimeStamp > 0f)
         {
             pausedTime += (float)AudioSettings.dspTime - pauseTimeStamp;
 
@@ -188,7 +188,7 @@ public class Conductor : MonoBehaviour
 
         float beatToShow = songPosition / secondsPerBeat + beatsShownInAdvance;
 
-        for(int i = 0; i < numberOfTracks; i++)
+        for (int i = 0; i < numberOfTracks; i++)
         {
             int nextNoteIndex = trackNoteIndices[i];
             Track curTrack = tracks[i];
@@ -217,7 +217,7 @@ public class Conductor : MonoBehaviour
             trackNoteIndices[i]++;
         }
 
-        for(int i = 0; i < numberOfTracks; i++)
+        for (int i = 0; i < numberOfTracks; i++)
         {
             // empty queue
             if (trackQueues[i].Count < 1)
@@ -245,19 +245,35 @@ public class Conductor : MonoBehaviour
                 }
             }
 
-            if(curNode.transform.position.x < dequeueX)
+            if (curNode.type == NoteType.Bad)
+            {
+                if (curNode.transform.position.x < finishLineX  - goodOffsetX)
+                {
+                    if (i == PlayerControler.locationIndex)
+                    {
+                        curNode.trackNumber = i;
+                        curNode.hitPlayer = true;
+
+                        trackQueues[i].Dequeue();
+                        BeatHit(i, Rank.HIT, NoteType.Bad);
+                        continue;
+                    }
+                }
+            }
+
+            if (curNode.transform.position.x < dequeueX)
             {
                 // can remove the note because its going to be disabled by the BeatHit 
                 // function
                 trackQueues[i].Dequeue();
 
                 // don't punish the player for missing the spikes, heals, or invincible power
-                if(curNode.type == NoteType.Normal)
+                if (curNode.type == NoteType.Normal)
                     BeatHit(i, Rank.MISS, NoteType.Normal);
             }
         }
 
-        if(songPosition >= songLength)
+        if (songPosition >= songLength)
         {
             songStarted = false;
             SongFinished();
@@ -279,18 +295,18 @@ public class Conductor : MonoBehaviour
         float offsetX = frontNode.gameObject.transform.position.x - finishLineX;
         //print($"offsetX: {offsetX}, perfectHit: {perfectOffsetX}");
 
-        if(offsetX.InRange(-perfectOffsetX, perfectOffsetX))
+        if (offsetX.InRange(-perfectOffsetX, perfectOffsetX))
         {
             HitBeat(frontNode, Rank.PERFECT, trackNumber);
             return;
         }
-        
+
         if (offsetX.InRange(-goodOffsetX, goodOffsetX)) //good hit
         {
             HitBeat(frontNode, Rank.GOOD, trackNumber);
             return;
         }
-        
+
         if (offsetX.InRange(-badOffsetX, badOffsetX)) //bad hit
         {
             HitBeat(frontNode, Rank.BAD, trackNumber);

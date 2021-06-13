@@ -12,6 +12,8 @@ public class OnHitManager : MonoBehaviour
 
     private Dictionary<int, ParticleSystem> particleSystems;
 
+    private float defaultPitch;
+
     private void Awake()
     {
         Instance = this;
@@ -20,6 +22,7 @@ public class OnHitManager : MonoBehaviour
     void Start()
     {
         musicSource = GetComponent<AudioSource>();
+        defaultPitch = musicSource.pitch;
 
         Conductor.beatOnHitEvent += BeatHit;
 
@@ -60,27 +63,41 @@ public class OnHitManager : MonoBehaviour
             return;
         }
 
-        musicSource.Play();
-
-        circleFlash[trackNumber].ShowFlash(
-            circleIndicators[trackNumber].transform.position.x, 
-            circleIndicators[trackNumber].transform.position.y, 
-            circleIndicators[trackNumber].transform.position.z, 
-            4);
+        
 
         switch (t)
         {
             case NoteType.Heal:
-                print("healed");
+                PlayHitSound();
+                ShowFlash(trackNumber);
                 PlayerControler.Instance.TakeDamage(-NotePool.Instance.damage);
                 break;
             case NoteType.Invincible:
+                PlayHitSound();
+                ShowFlash(trackNumber);
                 break;
             case NoteType.Normal:
+                PlayHitSound();
+                ShowFlash(trackNumber);
                 break;
             case NoteType.Bad:
+                PlayHitSound();
                 PlayerControler.Instance.TakeDamage(NotePool.Instance.damage);
                 break;
         }
+    }
+
+    private void PlayHitSound()
+    {
+        musicSource.Play();
+    }
+
+    private void ShowFlash(int trackNumber)
+    {
+        circleFlash[trackNumber].ShowFlash(
+            circleIndicators[trackNumber].transform.position.x,
+            circleIndicators[trackNumber].transform.position.y,
+            circleIndicators[trackNumber].transform.position.z,
+            4);
     }
 }
