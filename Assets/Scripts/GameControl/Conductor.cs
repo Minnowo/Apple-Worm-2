@@ -346,6 +346,18 @@ public class Conductor : MonoBehaviour
                 break;
         }
 
+        if (PlayerControler.Instance.isRockForm && n.type == NoteType.Bad)
+        {
+            n.PerfectHit();
+
+            //dispatch beat on hit event
+            BeatHit(tracknumber, Rank.PERFECT, NoteType.Normal);
+
+            // remove the note from queue
+            trackQueues[tracknumber].Dequeue();
+            return;
+        }
+
         //dispatch beat on hit event
         BeatHit(tracknumber, r, n.type);
 

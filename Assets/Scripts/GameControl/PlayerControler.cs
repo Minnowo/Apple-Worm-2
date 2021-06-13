@@ -14,7 +14,7 @@ public class PlayerControler : MonoBehaviour
     public static PlayerControler Instance = null;
     public static int locationIndex = 1;
 
-    public static int defaultInvincibleTime = 5;
+    public static int defaultInvincibleTime = 8;
 
     public int hitCooldownTime = 3;
     public int Health = 100;

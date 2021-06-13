@@ -53,7 +53,7 @@ MonoBehaviour:
     - note: 7.5225
       type: 0
     - note: 7.7
-      type: 1
+      type: 3
     - note: 7.84875
       type: 0
     - note: 8.175
@@ -688,7 +688,7 @@ MonoBehaviour:
     - note: 7.9
       type: 1
     - note: 8.2
-      type: 3
+      type: 1
     - note: 8.664
       type: 0
     - note: 9.15375

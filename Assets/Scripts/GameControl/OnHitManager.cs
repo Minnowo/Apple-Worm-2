@@ -71,7 +71,7 @@ public class OnHitManager : MonoBehaviour
                 PlayerControler.Instance.TakeDamage(-NotePool.Instance.generalDamage);
                 break;
             case NoteType.Invincible:
-                PlayerControler.Instance.GiveIFrames(5);
+                PlayerControler.Instance.GiveIFrames(PlayerControler.defaultInvincibleTime);
                 PlayHitSound();
                 ShowFlash(trackNumber);
                 break;
