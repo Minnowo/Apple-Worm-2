@@ -10,7 +10,9 @@ public class NotePool : MonoBehaviour
 
     public List<MusicNode> NotesObjectList;
 
-    public int damage = 15;
+    public int generalDamage = 10;
+    public int spikeDamage = 20;
+
     public int InitialAmount = 0;
 
     private void Awake()

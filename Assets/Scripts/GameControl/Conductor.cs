@@ -50,9 +50,19 @@ public class Conductor : MonoBehaviour
 
     public Text countDownText;
     public Text comboText;
+    public PlayerScoreText playerScore;
     public RankText rankText;
 
     public int combo;
+
+    public int scoreComboMultiplier
+    {
+        get
+        {
+            return combo / 5;
+        }
+    }
+
     private float[] notes;
 
     private float pausedTime = 0f;
@@ -86,6 +96,7 @@ public class Conductor : MonoBehaviour
     {
         Instance = this;
         PlayerControler.PlayerInputted += PlayerControler_PlayerInputted;
+        PlayerControler.PlayerDamaged += PlayerDamaged;
     }
 
     void Start()
@@ -305,12 +316,15 @@ public class Conductor : MonoBehaviour
         {
             case Rank.BAD:
                 n.BadHit();
+                PlayerScoreText.PlayerScore += 10 + scoreComboMultiplier;
                 break;
             case Rank.GOOD:
                 n.GoodHit();
+                PlayerScoreText.PlayerScore += 20 + scoreComboMultiplier;
                 break;
             case Rank.PERFECT:
                 n.PerfectHit();
+                PlayerScoreText.PlayerScore += 30 + scoreComboMultiplier;
                 break;
         }
 
@@ -359,9 +373,19 @@ public class Conductor : MonoBehaviour
         comboText.gameObject.SetActive(false);
     }
 
+    private void PlayerDamaged(int newHealth, int oldHealth)
+    {
+        if (oldHealth - newHealth < 0)
+        {
+            UpdateComboText(false);
+            PlayerScoreText.PlayerScore -= oldHealth - newHealth;
+        }
+    }
+
     void OnDestroy()
     {
         PlayerControler.PlayerInputted -= PlayerControler_PlayerInputted;
+        PlayerControler.PlayerDamaged -= PlayerDamaged;
     }
 
     private void SongFinished()
@@ -374,7 +398,7 @@ public class Conductor : MonoBehaviour
     {
         rankText.ShowRank(rank, 2);
 
-        if (rank == Rank.MISS || t == NoteType.Bad)
+        if (rank == Rank.MISS)
         {
             UpdateComboText(false);
         }

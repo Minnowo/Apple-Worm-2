@@ -6,6 +6,9 @@ TagManager:
   tags:
   - MusicNoteBAD
   - MusicNote
+  - MusicNoteINVINCIBLE
+  - MusicNoteNORMAL
+  - MusicNoteHEAL
   layers:
   - Default
   - TransparentFX

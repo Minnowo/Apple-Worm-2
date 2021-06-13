@@ -8,6 +8,9 @@ public class PlayerControler : MonoBehaviour
     public delegate void PlayerInputtedEvent(PlayerAction action);
     public static event PlayerInputtedEvent PlayerInputted;
 
+    public delegate void PlayerTookDamageEvent(int newHealth, int oldHealth);
+    public static event PlayerTookDamageEvent PlayerDamaged;
+
     public static PlayerControler Instance = null;
     public static int locationIndex = 1;
 
@@ -71,8 +74,11 @@ public class PlayerControler : MonoBehaviour
             if (Time.time - hitCooldownTime >= lastHitTime)
             {
                 isOnDamageCooldown = false;
-                sr.color = new Color(1, 1, 1, 1);
             }
+        }
+        else if (sr.color.a < 1)
+        {
+            sr.color = new Color(1, 1, 1, (sr.color.a + Time.deltaTime * fadeSpeed).Clamp(0, 1));
         }
 
         this.rigidBody.transform.position = Vector3.MoveTowards(
@@ -97,6 +103,7 @@ public class PlayerControler : MonoBehaviour
     {
         if (!isOnDamageCooldown)
         {
+            PlayerTookDamage((Health - dmg).Clamp(0, 100), Health);
             Health = (Health - dmg).Clamp(0, 100);
             UIPrefabs.HealthBar.SetHealth(Health);
 
@@ -138,9 +145,14 @@ public class PlayerControler : MonoBehaviour
         if (!collider.gameObject.activeInHierarchy)
             return;
 
+        if (collider.gameObject.CompareTag("MusicNoteNORMAL"))
+        {
+            TakeDamage(NotePool.Instance.generalDamage);
+        }
+
         if (collider.gameObject.CompareTag("MusicNoteBAD"))
         {
-            TakeDamage(NotePool.Instance.damage);
+            TakeDamage(NotePool.Instance.spikeDamage);
         }
 
         if (collider.gameObject.CompareTag("MusicNoteINVINCIBLE"))
@@ -153,5 +165,10 @@ public class PlayerControler : MonoBehaviour
     {
         if (PlayerInputted != null)
             PlayerInputted(inp);
+    }
+    private void PlayerTookDamage(int newHealth, int oldHealth)
+    {
+        if (PlayerDamaged != null)
+            PlayerDamaged(newHealth, oldHealth);
     }
 }

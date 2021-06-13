@@ -20888,6 +20888,98 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &619920151
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619920152}
+  - component: {fileID: 619920154}
+  - component: {fileID: 619920153}
+  - component: {fileID: 619920155}
+  m_Layer: 5
+  m_Name: ScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &619920152
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619920151}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 847159994}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -284.22723, y: 252.18588}
+  m_SizeDelta: {x: 343.5455, y: 77.6362}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &619920153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619920151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
+    m_FontSize: 35
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 65
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Score:'
+--- !u!222 &619920154
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619920151}
+  m_CullTransparentMesh: 1
+--- !u!114 &619920155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619920151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f20481a3d1edd4d8b79055a482b811, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &847159990
 GameObject:
   m_ObjectHideFlags: 0
@@ -20983,6 +21075,7 @@ RectTransform:
   - {fileID: 1667489942}
   - {fileID: 1351382886}
   - {fileID: 1603325008}
+  - {fileID: 619920152}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21561,9 +21654,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dfcd9af6512dc34a94ef72ca4d3eb6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitCooldownTime: 3
   Health: 100
+  fadeSpeed: 5
+  isOnDamageCooldown: 0
   speed: 5
   playerInput: {fileID: 1984052269}
+  lastHitTime: 0
 --- !u!61 &1984052266
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -21577,7 +21674,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15408659, y: -0.61634356}
+  m_Offset: {x: -0.15408611, y: -0.044844627}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -21588,7 +21685,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.189849, y: 1.3408188}
+  m_Size: {x: 2.7326508, y: 2.4838166}
   m_EdgeRadius: 0
 --- !u!50 &1984052267
 Rigidbody2D:
@@ -21853,6 +21950,7 @@ MonoBehaviour:
   songInfo: {fileID: 0}
   countDownText: {fileID: 1667489943}
   comboText: {fileID: 1351382887}
+  playerScore: {fileID: 0}
   rankText: {fileID: 1603325011}
   combo: 0
 --- !u!82 &2106534303
