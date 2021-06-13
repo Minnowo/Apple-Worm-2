@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MusicNode : MonoBehaviour
 {
+	public int pausedCounter = 0;
     public float startX;
     public float endX;
     public float removeLineX;
@@ -53,8 +54,9 @@ public class MusicNode : MonoBehaviour
 		sr.sortingLayerName = "MusicNote";
 
 		rt = GetComponent<Transform>();
+		pausedCounter = 0;
 		//sr.sprite
-    }
+	}
 
     public void Initialize(float startX, float posY, float endX, float removeLineX, float posZ, float targetBeat, NoteType nt = NoteType.Normal)
 	{

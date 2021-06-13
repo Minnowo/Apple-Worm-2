@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf06c2c02bb5cbb46b12f35b41630dff, type: 3}
-  m_Name: BadAppleSongLunatic - Copy
+  m_Name: BadAppleSongLunatic
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: ff490384e89082441a2336aa8d1f52c8, type: 3}
   SongName: 
@@ -21,13 +21,13 @@ MonoBehaviour:
   tracks:
   - notes:
     - note: 1.326
-      type: 2
+      type: 0
     - note: 2.14125
       type: 0
     - note: 2.223
       type: 0
     - note: 2.30475
-      type: 0
+      type: 2
     - note: 3.28275
       type: 0
     - note: 3.44625
@@ -63,7 +63,7 @@ MonoBehaviour:
     - note: 9.47925
       type: 0
     - note: 9.8055
-      type: 2
+      type: 0
     - note: 10.05
       type: 0
     - note: 11.1105
@@ -73,7 +73,7 @@ MonoBehaviour:
     - note: 12.0885
       type: 0
     - note: 12.65925
-      type: 0
+      type: 2
     - note: 13.3935
       type: 0
     - note: 13.638
@@ -167,9 +167,9 @@ MonoBehaviour:
     - note: 29.0475
       type: 0
     - note: 29.211
-      type: 2
+      type: 0
     - note: 29.37375
-      type: 2
+      type: 0
     - note: 30.02625
       type: 0
     - note: 30.189
@@ -185,11 +185,13 @@ MonoBehaviour:
     - note: 32.09175
       type: 0
     - note: 33.28725
-      type: 0
+      type: 2
     - note: 33.45075
       type: 0
     - note: 33.6135
       type: 0
+    - note: 34
+      type: 1
     - note: 34.755
       type: 0
     - note: 36.22275
@@ -209,7 +211,7 @@ MonoBehaviour:
     - note: 40.13625
       type: 0
     - note: 40.299
-      type: 0
+      type: 2
     - note: 41.115
       type: 0
     - note: 41.4405
@@ -227,7 +229,7 @@ MonoBehaviour:
     - note: 47.3115
       type: 0
     - note: 47.637
-      type: 0
+      type: 2
     - note: 47.96325
       type: 0
     - note: 48.12675
@@ -269,7 +271,7 @@ MonoBehaviour:
     - note: 56.1165
       type: 0
     - note: 56.769
-      type: 0
+      type: 2
     - note: 57.09525
       type: 0
     - note: 57.4215
@@ -285,7 +287,7 @@ MonoBehaviour:
     - note: 60.35625
       type: 0
     - note: 60.6825
-      type: 2
+      type: 0
     - note: 60.846
       type: 0
     - note: 61.17225
@@ -331,7 +333,7 @@ MonoBehaviour:
     - note: 74.05425
       type: 0
     - note: 74.70675
-      type: 0
+      type: 2
     - note: 75.03225
       type: 0
     - note: 75.19575
@@ -367,7 +369,7 @@ MonoBehaviour:
     - note: 80.90325
       type: 0
     - note: 81.2295
-      type: 0
+      type: 2
     - note: 81.555
       type: 0
     - note: 82.04475
@@ -395,7 +397,7 @@ MonoBehaviour:
     - note: 97.536
       type: 0
     - note: 98.6775
-      type: 0
+      type: 2
     - note: 98.84025
       type: 0
     - note: 99.819
@@ -425,7 +427,7 @@ MonoBehaviour:
     - note: 105.1455
       type: 0
     - note: 105.25425
-      type: 0
+      type: 2
     - note: 105.363
       type: 0
     - note: 106.0155
@@ -485,7 +487,7 @@ MonoBehaviour:
     - note: 120.6915
       type: 0
     - note: 121.01775
-      type: 0
+      type: 2
     - note: 121.99575
       type: 0
     - note: 122.322
@@ -533,7 +535,7 @@ MonoBehaviour:
     - note: 130.149
       type: 0
     - note: 130.47525
-      type: 0
+      type: 2
     - note: 130.96425
       type: 0
     - note: 131.12775
@@ -565,7 +567,7 @@ MonoBehaviour:
     - note: 148.08675
       type: 0
     - note: 148.2495
-      type: 0
+      type: 2
     - note: 148.413
       type: 0
     - note: 148.73924

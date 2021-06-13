@@ -19,6 +19,9 @@ public class Conductor : MonoBehaviour
 
     public int startCountDown = 3;
 
+    public bool pauseNoteAssist = true;
+    public int pauseNoteAssistFrames = 25;
+
     public float badOffsetX = 1f;
     public float goodOffsetX = 0.5f;
     public float perfectOffsetX = 0.2f;
@@ -222,13 +225,35 @@ public class Conductor : MonoBehaviour
 
             MusicNode curNode = trackQueues[i].Peek();
 
+            if (pauseNoteAssist)
+            {
+                if ((curNode.transform.position.x - finishLineX).InRange(-perfectOffsetX, perfectOffsetX) && curNode.paused == false)
+                {
+                    curNode.paused = true;
+                }
+                else if (curNode.paused)
+                {
+                    if (curNode.pausedCounter > pauseNoteAssistFrames)
+                    {
+                        curNode.paused = false;
+                        curNode.pausedCounter = 0;
+                    }
+                    else
+                    {
+                        curNode.pausedCounter++;
+                    }
+                }
+            }
+
             if(curNode.transform.position.x < dequeueX)
             {
                 // can remove the note because its going to be disabled by the BeatHit 
                 // function
                 trackQueues[i].Dequeue();
 
-                BeatHit(i, Rank.MISS, NoteType.Normal) ;
+                // don't punish the player for missing the spikes, heals, or invincible power
+                if(curNode.type == NoteType.Normal)
+                    BeatHit(i, Rank.MISS, NoteType.Normal);
             }
         }
 
@@ -350,11 +375,17 @@ public class Conductor : MonoBehaviour
         rankText.ShowRank(rank, 2);
 
         if (rank == Rank.MISS || t == NoteType.Bad)
+        {
             UpdateComboText(false);
+        }
         else
+        {
             UpdateComboText(true);
+        }
 
-        if (beatOnHitEvent != null) 
+        if (beatOnHitEvent != null)
+        {
             beatOnHitEvent(trackNumber, rank, t);
+        }
     }
 }
