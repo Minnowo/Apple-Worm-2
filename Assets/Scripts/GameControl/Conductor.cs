@@ -151,6 +151,8 @@ public class Conductor : MonoBehaviour
         //Record the time when the music starts
         dspSongTime = (float)AudioSettings.dspTime;
 
+        SongTimeBar.Instance.SetMaxTime(musicSource.clip.length);
+
         if (songInfo.delayMusicWithFirstBeatOffset)
         {
             StartCoroutine(DelayPlay());
@@ -193,6 +195,8 @@ public class Conductor : MonoBehaviour
 
         //determine how many seconds since the song started
         songPosition = (float)(AudioSettings.dspTime - dspSongTime - pausedTime - songInfo.firstBeatOffset);
+
+        SongTimeBar.Instance.SetTime(songPosition);
 
         //determine how many beats since the song started
         songPositionInBeats = songPosition / secondsPerBeat;
