@@ -11,6 +11,9 @@ public class PlayerControler : MonoBehaviour
     public delegate void PlayerTookDamageEvent(int newHealth, int oldHealth);
     public static event PlayerTookDamageEvent PlayerDamaged;
 
+    public delegate void PlayerHealedEvent(int newHealth, int oldHealth);
+    public static event PlayerHealedEvent PlayerHealed;
+
     public static PlayerControler Instance = null;
     public static int locationIndex = 1;
 
@@ -80,7 +83,7 @@ public class PlayerControler : MonoBehaviour
             {
                 sr.color = new Color(1, 1, 1, 1);
             }
-            else if(sr.color.a > 0.3)
+            else if (sr.color.a > 0.3)
             {
                 sr.color = new Color(1, 1, 1, (sr.color.a - Time.deltaTime * fadeSpeed).Clamp(0, 1));
             }
@@ -122,22 +125,32 @@ public class PlayerControler : MonoBehaviour
         }
     }
 
+    public void HealPlayer(int giveHp)
+    {
+        TakeDamage(-giveHp);
+    }
+
     public void TakeDamage(int dmg)
     {
-        if (!isOnDamageCooldown)
+        if (dmg < 0)
         {
-            PlayerTookDamage((Health - dmg).Clamp(0, 100), Health);
+            OnPlayerHealed((Health - dmg).Clamp(0, 100), Health);
+
             Health = (Health - dmg).Clamp(0, 100);
             UIPrefabs.HealthBar.SetHealth(Health);
-
-            // i pass negative values to heal the player
-            // this will not give the i frames for being healed
-            if (dmg > 0)
-            {
-                lastHitTime = Time.time;
-                isOnDamageCooldown = true;
-            }
+            return;
         }
+
+        if (isOnDamageCooldown)
+            return;
+
+        PlayerTookDamage((Health - dmg).Clamp(0, 100), Health);
+
+        Health = (Health - dmg).Clamp(0, 100);
+        UIPrefabs.HealthBar.SetHealth(Health);
+
+        lastHitTime = Time.time;
+        isOnDamageCooldown = true;
     }
 
     public void AttackUp(InputAction.CallbackContext value)
@@ -170,7 +183,7 @@ public class PlayerControler : MonoBehaviour
         isRockForm = true;
 
         sr.sprite = UIPrefabs.AppleWormRockSkin;
-        rt.localScale = new Vector3(0.9f, 0.9f, 1f);
+        rt.localScale = new Vector3(0.75f, 0.75f, 1f);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -180,12 +193,12 @@ public class PlayerControler : MonoBehaviour
 
         if (collider.gameObject.CompareTag("MusicNoteNORMAL"))
         {
-            TakeDamage(NotePool.Instance.generalDamage);
+            TakeDamage(NotePool.generalDamage);
         }
 
         if (collider.gameObject.CompareTag("MusicNoteBAD"))
         {
-            TakeDamage(NotePool.Instance.spikeDamage);
+            TakeDamage(NotePool.spikeDamage);
         }
 
         if (collider.gameObject.CompareTag("MusicNoteINVINCIBLE"))
@@ -199,9 +212,15 @@ public class PlayerControler : MonoBehaviour
         if (PlayerInputted != null)
             PlayerInputted(inp);
     }
-    private void PlayerTookDamage(int newHealth, int oldHealth)
+    private void PlayerTookDamage(int newHealth, int oldHealth, NoteType t = NoteType.Normal)
     {
         if (PlayerDamaged != null)
             PlayerDamaged(newHealth, oldHealth);
+    }
+
+    private void OnPlayerHealed(int newHealth, int oldHealth)
+    {
+        if (PlayerHealed != null)
+            PlayerHealed(newHealth, oldHealth);
     }
 }

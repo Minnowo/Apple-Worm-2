@@ -126,8 +126,6 @@ public class MusicNode : MonoBehaviour
 		if (transform.position.x < removeLineX)
 		{
 			gameObject.SetActive(false);
-			hitPlayer = false;
-			flyCounter = 1;
 		}
 	}
 

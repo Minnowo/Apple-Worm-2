@@ -190,13 +190,13 @@ public class LevelButtonCreator : MonoBehaviour
 
     void DifficultyButtonsVisible(SongCollection.SongSet set, bool visible)
     {
-        if (set.easy.tracks.Length == 2 && set.easy.Song != null)
+        if (set.easy != null && set.easy.tracks.Length == 2 && set.easy.Song != null)
             difficultyButtons[0].gameObject.SetActive(visible);
 
-        if (set.normal.tracks.Length == 2 && set.normal.Song != null)
+        if (set.normal != null && set.normal.tracks.Length == 2 && set.normal.Song != null)
             difficultyButtons[1].gameObject.SetActive(visible);
 
-        if (set.hard.tracks.Length == 2 || set.hard.Song != null)
+        if (set.hard != null && set.hard.tracks.Length == 2 && set.hard.Song != null)
             difficultyButtons[2].gameObject.SetActive(visible);
     }
 

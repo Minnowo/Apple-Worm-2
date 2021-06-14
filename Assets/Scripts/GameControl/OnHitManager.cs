@@ -59,7 +59,7 @@ public class OnHitManager : MonoBehaviour
     {
         if (rank == Rank.MISS)
         {
-            PlayerScoreText.PlayerScore -= NotePool.Instance.spikeDamage;
+            PlayerScoreText.PlayerScore -= NotePool.spikeDamage;
             return;
         }
 
@@ -68,7 +68,7 @@ public class OnHitManager : MonoBehaviour
             case NoteType.Heal:
                 PlayHitSound();
                 ShowFlash(trackNumber);
-                PlayerControler.Instance.TakeDamage(-NotePool.Instance.generalDamage);
+                PlayerControler.Instance.HealPlayer(NotePool.generalDamage);
                 break;
             case NoteType.Invincible:
                 PlayerControler.Instance.GiveIFrames(PlayerControler.defaultInvincibleTime);
@@ -81,7 +81,7 @@ public class OnHitManager : MonoBehaviour
                 break;
             case NoteType.Bad:
                 PlayHitSound();
-                PlayerControler.Instance.TakeDamage(NotePool.Instance.generalDamage);
+                PlayerControler.Instance.TakeDamage(NotePool.generalDamage);
                 break;
         }
     }

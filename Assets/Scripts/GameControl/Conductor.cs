@@ -258,7 +258,7 @@ public class Conductor : MonoBehaviour
 
             if (curNode.type == NoteType.Bad && PlayerControler.Instance.isRockForm)
             {
-                if (curNode.transform.position.x < finishLineX - goodOffsetX)
+                if (curNode.transform.position.x < finishLineX + goodOffsetX)
                 {
                     if (i == PlayerControler.locationIndex)
                     {
@@ -405,10 +405,16 @@ public class Conductor : MonoBehaviour
 
     private void PlayerDamaged(int newHealth, int oldHealth)
     {
-        if (oldHealth - newHealth > 0)
+        switch(newHealth - oldHealth)
         {
-            UpdateComboText(false);
-            PlayerScoreText.PlayerScore -= oldHealth - newHealth;
+            // if they take damage from spike lose combo
+            // otherwise they're fine
+            case NotePool.spikeDamage:
+                UpdateComboText(false);
+                PlayerScoreText.PlayerScore -= oldHealth - newHealth;
+                break;
+            case NotePool.generalDamage:
+                break;
         }
     }
 

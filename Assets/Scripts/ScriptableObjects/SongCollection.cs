@@ -18,7 +18,7 @@ public class SongCollection : ScriptableObject
 
         public bool IsEmpty()
         {
-            return easy.Song == null && normal.Song == null && hard.Song == null;
+            return easy == null && normal == null && hard == null && easy.Song == null && normal.Song == null && hard.Song == null;
         }
 
         public int SongCount()
