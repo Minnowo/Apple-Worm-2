@@ -9,4 +9,9 @@ public class StartButton : MonoBehaviour
 	{
 		Helpers.LoadSceneByName(sceneName);
 	}
+
+	public void QuiteGameButton()
+	{
+		Application.Quit();
+	}
 }

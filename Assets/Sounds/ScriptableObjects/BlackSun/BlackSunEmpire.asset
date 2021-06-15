@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: BlackSunEmpire
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: 9747a77ad72f52f4db0e1d9e2922d40f, type: 3}
-  SongName: 
+  SongName: Black Sun Empire
   bpm: 43.45
   firstBeatOffset: 1
+  beatsShowInAdvance: 1
   delayMusicWithFirstBeatOffset: 1
   tracks:
   - notes:

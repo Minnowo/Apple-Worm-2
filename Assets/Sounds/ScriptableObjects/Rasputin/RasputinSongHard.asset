@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RasputinSongHard
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: b33f7b7f97b969b4c86ef93f835ca9a6, type: 3}
-  SongName: 
+  SongName: Rasputin Remix
   bpm: 34.9
   firstBeatOffset: 0
   beatsShowInAdvance: 0.8

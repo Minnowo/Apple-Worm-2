@@ -7,6 +7,21 @@ using System.Threading.Tasks;
 
 public static class Extensions
 {
+ 
+    public static string FormatBool(this bool t, string True, string False)
+    {
+        if (t)
+            return True;
+        return False;
+    }
+
+    public static string FormatBool(this bool t)
+    {
+        if (t)
+            return "True";
+        return "False";
+    }
+
     public static T _ClampMax<T>(T num, T max) where T : IComparable<T>
     {
         if (num.CompareTo(max) >= 0) return max;

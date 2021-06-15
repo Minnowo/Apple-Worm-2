@@ -107,6 +107,13 @@ public class OnHitManager : MonoBehaviour
     {
         switch (rank)
         {
+            // since a bonus ranked note is a notetype.Normal
+            // we need to reset the number of notes hit to before we hit it
+            // and then increase the bonusCounter to avoid the accuracy counter being wrong
+            case Rank.BONUS:
+                notesHit--;
+                extraNotesHit++;
+                break;
             case Rank.PERFECT:
                 UpdateAccuracy(3);
                 break;
@@ -124,9 +131,7 @@ public class OnHitManager : MonoBehaviour
     private void UpdateAccuracy(int increaseBy)
     {
         currentPerfection += increaseBy;
-        playerHitAccuracy = (float)currentPerfection / (float)(Conductor.totalNoteCountWithoutSpikes * 2f) * 100f;
-
-        print($"notes hit: {notesHit}, hit percent: {playerHitAccuracy}");
+        playerHitAccuracy = (float)currentPerfection / (float)(Conductor.totalNoteCountWithoutSpikes * 3f) * 100f;
     }
 
     private void PlayHitSound(int track)

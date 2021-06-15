@@ -15,7 +15,8 @@ public enum Rank
     GOOD, 
     BAD, 
     MISS,
-    HIT
+    HIT,
+    BONUS
 }
 
 public enum NoteType

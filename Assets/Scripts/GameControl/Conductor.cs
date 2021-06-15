@@ -276,14 +276,13 @@ public class Conductor : MonoBehaviour
                 {
                     if (i == PlayerControler.locationIndex)
                     {
-                        OnHitManager.notesHit++;
                         curNode.trackNumber = i;
                         curNode.hitPlayer = true;
 
                         trackQueues[i].Dequeue();
 
                         // influence the beat hit to be good instead of the spikes
-                        BeatHit(i, Rank.PERFECT, NoteType.Normal);
+                        BeatHit(i, Rank.BONUS, NoteType.Normal);
                         continue;
                     }
                 }
@@ -299,6 +298,15 @@ public class Conductor : MonoBehaviour
                 if (curNode.type == NoteType.Normal)
                     BeatHit(i, Rank.MISS, NoteType.Normal);
             }
+        }
+
+        if(PlayerControler.Instance.Health <= 0)
+        {
+            Paused = true;
+            musicSource.Pause();
+
+            songStarted = false;
+            SongFinished(false);
         }
 
         if (songPosition >= songLength)
@@ -366,10 +374,8 @@ public class Conductor : MonoBehaviour
 
         if (PlayerControler.Instance.isRockForm && n.type == NoteType.Bad)
         {
-            n.PerfectHit();
-
             //dispatch beat on hit event
-            BeatHit(tracknumber, Rank.PERFECT, NoteType.Normal);
+            BeatHit(tracknumber, Rank.BONUS, NoteType.Normal);
 
             // remove the note from queue
             trackQueues[tracknumber].Dequeue();

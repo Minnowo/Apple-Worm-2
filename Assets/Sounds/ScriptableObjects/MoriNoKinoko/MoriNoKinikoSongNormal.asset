@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: MoriNoKinikoSongNormal
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: ad244117c80403849b5f2c28283d26bd, type: 3}
-  SongName: 
+  SongName: Mori No Kinoko
   bpm: 35
   firstBeatOffset: 1
+  beatsShowInAdvance: 1
   delayMusicWithFirstBeatOffset: 1
   tracks:
   - notes:

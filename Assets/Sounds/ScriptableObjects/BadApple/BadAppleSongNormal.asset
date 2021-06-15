@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: BadAppleSongNormal
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: ff490384e89082441a2336aa8d1f52c8, type: 3}
-  SongName: 
+  SongName: Bad Apple
   bpm: 34.49525
   firstBeatOffset: 0
-  TotalNotes: -1
+  beatsShowInAdvance: 1
+  delayMusicWithFirstBeatOffset: 1
   tracks:
   - notes:
     - note: 17.766779

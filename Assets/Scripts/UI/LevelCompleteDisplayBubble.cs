@@ -5,11 +5,5 @@ using UnityEngine.UI;
 
 public class LevelCompleteDisplayBubble : MonoBehaviour
 {
-
     public Text value;
-
-    private void Awake()
-    {
-        value = GetComponent<Text>();
-    }
 }
