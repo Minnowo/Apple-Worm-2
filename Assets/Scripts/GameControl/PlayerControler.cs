@@ -30,6 +30,7 @@ public class PlayerControler : MonoBehaviour
     public PlayerInput playerInput;
 
     public float lastHitTime = 0;
+    public AudioSource[] dmgSounds;
 
     // 1 is the bottom
     private int currentTrackIndex
@@ -138,6 +139,8 @@ public class PlayerControler : MonoBehaviour
 
             Health = (Health - dmg).Clamp(0, 100);
             UIPrefabs.HealthBar.SetHealth(Health);
+
+            dmgSounds[2].Play();
             return;
         }
 
@@ -148,6 +151,11 @@ public class PlayerControler : MonoBehaviour
 
         Health = (Health - dmg).Clamp(0, 100);
         UIPrefabs.HealthBar.SetHealth(Health);
+
+        if (dmg == NotePool.spikeDamage)
+            dmgSounds[1].Play();
+        else
+            dmgSounds[0].Play();
 
         lastHitTime = Time.time;
         isOnDamageCooldown = true;
