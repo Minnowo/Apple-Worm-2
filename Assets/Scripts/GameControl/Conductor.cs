@@ -16,6 +16,7 @@ public class Conductor : MonoBehaviour
     public static event SongCompletedAction songCompletedEvent;
 
     public static bool Paused = false;
+    public static bool countingDown = false;
 
     public int startCountDown = 3;
 
@@ -134,6 +135,7 @@ public class Conductor : MonoBehaviour
 
         musicSource.clip = SongMessenger.Instance.CurrentSong.Song;
 
+        countingDown = true;
         StartCoroutine(CountDown());
     }
 
@@ -141,6 +143,7 @@ public class Conductor : MonoBehaviour
     {
         Paused = false;
         songStarted = true;
+        countingDown = false;
 
         yield return new WaitForSeconds(songInfo.firstBeatOffset);
         musicSource.Play();
@@ -163,6 +166,7 @@ public class Conductor : MonoBehaviour
 
         Paused = false;
         songStarted = true;
+        countingDown = false;
     }
 
 
@@ -262,7 +266,7 @@ public class Conductor : MonoBehaviour
 
             if (curNode.type == NoteType.Bad && PlayerControler.Instance.isRockForm)
             {
-                if (curNode.transform.position.x < finishLineX + goodOffsetX)
+                if (curNode.transform.position.x < finishLineX + badOffsetX)
                 {
                     if (i == PlayerControler.locationIndex)
                     {

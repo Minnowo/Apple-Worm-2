@@ -199,6 +199,12 @@ public class PlayerControler : MonoBehaviour
         if (collider.gameObject.CompareTag("MusicNoteBAD"))
         {
             TakeDamage(NotePool.spikeDamage);
+            if (isRockForm)
+            {
+                MusicNode n = collider.gameObject.GetComponent<MusicNode>();
+                n.hitPlayer = true;
+                n.trackNumber = currentTrackIndex;
+            }
         }
 
         if (collider.gameObject.CompareTag("MusicNoteINVINCIBLE"))

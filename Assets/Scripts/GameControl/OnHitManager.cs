@@ -5,7 +5,7 @@ using UnityEngine;
 public class OnHitManager : MonoBehaviour
 {
     public static OnHitManager Instance = null;
-    public AudioSource musicSource;
+    public AudioSource[] musicSource;
 
     public CircleFlash[] circleFlash;
     public CircleIndicator[] circleIndicators;
@@ -21,8 +21,8 @@ public class OnHitManager : MonoBehaviour
 
     void Start()
     {
-        musicSource = GetComponent<AudioSource>();
-        defaultPitch = musicSource.pitch;
+        //musicSource = GetComponent<AudioSource>();
+        //defaultPitch = musicSource.pitch;
 
         Conductor.beatOnHitEvent += BeatHit;
 
@@ -55,6 +55,11 @@ public class OnHitManager : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        Conductor.beatOnHitEvent -= BeatHit;
+    }
+
     private void BeatHit(int trackNumber, Rank rank, NoteType t)
     {
         if (rank == Rank.MISS)
@@ -66,29 +71,29 @@ public class OnHitManager : MonoBehaviour
         switch (t)
         {
             case NoteType.Heal:
-                PlayHitSound();
+                PlayHitSound(trackNumber);
                 ShowFlash(trackNumber);
                 PlayerControler.Instance.HealPlayer(NotePool.generalDamage);
                 break;
             case NoteType.Invincible:
                 PlayerControler.Instance.GiveIFrames(PlayerControler.defaultInvincibleTime);
-                PlayHitSound();
+                PlayHitSound(trackNumber);
                 ShowFlash(trackNumber);
                 break;
             case NoteType.Normal:
-                PlayHitSound();
+                PlayHitSound(trackNumber);
                 ShowFlash(trackNumber);
                 break;
             case NoteType.Bad:
-                PlayHitSound();
+                PlayHitSound(trackNumber);
                 PlayerControler.Instance.TakeDamage(NotePool.generalDamage);
                 break;
         }
     }
 
-    private void PlayHitSound()
+    private void PlayHitSound(int track)
     {
-        musicSource.Play();
+        musicSource[track].Play();
     }
 
     private void ShowFlash(int trackNumber)
