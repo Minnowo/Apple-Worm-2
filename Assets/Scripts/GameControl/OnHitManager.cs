@@ -10,6 +10,12 @@ public class OnHitManager : MonoBehaviour
     public CircleFlash[] circleFlash;
     public CircleIndicator[] circleIndicators;
 
+    public static float playerHitAccuracy = 0f;
+    public static int notesHit = 0;
+    public static int extraNotesHit = 0;
+
+    private int currentPerfection = 0;
+
     private Dictionary<int, ParticleSystem> particleSystems;
 
     private float defaultPitch;
@@ -71,24 +77,56 @@ public class OnHitManager : MonoBehaviour
         switch (t)
         {
             case NoteType.Heal:
+                notesHit++;
                 PlayHitSound(trackNumber);
                 ShowFlash(trackNumber);
                 PlayerControler.Instance.HealPlayer(NotePool.generalDamage);
+                UpdateAccuracy(rank);
                 break;
             case NoteType.Invincible:
-                PlayerControler.Instance.GiveIFrames(PlayerControler.defaultInvincibleTime);
+                notesHit++;
                 PlayHitSound(trackNumber);
                 ShowFlash(trackNumber);
+                PlayerControler.Instance.GiveIFrames(PlayerControler.defaultInvincibleTime);
+                UpdateAccuracy(rank);
                 break;
             case NoteType.Normal:
+                notesHit++;
                 PlayHitSound(trackNumber);
                 ShowFlash(trackNumber);
+                UpdateAccuracy(rank);
                 break;
             case NoteType.Bad:
                 PlayHitSound(trackNumber);
                 PlayerControler.Instance.TakeDamage(NotePool.generalDamage);
                 break;
         }
+    }
+
+    private void UpdateAccuracy(Rank rank)
+    {
+        switch (rank)
+        {
+            case Rank.PERFECT:
+                UpdateAccuracy(3);
+                break;
+            case Rank.GOOD:
+                UpdateAccuracy(2);
+                break;
+            case Rank.BAD:
+                UpdateAccuracy(1);
+                break;
+            case Rank.MISS:
+                break;
+        }
+    }
+
+    private void UpdateAccuracy(int increaseBy)
+    {
+        currentPerfection += increaseBy;
+        playerHitAccuracy = (float)currentPerfection / (float)(Conductor.totalNoteCountWithoutSpikes * 2f) * 100f;
+
+        print($"notes hit: {notesHit}, hit percent: {playerHitAccuracy}");
     }
 
     private void PlayHitSound(int track)

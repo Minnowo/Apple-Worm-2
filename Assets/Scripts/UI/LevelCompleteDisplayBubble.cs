@@ -1,0 +1,15 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class LevelCompleteDisplayBubble : MonoBehaviour
+{
+
+    public Text value;
+
+    private void Awake()
+    {
+        value = GetComponent<Text>();
+    }
+}

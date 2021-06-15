@@ -12,11 +12,14 @@ public class Conductor : MonoBehaviour
     public delegate void BeatOnHitAction(int trackNumber, Rank rank, NoteType type);
     public static event BeatOnHitAction beatOnHitEvent;
 
-    public delegate void SongCompletedAction();
+    public delegate void SongCompletedAction(bool victoryResult);
     public static event SongCompletedAction songCompletedEvent;
 
     public static bool Paused = false;
     public static bool countingDown = false;
+    public static int totalNoteCount = 0;
+    public static int totalNoteCountWithoutSpikes = 0;
+    public static int Combo { get { return Conductor.Instance.combo; } }
 
     public int startCountDown = 3;
 
@@ -127,7 +130,10 @@ public class Conductor : MonoBehaviour
 
             // place holder to fill the array
             previousNodes[i] = null;
-        }
+
+            totalNoteCount += songInfo.tracks[i].notes.Length;
+            totalNoteCountWithoutSpikes += Array.FindAll(songInfo.tracks[i].notes, e => e.type != NoteType.Bad).Length;
+        };
 
         tracks = songInfo.tracks;
 
@@ -270,6 +276,7 @@ public class Conductor : MonoBehaviour
                 {
                     if (i == PlayerControler.locationIndex)
                     {
+                        OnHitManager.notesHit++;
                         curNode.trackNumber = i;
                         curNode.hitPlayer = true;
 
@@ -297,7 +304,10 @@ public class Conductor : MonoBehaviour
         if (songPosition >= songLength)
         {
             songStarted = false;
-            SongFinished();
+
+            // if this point in the code is reached the player has not died
+            // therefore they passed the level
+            SongFinished(true);
         }
     }
 
@@ -432,10 +442,10 @@ public class Conductor : MonoBehaviour
         PlayerControler.PlayerDamaged -= PlayerDamaged;
     }
 
-    private void SongFinished()
+    private void SongFinished(bool result)
     {
         if (songCompletedEvent != null)
-            songCompletedEvent();
+            songCompletedEvent(result);
     }
 
     private void BeatHit(int trackNumber, Rank rank, NoteType t)
