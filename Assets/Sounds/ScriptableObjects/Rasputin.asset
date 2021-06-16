@@ -15,4 +15,4 @@ MonoBehaviour:
   songSets:
   - easy: {fileID: 0}
     normal: {fileID: 11400000, guid: 5fdc99edc5bc6c14a809696a30592370, type: 2}
-    hard: {fileID: 11400000, guid: d9e9c2e70ccc2d5429e0a5d0481ea420, type: 2}
+    hard: {fileID: 0}
