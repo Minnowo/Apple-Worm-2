@@ -364,7 +364,6 @@ MonoBehaviour:
   songCollections:
   - {fileID: 11400000, guid: e96c6e45b1cc48149bdc3b399a3f2956, type: 2}
   - {fileID: 11400000, guid: 6f81382cd9590874f814a46c35aa946b, type: 2}
-  - {fileID: 0}
   - {fileID: 11400000, guid: 9c8a60a61c243e446a6ce69ddc7c3843, type: 2}
 --- !u!114 &148614708
 MonoBehaviour:
