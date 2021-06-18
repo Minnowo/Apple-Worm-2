@@ -14,24 +14,21 @@ public class OnHitManager : MonoBehaviour
     public static int notesHit = 0;
     public static int extraNotesHit = 0;
 
-    private int currentPerfection = 0;
-
-    private Dictionary<int, ParticleSystem> particleSystems;
-
-    private float defaultPitch;
+    public int currentPerfection = 0;
 
     private void Awake()
     {
         Instance = this;
+
+        playerHitAccuracy = 0f;
+        notesHit = 0;
+        extraNotesHit = 0;
+        currentPerfection = 0;
     }
 
     void Start()
     {
-        //musicSource = GetComponent<AudioSource>();
-        //defaultPitch = musicSource.pitch;
-
         Conductor.beatOnHitEvent += BeatHit;
-
         
         float xpos = Conductor.Instance.finishLineX;
         float[] yPos = Conductor.Instance.trackSpawnYPos;

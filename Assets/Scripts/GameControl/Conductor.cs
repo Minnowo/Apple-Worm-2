@@ -108,6 +108,8 @@ public class Conductor : MonoBehaviour
         Paused = true;
         pauseTimeStamp = -1f;
         combo = 0;
+        totalNoteCount = 0;
+        totalNoteCountWithoutSpikes = 0;
 
         songInfo = SongMessenger.Instance.CurrentSong;
         secondsPerBeat = 60f / songInfo.bpm;
