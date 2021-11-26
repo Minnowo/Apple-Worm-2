@@ -1,4 +1,8 @@
-# Apple Worm Fan Game
+# Apple Worm 2
+
+this is a fan game of the infamous Apple Worm from cool math games  
+
+https://www.coolmathgames.com/0-apple-worm/play  
 
 this is a rhythm i made in my high school computer science class  
 this was made in about 2-3 weeks and is my first game using unity  
